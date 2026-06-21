@@ -4,6 +4,8 @@ import { persist } from "zustand/middleware";
 export type QualityPreset = "low" | "medium" | "high" | "ultra";
 export type FpsCap = 0 | 30 | 60 | 120;
 
+export type MobileLayout = "sheet" | "pills";
+
 export interface Settings {
   quality: QualityPreset;
   fpsCap: FpsCap;
@@ -19,6 +21,10 @@ export interface Settings {
   audioVolume: number;
   reducedMotion: boolean;
   highContrastLabels: boolean;
+  mobileLayout: MobileLayout;
+  // Offset draggable panel (desktop). { x, y } pixel relatif posisi default.
+  sidebarOffset: { x: number; y: number };
+  sidePanelOffset: { x: number; y: number };
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -26,7 +32,7 @@ export const DEFAULT_SETTINGS: Settings = {
   fpsCap: 60,
   showFps: false,
   bloomIntensity: 0.7,
-  nebulaOpacity: 0.5,
+  nebulaOpacity: 0.95,
   starSize: 1.0,
   showHoverEdges: true,
   autoRotate: true,
@@ -36,6 +42,9 @@ export const DEFAULT_SETTINGS: Settings = {
   audioVolume: 0.35,
   reducedMotion: false,
   highContrastLabels: false,
+  mobileLayout: "sheet",
+  sidebarOffset: { x: 0, y: 0 },
+  sidePanelOffset: { x: 0, y: 0 },
 };
 
 interface UniverseState {
