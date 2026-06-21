@@ -148,6 +148,22 @@ export function SidePanel() {
               </div>
             )}
           </div>
+
+          {/* Drag handle (kiri) — geser panel; double-click utk reset */}
+          <div
+            title="Geser panel — double-click utk reset"
+            onDoubleClick={() => update({ sidePanelOffset: { x: 0, y: 0 } })}
+            {...drag}
+            style={{
+              position: "absolute", top: "50%", left: -6, transform: "translateY(-50%)",
+              width: 12, height: 56, borderRadius: 6,
+              background: `${node.color}30`, border: `1px solid ${node.color}66`,
+              cursor: "grab", touchAction: "none", zIndex: 2,
+              display: "flex", alignItems: "center", justifyContent: "center",
+            }}
+          >
+            <span style={{ width: 2, height: 24, background: "rgba(232,244,255,0.6)", borderRadius: 2 }} />
+          </div>
         </motion.aside>
       )}
     </AnimatePresence>
