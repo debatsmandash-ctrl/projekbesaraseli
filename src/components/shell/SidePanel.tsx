@@ -1,10 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { useUniverse } from "@/lib/store";
+import { useUniverse, useSettings } from "@/lib/store";
 import { buildGraph } from "@/lib/graph/build";
 import { invalidateGraphCache } from "@/lib/graph/build";
 import { useMemo, useState, useEffect } from "react";
 import { PanelContent } from "./panels/PanelContent";
 import { setOverride, loadOverrides, clearOverrides, exportOverrides } from "@/lib/editor/overrides";
+import { usePointerDrag } from "@/hooks/usePointerDrag";
 
 export function SidePanel() {
   const selectedId = useUniverse((s) => s.selectedId);
@@ -15,6 +16,9 @@ export function SidePanel() {
   const open = !!node && node.id !== "root";
   const [labelDraft, setLabelDraft] = useState("");
   useEffect(() => { if (node) setLabelDraft(node.label); }, [node]);
+  const offset = useSettings((s) => s.sidePanelOffset);
+  const update = useSettings((s) => s.update);
+  const drag = usePointerDrag(offset, (next) => update({ sidePanelOffset: next }));
 
   return (
     <AnimatePresence>
@@ -27,9 +31,9 @@ export function SidePanel() {
           transition={{ type: "spring", stiffness: 240, damping: 28 }}
           style={{
             position: "fixed",
-            top: 0,
-            right: 0,
-            bottom: 0,
+            top: offset.y,
+            right: -offset.x,
+            bottom: -offset.y,
             width: "min(560px, 92vw)",
             background: "linear-gradient(180deg, rgba(11,18,32,0.95), rgba(5,8,15,0.92))",
             borderLeft: `1px solid ${node.color}55`,
@@ -143,6 +147,22 @@ export function SidePanel() {
                 </div>
               </div>
             )}
+          </div>
+
+          {/* Drag handle (kiri) — geser panel; double-click utk reset */}
+          <div
+            title="Geser panel — double-click utk reset"
+            onDoubleClick={() => update({ sidePanelOffset: { x: 0, y: 0 } })}
+            {...drag}
+            style={{
+              position: "absolute", top: "50%", left: -6, transform: "translateY(-50%)",
+              width: 12, height: 56, borderRadius: 6,
+              background: `${node.color}30`, border: `1px solid ${node.color}66`,
+              cursor: "grab", touchAction: "none", zIndex: 2,
+              display: "flex", alignItems: "center", justifyContent: "center",
+            }}
+          >
+            <span style={{ width: 2, height: 24, background: "rgba(232,244,255,0.6)", borderRadius: 2 }} />
           </div>
         </motion.aside>
       )}

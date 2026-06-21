@@ -1,76 +1,79 @@
-# Rencana Update Debate Universe
+# Upgrade Galaksi HD + Mobile UI + PWA
 
-## 1. Background: Milky Way realistis (ganti CosmicCrust)
+## 1. Milky Way HD (procedural shader, bore-up)
 
-- **Hapus / nonaktifkan** efek nebula pink+magenta+orange di `CosmicCrust.tsx` (sumber utama "gas-gas pink").
-- Bangun langit baru `MilkyWaySky.tsx`:
-  - **Sphere skybox gelap** (dasar `#03050d` → `#000` di kutub) — bukan hitam total tapi sangat gelap supaya bintang & node tetap kontras.
-  - **Disc / piringan galaksi**: shader sphere kedua (BackSide) yang merender **pita Milky Way** memanjang di ekuator. Bahan: FBM noise + ridge untuk dust lane gelap, blend dengan warna *putih kebiruan → krem hangat → emas redup* (mirip foto referensi, tanpa pink/magenta).
-  - **Kamera di dalam disc**: orientasi pita = horizon, sehingga melintang di tengah layar persis seperti foto referensi.
-  - **Bias gelap**: opacity pita dikurangi (~0.55), tepi luar fade ke gelap, supaya bintang & node tetap fokus.
-  - **Lighting halus**: 2–3 PointLight redup berwarna krem & biru di sepanjang core galaksi (bloom-friendly) sebagai aksen, bukan glow penuh.
-- StarField tetap, tapi naikkan sedikit kepadatan lapisan jauh agar nyambung dengan pita.
+File: `src/components/universe/MilkyWaySky.tsx` (rewrite)
 
-## 2. Jarak cluster lebih seimbang
+- Naikkan resolusi noise: 6–7 oktaf FBM (saat ini ~3), tambah ridge noise utk dust lane gelap yg tegas.
+- **Asymmetric core bulge**: pusat galaksi terang hanya di satu sisi (bukan ring penuh). Pakai radial gaussian besar di satu arah (mis. +X), warna amber-cream `#ffd9a8 → #ffb070`, falloff lebar.
+- **Dust lanes**: lapisan kedua FBM di-invert + threshold, warna deep brown `#1a0e08`, ditumpuk di atas disc utk siluet lane gelap.
+- **Disc gradient**: cream center → blue-white mid `#b8c8ff` → dark navy edge `#03050d`. Anisotropic disc tipis (h ±0.08) supaya jelas pita.
+- **Star layers (3 lapis, di skybox shader, bukan PointLight)**:
+  - Background haze: ribuan titik halus via hash noise, intensitas tinggi di dalam pita.
+  - Mid stars: ~2000 titik kecil dgn temperature tint (blue-white–amber).
+  - Foreground bright: ~60 bintang besar dgn diffraction cross subtle.
+- **Lighting universe**: 2 directional/point light lemah yg warnanya match core (amber) + opposite (cool blue), sehingga node 3D dapat rim-light dari arah galaxy core.
+- Kamera tetap di dalam disc, miringkan sedikit supaya core terlihat di sisi kanan layar.
+- Tone: deep, gelap, kontras tinggi — fokus tetap di node.
 
-Di `src/lib/graph/build.ts`:
+## 2. Cluster Competitor (slider=4 → dekat tapi tidak nabrak)
 
-- Turunkan jarak cluster bermasalah:
-  - `active_member` (SMANDASH) `dist: 56 → 38`
-  - `competitor` `dist: 54 → 40`
-  - (cluster lain disesuaikan tipis biar tidak tumpang tindih)
-- Naikkan **sebaran sub-hub → leaf** di kedua cluster supaya bintang anak tidak terlalu nempel ke induk:
-  - Radius `placeCloud` untuk teams & speakers SMANDASH/competitor diperbesar ~1.6×.
-- Hasil: jarak universe → cluster → sub-cluster → bintang lebih proporsional (cluster mendekat, leaf merenggang).
+File: `src/lib/graph/build.ts`
 
-## 3. Bintang Motion Bank warna neon hangat
+- Radius leaf sekolah di Competitor: dari ~10–11 → **5.5**.
+- Cek collision dgn radius node parent (`competitor` hub) + node visual size; pastikan jarak min ≈ parentRadius + childRadius + 0.8 padding.
+- Sub-hub Competitor tetap, hanya jarak parent→leaf yg dipendekkan.
 
-- Palet baru (pink-orange-yellow): `#ff3d8b`, `#ff8b3d`, `#ffd53d`, `#ff3df5`.
-- Di blok motion (`build.ts` ~line 353), ganti `paletteColor(...)` agar warna selalu di-pick dari palet ini secara deterministik per id; pastikan **tidak pernah hitam** (clamp luminance minimum).
-- Sub-hub `jenis-mosi` tetap warnanya sendiri, hanya leaf bintang yang dipaksa warm-neon.
+## 3. Panel & Navigasi bisa digeser (desktop + mobile)
 
-## 4. Roles: pisah AP & BP + sub-skill
+Files: `src/components/shell/SidePanel.tsx`, `src/components/shell/Sidebar.tsx`, `src/components/shell/MobileShell.tsx`
 
-### Data
-Buat `src/data/raw/roles.json` baru:
-```
-{
-  "asian": [ { id, nama, short, side, time, inti, sub: [ {id, label, kind: "case|timing|structure|speech", desc} ] } x6 + reply ],
-  "british": {
-    "opening_gov":  [ PM, DPM ],
-    "opening_opp":  [ LO, DLO ],
-    "closing_gov":  [ MG, GW ],
-    "closing_opp":  [ MO, OW ]
-  }
-}
-```
-Setiap role punya array `sub` berisi minimal:
-- **Strategi Case Building**
-- **Timing** (alokasi waktu detail per menit)
-- **Structure** (template signpost) — tampil dengan styling khusus saat hover
-- **Speech Timing** (universal, default di tiap role)
+- Tambah drag handle di tepi panel (kiri utk Sidebar, kanan utk SidePanel di desktop).
+- State `panelOffset` di `src/lib/store.ts` (zustand) per panel, persisted ke localStorage.
+- Pakai pointer events (no library) — drag mengubah `translateX/Y`, snap ke edge bila <40px.
+- Mobile: bottom sheet bisa di-drag handle vertikal (lihat #4).
 
-### Graph (build.ts)
-Pecah cluster `roles` jadi 2 sub-hub utama:
-- `subhub:roles:ap` ("ASIAN PARLIAMENTARY") — child: GOV/OPP mini-hub → role node → sub-skill leaf (bintang).
-- `subhub:roles:bp` ("BRITISH PARLIAMENTARY") — child: OG / OO / CG / CO → 2 role per tim → sub-skill leaf.
-- Setiap role node ⇒ 3–4 leaf bintang (case-building, timing, structure, speech-timing) dengan warna lembut berbeda per kind.
+## 4. Mobile UI baru (default = bottom sheet, opsi di Settings)
 
-### UI
-- Di `PanelContent.tsx`, tambah renderer untuk node `kind: "role"` & `"role-skill"`:
-  - Role: tampil overview + tabs (Case Building, Timing, Structure, Speech Timing).
-  - "Structure" tab: render dengan styling khusus (kartu bertingkat / outline berwarna) saat di-hover.
-- Speech Timing dibuat sebagai helper konstan yang diapply ke semua role (DRY).
+Files baru:
+- `src/components/shell/mobile/BottomSheet.tsx` — info panel sbg sheet 3 snap point (peek 12%, mid 50%, full 92%), drag handle.
+- `src/components/shell/mobile/FloatingPills.tsx` — alternatif: nav pill atas + info pill bawah, collapsible jadi icon.
+- `src/components/shell/mobile/MobileNavBar.tsx` — top bar tipis (logo + search + menu).
 
-## 5. Verifikasi
+Logic:
+- `useDeviceProfile()` deteksi mobile (sudah ada).
+- Setting baru di `SettingsPanel.tsx`: **Mobile layout** = "Bottom sheet (default)" | "Floating pills". Disimpan di store.
+- `MobileShell.tsx` switch berdasar setting tsb.
+- Desktop **tidak berubah** sama sekali.
 
-- Jalankan preview, cek:
-  - Pita Milky Way melintang horizon, gelap tapi terlihat, tanpa pink nebula.
-  - Cluster SMANDASH & Competitor lebih dekat ke pusat; leaf-nya tidak menempel.
-  - Tidak ada bintang Motion Bank yang hitam.
-  - Cluster Roles punya 2 cabang AP / BP dengan struktur lengkap & sub-skill bisa di-klik.
+Target: peta bintang minimal 60% layar selalu terlihat di mobile.
 
-## Catatan teknis singkat
-- File baru: `src/components/universe/MilkyWaySky.tsx`, `src/data/raw/roles.json`.
-- File diubah: `Universe.tsx` (swap CosmicCrust → MilkyWaySky), `build.ts` (jarak + motion color + roles graph), `data/index.ts` (export ROLES_AP / ROLES_BP), `PanelContent.tsx` (renderer role + sub-skill).
-- Tidak perlu Lovable Cloud untuk update ini — semuanya frontend & data statis.
+## 5. Warna hover sesuai bintang tujuan
+
+File: `src/components/universe/HoverEdges.tsx` (+ `Universe.tsx`)
+
+- Saat hover edge/node, ambil warna node tujuan (target star color), pakai sbg stroke edge + glow halo.
+- Sebelumnya warna hover statis — sekarang dynamic per target.
+
+## 6. Installable PWA (home-screen only)
+
+Files:
+- `public/manifest.webmanifest` (baru): name "Debate Universe", short_name "Debate U", display "standalone", theme `#03050d`, background `#000`.
+- Icons: 192, 512, maskable 512 — generate via imagegen (logo galaksi sederhana).
+- `src/routes/__root.tsx` head(): tambah link `manifest`, `apple-touch-icon`, meta `theme-color`, `apple-mobile-web-app-capable`.
+- **Tidak ada service worker** (sesuai pilihan home-screen only). Tidak ada offline cache.
+
+## File summary
+
+**Baru**: `BottomSheet.tsx`, `FloatingPills.tsx`, `MobileNavBar.tsx`, `public/manifest.webmanifest`, 3 icon PNG.
+
+**Diubah**: `MilkyWaySky.tsx`, `build.ts`, `SidePanel.tsx`, `Sidebar.tsx`, `MobileShell.tsx`, `SettingsPanel.tsx`, `store.ts`, `HoverEdges.tsx`, `Universe.tsx`, `__root.tsx`.
+
+**Tidak diubah**: data roles, layout desktop, semua konten panel.
+
+## Catatan teknis
+
+- Shader noise pakai GLSL hash (no texture) → tetap ringan, target 60fps di desktop, 30fps di mobile.
+- Drag panel pakai pointer events native + `useRef`, no dnd-kit (overkill).
+- Bottom sheet pakai framer-motion `useDragControls` (sudah ada di project).
+- Manifest icons: solid background utk maskable, transparent utk regular.

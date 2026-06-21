@@ -1,6 +1,7 @@
-import { useUniverse } from "@/lib/store";
+import { useUniverse, useSettings } from "@/lib/store";
 import { CLUSTER_META } from "@/lib/graph/build";
 import { useState } from "react";
+import { usePointerDrag } from "@/hooks/usePointerDrag";
 import logo from "@/assets/smandash-logo.png";
 
 const ICONS: Record<string, string> = {
@@ -19,6 +20,9 @@ export function Sidebar() {
   const setEditorUnlockOpen = useUniverse((s) => s.setEditorUnlockOpen);
   const editorMode = useUniverse((s) => s.editorMode);
   const [collapsed, setCollapsed] = useState(false);
+  const offset = useSettings((s) => s.sidebarOffset);
+  const update = useSettings((s) => s.update);
+  const drag = usePointerDrag(offset, (next) => update({ sidebarOffset: next }));
 
   return (
     <aside
@@ -28,6 +32,7 @@ export function Sidebar() {
         left: 0,
         bottom: 0,
         width: collapsed ? 56 : 240,
+        transform: `translate(${offset.x}px, ${offset.y}px)`,
         background: "linear-gradient(180deg, rgba(8,13,24,0.95), rgba(5,8,15,0.85))",
         borderRight: "1px solid rgba(168,85,247,0.18)",
         backdropFilter: "blur(14px)",
@@ -189,6 +194,22 @@ export function Sidebar() {
         >
           {collapsed ? "›" : "‹"}
         </button>
+      </div>
+
+      {/* Drag handle — geser panel; double-click utk reset */}
+      <div
+        title="Geser panel — double-click utk reset"
+        onDoubleClick={() => update({ sidebarOffset: { x: 0, y: 0 } })}
+        {...drag}
+        style={{
+          position: "absolute", top: "50%", right: -6, transform: "translateY(-50%)",
+          width: 12, height: 56, borderRadius: 6,
+          background: "rgba(168,85,247,0.18)", border: "1px solid rgba(168,85,247,0.35)",
+          cursor: "grab", touchAction: "none", zIndex: 2,
+          display: "flex", alignItems: "center", justifyContent: "center",
+        }}
+      >
+        <span style={{ width: 2, height: 24, background: "rgba(232,244,255,0.5)", borderRadius: 2 }} />
       </div>
     </aside>
   );

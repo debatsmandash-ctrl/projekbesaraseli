@@ -5,8 +5,7 @@ import type { Graph } from "@/lib/graph/build";
 
 /**
  * Render link-edges hanya untuk node yang sedang dipilih/hover.
- * Garis dibuat melengkung — control point digeser 25% menjauh dari pusat
- * supaya tidak menembus cluster lain.
+ * Warna stroke = warna node TUJUAN (bintang yang dituju), bukan static.
  */
 export function HoverEdges({ graph, activeId }: { graph: Graph; activeId: string | null }) {
   const linkEdges = useMemo(() => {
@@ -25,10 +24,11 @@ export function HoverEdges({ graph, activeId }: { graph: Graph; activeId: string
         const A = new THREE.Vector3(...a.pos);
         const B = new THREE.Vector3(...b.pos);
         const mid = A.clone().add(B).multiplyScalar(0.5);
-        // push control point away from world origin
         const out = mid.clone().normalize().multiplyScalar(mid.length() * 0.25);
         const ctrl = mid.add(out);
-        const color = e.color || a.color;
+        // warna mengikuti bintang TUJUAN (ujung yang bukan active)
+        const target = e.a === activeId ? b : a;
+        const color = target.color || e.color || "#ffffff";
         return (
           <QuadraticBezierLine
             key={`link-${i}`}
@@ -36,9 +36,9 @@ export function HoverEdges({ graph, activeId }: { graph: Graph; activeId: string
             end={[B.x, B.y, B.z]}
             mid={[ctrl.x, ctrl.y, ctrl.z]}
             color={color}
-            lineWidth={1.4}
+            lineWidth={1.6}
             transparent
-            opacity={0.55}
+            opacity={0.7}
             dashed={false}
           />
         );

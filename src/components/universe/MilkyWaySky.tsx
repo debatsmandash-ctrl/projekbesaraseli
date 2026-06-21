@@ -3,11 +3,12 @@ import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
 /**
- * MilkyWaySky — skybox realistis. Kamera berada DI DALAM disc galaksi:
- *  - Sphere besar (BackSide) dengan shader pita Milky Way memanjang di ekuator
- *  - Tidak ada nebula pink / gas magenta — palet putih kebiruan → krem hangat → emas redup
- *  - Dust lane gelap di tengah pita; tepi luar fade ke gelap pekat
- *  - 2 PointLight redup sebagai "core glow" agar bintang & node tetap kontras
+ * MilkyWaySky — galaksi realistis full-procedural shader.
+ *  - 7 oktaf FBM + ridge noise → struktur awan & dust lane tajam
+ *  - Pusat galaksi (bulge) ASYMMETRIC — terang di SATU sisi saja (sisi kanan kamera awal)
+ *  - 3 lapis bintang dipanggang langsung di shader (haze, mid, foreground bright)
+ *  - Palet: deep navy → blue-white → cream → amber/emas core (TANPA pink/magenta)
+ *  - 2 PointLight aksen warna core (amber + cool blue) untuk rim-light node
  */
 const vertexShader = /* glsl */ `
 varying vec3 vDir;
@@ -23,93 +24,125 @@ varying vec3 vDir;
 uniform float uTime;
 uniform float uOpacity;
 
-float hash(vec3 p){ p=fract(p*0.3183099+0.1); p*=17.0; return fract(p.x*p.y*p.z*(p.x+p.y+p.z)); }
+// ─── Noise primitives ───
+float hash13(vec3 p){ p=fract(p*0.3183099+0.1); p*=17.0; return fract(p.x*p.y*p.z*(p.x+p.y+p.z)); }
+float hash12(vec2 p){ p=fract(p*vec2(123.34,456.21)); p+=dot(p, p+45.32); return fract(p.x*p.y); }
 float vnoise(vec3 x){
   vec3 i=floor(x); vec3 f=fract(x); f=f*f*(3.0-2.0*f);
-  return mix(mix(mix(hash(i+vec3(0,0,0)),hash(i+vec3(1,0,0)),f.x),
-                 mix(hash(i+vec3(0,1,0)),hash(i+vec3(1,1,0)),f.x),f.y),
-             mix(mix(hash(i+vec3(0,0,1)),hash(i+vec3(1,0,1)),f.x),
-                 mix(hash(i+vec3(0,1,1)),hash(i+vec3(1,1,1)),f.x),f.y),f.z);
+  return mix(mix(mix(hash13(i+vec3(0,0,0)),hash13(i+vec3(1,0,0)),f.x),
+                 mix(hash13(i+vec3(0,1,0)),hash13(i+vec3(1,1,0)),f.x),f.y),
+             mix(mix(hash13(i+vec3(0,0,1)),hash13(i+vec3(1,0,1)),f.x),
+                 mix(hash13(i+vec3(0,1,1)),hash13(i+vec3(1,1,1)),f.x),f.y),f.z);
 }
-float fbm(vec3 p, int oct){
-  float a=0.0; float w=0.55;
-  for(int i=0;i<7;i++){
-    if(i>=oct) break;
-    a+=w*vnoise(p); p=p*2.07 + vec3(11.7,3.2,7.9); w*=0.5;
-  }
+float fbm7(vec3 p){
+  float a=0.0, w=0.5;
+  for(int i=0;i<7;i++){ a+=w*vnoise(p); p=p*2.07+vec3(11.7,3.2,7.9); w*=0.5; }
   return a;
 }
 float ridge(vec3 p){ return 1.0 - abs(vnoise(p)*2.0 - 1.0); }
-float ridgeFbm(vec3 p, int oct){
+float ridgeFbm6(vec3 p){
   float a=0.0, w=0.55;
-  for(int i=0;i<5;i++){
-    if(i>=oct) break;
-    a+=w*ridge(p); p=p*2.13+vec3(5.0,9.1,2.3); w*=0.5;
-  }
+  for(int i=0;i<6;i++){ a+=w*ridge(p); p=p*2.13+vec3(5.0,9.1,2.3); w*=0.5; }
   return a;
+}
+
+// Bintang procedural: cell-based hash, threshold tinggi → titik tajam
+float starsLayer(vec3 d, float density, float threshold, float sharpness){
+  // proyeksi ke sphere ke grid pseudo-uv
+  vec2 uv = vec2(atan(d.z, d.x), asin(clamp(d.y, -1.0, 1.0)));
+  vec2 cell = uv * density;
+  vec2 fcell = fract(cell);
+  vec2 icell = floor(cell);
+  float h = hash12(icell);
+  if (h < threshold) return 0.0;
+  // jarak ke titik bintang dalam sel
+  vec2 starPos = vec2(hash12(icell+1.7), hash12(icell+5.3));
+  float dStar = length(fcell - starPos);
+  float br = (h - threshold) / (1.0 - threshold);
+  return pow(max(0.0, 1.0 - dStar * sharpness), 4.0) * br;
 }
 
 void main(){
   vec3 d = normalize(vDir);
 
-  // Latitude relatif ke ekuator (disc plane = XZ)
   float lat = d.y;
-  // pita Milky Way: gaussian band sempit di sekitar ekuator
-  float band = exp(-pow(lat / 0.22, 2.0));
-  // band kedua lebih lebar & redup (halo)
+  float lon = atan(d.z, d.x);
+
+  // ─── Pita disc (gaussian sempit + halo lebar) ───
+  float band = exp(-pow(lat / 0.20, 2.0));
   float halo = exp(-pow(lat / 0.55, 2.0)) * 0.35;
 
-  // Longitude untuk variasi sepanjang pita (azimuth)
-  float lon = atan(d.z, d.x);
-  // posisi sampling 3D agar konsisten saat dilihat 360°
+  // ─── Struktur awan: FBM + ridge ───
   vec3 q = d * 2.6;
+  float clouds = fbm7(q * 1.5);
+  float ridges = ridgeFbm6(q * 2.2);
+  float structure = mix(clouds, ridges, 0.55);
+  // detail awan kedua (lebih halus)
+  float fineCloud = fbm7(q * 5.2 + vec3(13.0));
 
-  // Struktur awan pita
-  float clouds = fbm(q * 1.4 + vec3(0.0, 0.0, uTime*0.005), 6);
-  float ridges = ridgeFbm(q * 2.1, 4);
-  float structure = mix(clouds, ridges, 0.45);
+  // ─── Dust lanes GELAP (tajam, mengikuti pita) ───
+  float dustLane = exp(-pow(lat / 0.05, 2.0));
+  float dustNoise = fbm7(q * 3.6 + vec3(7.0));
+  float dust = dustLane * smoothstep(0.30, 0.78, dustNoise) * 1.0;
 
-  // Dust lane GELAP di tengah pita (jalur debu)
-  float dustLane = exp(-pow(lat / 0.06, 2.0));
-  float dustNoise = fbm(q * 3.2 + vec3(7.0), 4);
-  float dust = dustLane * smoothstep(0.35, 0.85, dustNoise) * 0.9;
+  // ─── ASYMMETRIC CORE BULGE: terang di SATU sisi (longitude ~ 0.7 rad) ───
+  // bulge utama + bulge sekunder lebih lebar & redup
+  float coreAng = exp(-pow((lon - 0.7) / 0.55, 2.0));
+  float coreLat = exp(-pow(lat / 0.13, 2.0));
+  float bulge = coreAng * coreLat;
+  float coreGlow = bulge * (0.85 + 0.35 * fineCloud);
+  // hotspot inti (sangat kecil & sangat terang)
+  float coreHot = exp(-pow((lon - 0.72) / 0.18, 2.0)) * exp(-pow(lat / 0.06, 2.0));
 
-  // Core hotspot: bagian tengah Milky Way lebih terang (di azimuth tertentu)
-  float coreAz = exp(-pow((lon - 0.6) / 1.2, 2.0))
-               + exp(-pow((lon + 2.3) / 1.5, 2.0)) * 0.7;
-  float core = band * coreAz * (0.55 + 0.45 * structure);
+  // ─── Intensitas pita ───
+  float intensity = (band * structure * 1.15 + halo * clouds * 0.55) - dust * 0.85;
+  intensity = clamp(intensity, 0.0, 1.6);
 
-  // Intensitas pita keseluruhan
-  float intensity = (band * structure + halo * clouds * 0.6) - dust;
-  intensity = clamp(intensity, 0.0, 1.4);
-
-  // Palet: dark navy → biru pucat → krem hangat → emas redup
-  vec3 colDark   = vec3(0.012, 0.018, 0.045);
-  vec3 colBlue   = vec3(0.18, 0.26, 0.42);   // pita pinggir
-  vec3 colCream  = vec3(0.62, 0.55, 0.46);   // tengah pita
-  vec3 colAmber  = vec3(0.78, 0.62, 0.38);   // core
-  vec3 colDust   = vec3(0.02, 0.02, 0.04);
+  // ─── Palet (no pink/magenta) ───
+  vec3 colDark   = vec3(0.006, 0.010, 0.028);   // langit gelap
+  vec3 colBlue   = vec3(0.14, 0.22, 0.38);      // pinggir pita
+  vec3 colWhite  = vec3(0.78, 0.80, 0.86);      // bagian terang netral
+  vec3 colCream  = vec3(0.82, 0.70, 0.52);      // tengah pita
+  vec3 colAmber  = vec3(0.95, 0.72, 0.40);      // core
+  vec3 colAmberHot = vec3(1.10, 0.85, 0.55);    // hotspot
+  vec3 colDust   = vec3(0.015, 0.012, 0.022);
 
   vec3 col = colDark;
-  col = mix(col, colBlue, smoothstep(0.05, 0.45, intensity));
-  col = mix(col, colCream, smoothstep(0.35, 0.85, intensity));
-  col = mix(col, colAmber, clamp(core, 0.0, 1.0));
-  // jalur debu
+  col = mix(col, colBlue,  smoothstep(0.05, 0.40, intensity));
+  col = mix(col, colWhite, smoothstep(0.40, 0.80, intensity));
+  col = mix(col, colCream, smoothstep(0.55, 0.95, intensity));
+  col = mix(col, colAmber, clamp(coreGlow, 0.0, 1.0));
+  col = mix(col, colAmberHot, clamp(coreHot * 1.2, 0.0, 1.0));
   col = mix(col, colDust, dust);
 
-  // Fade ke gelap pekat di kutub
-  float poleFade = smoothstep(0.85, 0.55, abs(lat));
-  col *= mix(0.35, 1.0, poleFade);
+  // ─── 3 lapis bintang langsung di shader ───
+  // background haze: padat, lemah, lebih banyak di dalam pita
+  float bgStars = starsLayer(d, 320.0, 0.90, 14.0) * (0.6 + band * 0.8);
+  // mid stars: medium
+  float midStars = starsLayer(d, 180.0, 0.94, 9.0) * (0.7 + band * 0.6);
+  // foreground bright stars: jarang tapi besar & terang
+  float fgStars = starsLayer(d, 60.0, 0.985, 5.0) * 1.4;
 
-  // Opacity halus
-  float alpha = clamp(intensity * 0.95 + halo * 0.4, 0.0, 1.0);
-  alpha = mix(0.18, 1.0, alpha); // selalu ada base gelap
+  // warna bintang: bias biru-putih di luar pita, krem-amber di dalam pita
+  vec3 starColCool = vec3(0.88, 0.92, 1.10);
+  vec3 starColWarm = vec3(1.10, 0.92, 0.70);
+  vec3 starCol = mix(starColCool, starColWarm, smoothstep(0.0, 0.6, band));
 
-  gl_FragColor = vec4(col * uOpacity, alpha * uOpacity);
+  vec3 starsAdd = starCol * (bgStars * 0.55 + midStars * 1.0 + fgStars * 1.8);
+
+  // fade ke gelap pekat di kutub (bintang tetap kelihatan)
+  float poleFade = smoothstep(0.95, 0.55, abs(lat));
+  col *= mix(0.30, 1.0, poleFade);
+
+  // tambahkan bintang (additive)
+  col += starsAdd;
+
+  // alpha tetap solid (skybox), additive blend di renderer
+  gl_FragColor = vec4(col * uOpacity, 1.0);
 }
 `;
 
-export function MilkyWaySky({ opacity = 0.62 }: { opacity?: number }) {
+export function MilkyWaySky({ opacity = 0.95 }: { opacity?: number }) {
   const matRef = useRef<THREE.ShaderMaterial>(null);
   const groupRef = useRef<THREE.Group>(null);
 
@@ -121,28 +154,21 @@ export function MilkyWaySky({ opacity = 0.62 }: { opacity?: number }) {
     [opacity]
   );
 
-  // Tilt grup agar disc tidak rata sempurna dengan kamera awal — sedikit miring
-  // sehingga pita terlihat seperti melengkung di horizon.
-  useMemo(() => {
-    if (groupRef.current) {
-      groupRef.current.rotation.z = THREE.MathUtils.degToRad(18);
-      groupRef.current.rotation.y = THREE.MathUtils.degToRad(35);
-    }
-  }, []);
-
   useFrame((_, dt) => {
-    if (matRef.current) matRef.current.uniforms.uTime.value += dt;
-    if (matRef.current) matRef.current.uniforms.uOpacity.value = opacity;
+    if (matRef.current) {
+      matRef.current.uniforms.uTime.value += dt;
+      matRef.current.uniforms.uOpacity.value = opacity;
+    }
   });
 
   return (
     <group
       ref={groupRef}
-      rotation={[0, THREE.MathUtils.degToRad(35), THREE.MathUtils.degToRad(18)]}
+      rotation={[0, THREE.MathUtils.degToRad(35), THREE.MathUtils.degToRad(14)]}
     >
-      {/* Skybox sphere — kamera berada di dalam */}
+      {/* Skybox sphere — kamera berada di dalam disc */}
       <mesh frustumCulled={false}>
-        <sphereGeometry args={[900, 64, 48]} />
+        <sphereGeometry args={[900, 96, 64]} />
         <shaderMaterial
           ref={matRef}
           vertexShader={vertexShader}
@@ -150,14 +176,14 @@ export function MilkyWaySky({ opacity = 0.62 }: { opacity?: number }) {
           uniforms={uniforms}
           side={THREE.BackSide}
           depthWrite={false}
-          transparent
-          blending={THREE.NormalBlending}
+          transparent={false}
         />
       </mesh>
 
-      {/* Core lighting halus — biru-krem, bukan magenta */}
-      <pointLight position={[260, 20, 0]} intensity={0.45} color="#d8b27a" distance={520} />
-      <pointLight position={[-260, -10, 60]} intensity={0.30} color="#8aa6d8" distance={520} />
+      {/* Rim-light dari arah core galaksi (amber) + opposite (cool blue) */}
+      <pointLight position={[300, 30, 80]} intensity={0.55} color="#ffb070" distance={620} decay={1.6} />
+      <pointLight position={[-280, -20, -60]} intensity={0.32} color="#8aa6d8" distance={520} decay={1.8} />
+      <pointLight position={[40, 220, -40]} intensity={0.18} color="#d8b27a" distance={500} decay={2} />
     </group>
   );
 }

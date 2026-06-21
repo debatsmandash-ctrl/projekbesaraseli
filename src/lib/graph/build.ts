@@ -553,7 +553,8 @@ export function buildGraph(): Graph {
       });
     });
   }
-  buildSchoolTree("competitor", COMPETITORS, clusterCenter.competitor, 44);
+  // Competitor: cluster→sekolah lebih DEKAT (radius 22, sebelumnya 44) sesuai request.
+  buildSchoolTree("competitor", COMPETITORS, clusterCenter.competitor, 22);
   buildSchoolTree("active_member", ACTIVE_MEMBERS, clusterCenter.active_member, 24);
 
   // ─── WANGY (MAN IC Siak) — bintang merah headline, paling terang ───
