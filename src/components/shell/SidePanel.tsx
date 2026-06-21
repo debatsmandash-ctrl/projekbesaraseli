@@ -1,10 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { useUniverse } from "@/lib/store";
+import { useUniverse, useSettings } from "@/lib/store";
 import { buildGraph } from "@/lib/graph/build";
 import { invalidateGraphCache } from "@/lib/graph/build";
 import { useMemo, useState, useEffect } from "react";
 import { PanelContent } from "./panels/PanelContent";
 import { setOverride, loadOverrides, clearOverrides, exportOverrides } from "@/lib/editor/overrides";
+import { usePointerDrag } from "@/hooks/usePointerDrag";
 
 export function SidePanel() {
   const selectedId = useUniverse((s) => s.selectedId);
