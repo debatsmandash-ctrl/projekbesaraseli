@@ -29,12 +29,12 @@ const dist = (a: V3, b: V3): number => Math.hypot(a[0]-b[0], a[1]-b[1], a[2]-b[2
 // Cluster meta. Centers auto-spread on a fibonacci sphere so no two collide.
 interface ClusterMeta { key: ClusterKey; label: string; color: string; dist: number; }
 const CLUSTERS: ClusterMeta[] = [
-  { key: "matter",        label: "MATTER",       color: "#00ffc8", dist: 52 },
-  { key: "motion",        label: "MOTION BANK",  color: "#a855f7", dist: 50 },
-  { key: "kamus",         label: "KAMUS",        color: "#38bdf8", dist: 50 },
-  { key: "competitor",    label: "COMPETITOR",   color: "#fb7185", dist: 54 },
-  { key: "active_member", label: "SMANDASH",     color: "#00ffc8", dist: 56 },
-  { key: "event",         label: "EVENT",        color: "#fde047", dist: 58 },
+  { key: "matter",        label: "MATTER",       color: "#00ffc8", dist: 50 },
+  { key: "motion",        label: "MOTION BANK",  color: "#ff8b3d", dist: 48 },
+  { key: "kamus",         label: "KAMUS",        color: "#38bdf8", dist: 48 },
+  { key: "competitor",    label: "COMPETITOR",   color: "#fb7185", dist: 40 },
+  { key: "active_member", label: "SMANDASH",     color: "#00ffc8", dist: 38 },
+  { key: "event",         label: "EVENT",        color: "#fde047", dist: 52 },
   { key: "roles",         label: "ROLES",        color: "#ff6b6b", dist: 44 },
   { key: "styles",        label: "STYLES",       color: "#f0c040", dist: 42 },
   { key: "practice",      label: "PRACTICE",     color: "#ff9f43", dist: 40 },
