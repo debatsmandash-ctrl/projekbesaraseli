@@ -1,0 +1,1802 @@
+[
+  {
+    "term": "Kausalistik",
+    "cat": "kausalistik",
+    "def": "Asas rantai sebab-akibat yang digunakan sebagai framing argumen. Alternatif dari \"mekanisme\" untuk menghindari trigger feasibility assessment.",
+    "detail": "Terdiri dari: kondisi awal → aktor → tindakan → kausal 1 → kausal 2 → impact final. Branching = satu kondisi, beberapa jalur kausal.",
+    "ex": "Digunakan: \"Rantai kausalistiknya adalah: [kondisi] → [aktor] → [dampak bertahap] → [impact]\"",
+    "domain": null
+  },
+  {
+    "term": "Framing",
+    "cat": "debate",
+    "def": "Cara menentukan \"apa yang sebenarnya sedang diperdebatkan.\" Siapa yang define framing, mereka yang kontrol battlefield.",
+    "detail": "Framing defensif: isolasi clash ke terrain kamu. Framing ofensif: expand clash ke terrain yang bikin lawan tidak siap.",
+    "ex": "Contoh: \"Debat ini bukan tentang kebijakan X, tapi tentang nilai fundamental Y.\"",
+    "domain": null
+  },
+  {
+    "term": "Fiat",
+    "cat": "debate",
+    "def": "Hak P1 Government untuk meng-assume bahwa proposal mosi bisa diimplementasikan. Establish testing ground, bukan argue feasibility.",
+    "detail": "Fiat hanya untuk establish testing ground — bukan escape hatch dari argumen lawan. Jangan gunakan fiat untuk avoid clash substantif.",
+    "ex": "Contoh: \"Kami mem-fiat bahwa kebijakan ini diterapkan — pertanyaannya bukan bisa/tidak, tapi harus/tidak.\"",
+    "domain": null
+  },
+  {
+    "term": "Axioma",
+    "cat": "debate",
+    "def": "Prinsip yang di-declare sebagai given dalam case. Kalau lawan mau kontes axioma, mereka membuang waktu di tempat yang salah.",
+    "detail": "Axioma yang baik: universal, defensible, dan menguntungkan framing. Maksimal 2 axioma per case — lebih dari itu jadi target serangan.",
+    "ex": "Contoh: \"Prinsip aksiomatic kami: setiap kebijakan harus di-evaluate dari dampaknya terhadap yang paling rentan.\"",
+    "domain": null
+  },
+  {
+    "term": "Weighing",
+    "cat": "debate",
+    "def": "Proses menjelaskan kepada juri kenapa impact kamu lebih penting dari impact lawan. Bukan hanya claim — butuh reasoning.",
+    "detail": "Dimensi weighing: magnitude (seberapa besar), probability (seberapa mungkin), reversibility (bisa dibalik tidak), breadth (seberapa luas).",
+    "ex": "Contoh: \"Impact kami lebih besar karena menyentuh structural, bukan hanya individual — dan bersifat irreversible.\"",
+    "domain": null
+  },
+  {
+    "term": "Deadlock",
+    "cat": "debate",
+    "def": "Kondisi di mana dua tim clashing di argumen yang sama tanpa ada yang bergerak. HaramDebate memanfaatkan deadlock untuk menang di weighing.",
+    "detail": "Deadlock yang baik: clash di terrain yang menguntungkan kamu untuk di-weigh. Bukan deadlock karena sama-sama tidak bisa argue.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Preemption",
+    "cat": "debate",
+    "def": "Teknik menyerang argumen lawan sebelum mereka mengucapkannya. Membuat rebuttal lawan terasa sudah diantisipasi dan kurang powerful.",
+    "detail": "Principal Killer: rebut argumen terkuat lawan. Even If: konsesi kecil tapi tetap menang. Paling Tidak: floor argument yang tak bisa dibantah.",
+    "ex": "Contoh: \"Lawan kemungkinan akan berargumen X. Tapi bahkan sebelum mereka bicara, kausalistik kami sudah menjawab: Y.\"",
+    "domain": null
+  },
+  {
+    "term": "Extension",
+    "cat": "debate",
+    "def": "Cara P2 (DPM atau DLO) menambah dimensi baru ke case P1 tanpa contradict-ing argumen sebelumnya.",
+    "detail": "Extension yang baik: menambah new angle, tidak repeat P1. Compatible tapi tidak redundant.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Crystallize",
+    "cat": "debate",
+    "def": "Teknik P3 atau Reply Speaker untuk menyederhanakan keseluruhan debat menjadi satu framing yang paling menguntungkan.",
+    "detail": "Crystallization yang baik: satu kalimat yang merangkum kenapa tim kamu menang, yang bisa diingat juri 10 menit setelah round.",
+    "ex": "Contoh: \"Pada akhirnya, satu pertanyaan: [paling simple version of clash]. Dan kami yang menjawab itu.\"",
+    "domain": null
+  },
+  {
+    "term": "POI",
+    "cat": "debate",
+    "def": "Point of Information — interupsi singkat ke speaker lawan yang sedang bicara. Bisa dalam bentuk pertanyaan atau pernyataan singkat.",
+    "detail": "Tidak bisa diberikan di menit pertama dan terakhir speech. Speaker bisa terima atau tolak. Terlalu banyak menolak = kelemahan signal.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Ontologi",
+    "cat": "filosofi",
+    "def": "Cabang filsafat yang mempelajari hakikat keberadaan. Apa yang ada, bagaimana ada, dan apa sifat dasar realitas.",
+    "detail": "Dalam debat, ontological frame menentukan bagaimana kita define existence of the problem.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Epistemologi",
+    "cat": "filosofi",
+    "def": "Cabang filsafat yang mempelajari hakikat pengetahuan. Apa yang kita ketahui, bagaimana kita tahu, dan apa batas pengetahuan.",
+    "detail": "Berguna untuk mosi tentang kebenaran, informasi, edukasi, dan media.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Utilitarianisme",
+    "cat": "filosofi",
+    "def": "Teori etika yang menilai tindakan berdasarkan konsekuensinya — tindakan yang benar adalah yang memaksimalkan kebaikan (utility) bagi jumlah terbesar.",
+    "detail": "Digunakan untuk mosi kebijakan publik dan trade-off sosial. Counter: rights-based argument.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Kontraktarianisme",
+    "cat": "filosofi",
+    "def": "Teori bahwa moralitas dan legitimasi politik berasal dari kontrak sosial yang (hipotetis) disepakati semua pihak.",
+    "detail": "John Rawls (veil of ignorance) adalah versi paling powerful untuk debat tentang keadilan distributif.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Eksternalitas",
+    "cat": "ekonomi",
+    "def": "Dampak dari transaksi atau tindakan ekonomi yang dirasakan oleh pihak ketiga yang tidak terlibat. Bisa positif atau negatif.",
+    "detail": "Market failure terjadi ketika eksternalitas tidak di-internalize. Basis argumen untuk intervensi pemerintah.",
+    "ex": "",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Moral Hazard",
+    "cat": "ekonomi",
+    "def": "Kecenderungan mengambil lebih banyak risiko karena terlindungi dari konsekuensinya. Sering muncul di mosi asuransi, bail-out, regulasi.",
+    "detail": "Contoh: jaminan bank pemerintah membuat bank berani ambil risiko lebih karena tahu akan diselamatkan.",
+    "ex": "",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Asymmetric Information",
+    "cat": "ekonomi",
+    "def": "Kondisi di mana satu pihak dalam transaksi memiliki lebih banyak informasi daripada pihak lain.",
+    "detail": "Adverse selection + moral hazard adalah dua masalah utama yang muncul dari asymmetric information.",
+    "ex": "",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Norma Sosial",
+    "cat": "sosial",
+    "def": "Aturan tak tertulis yang mengatur perilaku dalam masyarakat. Dibentuk melalui interaksi berulang dan sanksi sosial.",
+    "detail": "Powerful karena self-reinforcing: orang mematuhi karena orang lain mematuhi.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Interseksionalitas",
+    "cat": "sosial",
+    "def": "Framework yang memahami bagaimana berbagai identitas sosial (ras, gender, kelas) saling berinteraksi dan menciptakan pengalaman diskriminasi yang kompleks.",
+    "detail": "Kimberlé Crenshaw. Berguna untuk mosi tentang kesetaraan dan representasi.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Habitus",
+    "cat": "sosial",
+    "def": "Konsep Bourdieu — disposisi yang terinternalisasi dari lingkungan sosial seseorang yang membentuk cara mereka melihat dan bertindak di dunia.",
+    "detail": "Berguna untuk mosi pendidikan, mobilitas sosial, dan reproduksi ketimpangan.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Rule of Law",
+    "cat": "hukum",
+    "def": "Prinsip bahwa semua orang dan institusi — termasuk negara — tunduk pada hukum yang adil, dipublikasikan, diterapkan secara merata, dan independen.",
+    "detail": "Pilar utama argumen tentang demokrasi, tata kelola, dan hak asasi manusia.",
+    "ex": "",
+    "domain": "hukum"
+  },
+  {
+    "term": "Due Process",
+    "cat": "hukum",
+    "def": "Hak seseorang untuk mendapat prosedur hukum yang adil sebelum negara merampas hak hidup, kebebasan, atau propertinya.",
+    "detail": "Substantive vs procedural due process. Sering muncul di mosi hukuman, surveillance, dan hak sipil.",
+    "ex": "",
+    "domain": "hukum"
+  },
+  {
+    "term": "Dual System Thinking",
+    "cat": "filosofi",
+    "def": "Teori Kahneman — Sistem 1 (cepat, intuitif, emosional) dan Sistem 2 (lambat, analitis, rasional). Manusia bukan makhluk rasional murni.",
+    "detail": "Sistem 1 selalu mendahului Sistem 2 dan sangat rentan terhadap bias, fear, dan tribalism. Berguna untuk counter argumen yang assume manusia selalu rasional.",
+    "ex": "Counter: \"Argumen mereka gagal karena mengasumsikan manusia selalu rasional. Kahneman membuktikan Sistem 1 mendahului Sistem 2 — emosi mendahului kalkulasi.\"",
+    "domain": null
+  },
+  {
+    "term": "Descartes' Error (Damasio)",
+    "cat": "filosofi",
+    "def": "Penemuan Antonio Damasio: individu yang mengalami kerusakan pada area otak pengatur emosi justru kesulitan mengambil keputusan efektif. Emosi adalah komponen penting pengambilan keputusan.",
+    "detail": "Membantah dikotomi rasional vs emosional. Rasionalitas tanpa emosionalitas bukan hanya tidak lengkap — tapi tidak fungsional.",
+    "ex": "Digunakan untuk: mosi tentang intelektualisasi emosi, kesehatan mental, kebijakan sosial.",
+    "domain": null
+  },
+  {
+    "term": "Moral Relativisme",
+    "cat": "filosofi",
+    "def": "Pandangan bahwa moralitas adalah konstruksi sosial yang bergantung pada konteks budaya, waktu, dan konsensus masyarakat. Tidak ada standar moral yang universal.",
+    "detail": "Kelemahan fatal: dapat digunakan untuk justifikasi Holocaust. Jika moralitas = konsensus sosial, maka Nazi Jerman 1940 yang menetapkan standar moral \"membunuh Yahudi = tindakan mulia\" tidak bisa dikritik. Ini reductio ad absurdum yang collapse moral relativisme murni.",
+    "ex": "Counter: \"Jika moralitas relatif pada konsensus zamannya, Holocaust tidak bisa dikritik secara moral dalam konteks Nazi 1940. Kalau lawan tidak bisa menjawab ini, relativisme mereka collapse dari fondasi.\"",
+    "domain": null
+  },
+  {
+    "term": "Moral Absolutisme",
+    "cat": "filosofi",
+    "def": "Pandangan bahwa ada standar moral universal yang berlaku di semua konteks — terlepas dari konsensus sosial, budaya, atau zaman.",
+    "detail": "Landasan terkuat: Categorical Imperative Kant. Holocaust melanggar ini secara absolut karena tidak bisa di-universalkan tanpa self-contradiction. Hampir setiap sistem etika coherent mengakui Holocaust adalah kejahatan moral absolut.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Categorical Imperative",
+    "cat": "filosofi",
+    "def": "Prinsip etika Kant: \"Bertindaklah hanya sesuai dengan prinsip yang kamu inginkan menjadi hukum universal.\" Tindakan yang tidak bisa di-universalkan adalah tindakan yang secara moral salah.",
+    "detail": "Genosida tidak bisa di-universalkan tanpa self-contradiction → secara absolut salah. Sangat kuat untuk mosi HAM, kekerasan, hukuman mati.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Veil of Ignorance",
+    "cat": "filosofi",
+    "def": "Konsep John Rawls — kebijakan yang adil adalah kebijakan yang akan dipilih orang jika tidak tahu posisi mereka dalam masyarakat (tidak tahu apakah kaya/miskin, mayoritas/minoritas).",
+    "detail": "Argumen paling persuasive untuk kebijakan redistribusi dan perlindungan minoritas. Hampir tidak bisa di-counter secara langsung.",
+    "ex": "\"Kalau kamu tidak tahu akan lahir sebagai siapa dalam masyarakat yang sedang kita debatkan — mayoritas atau minoritas — kebijakan mana yang kamu pilih?\"",
+    "domain": null
+  },
+  {
+    "term": "Reductio ad Absurdum",
+    "cat": "debate",
+    "def": "Teknik argumentasi: ambil premis lawan, ikuti logikanya sampai titik absurd, lalu tunjukkan bahwa absurditas itu membuktikan premis tersebut salah.",
+    "detail": "Sangat powerful untuk mosi filosofi. Contoh: moral relativisme → jika benar maka Holocaust tidak bisa dikritik → absurd → relativisme murni salah.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Intelektualisasi",
+    "cat": "filosofi",
+    "def": "Mekanisme pertahanan psikologis: menghindari emosi tidak nyaman dengan berfokus berlebihan pada logika dan analisis. Emosi dilihat sebagai menarik secara intelektual tapi tidak diproses secara afektif.",
+    "detail": "Berbeda dari regulasi emosi sehat. Intelektualisasi = denial emosi berbalut rasionalitas. Berguna untuk mosi: \"Mengintelektualisasi emosi lebih banyak merugikan daripada menguntungkan individu.\"",
+    "ex": "Seseorang yang baru kehilangan orang tua langsung berbicara tentang statistik kesedihan daripada merasakan atau mengekspresikan kesedihannya.",
+    "domain": null
+  },
+  {
+    "term": "Feminisme Karseral",
+    "cat": "sosial",
+    "def": "Pendekatan feminis yang menggunakan sistem peradilan pidana (polisi, penjara, penuntutan) sebagai solusi utama terhadap kekerasan berbasis gender.",
+    "detail": "Kritik: memperkuat state power yang sama yang menindas perempuan, tidak menyentuh akar struktural, merugikan perempuan miskin dan minoritas yang lebih rentan terhadap sistem karseral. Kontra-kritik: tanpa penegakan hukum tidak ada disinsentif nyata bagi pelaku.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Emosi Kolektif",
+    "cat": "sosial",
+    "def": "Emosi yang dialami dan diekspresikan bersama oleh sekelompok orang sebagai respons terhadap peristiwa sosial. Bisa menjadi energi moral perubahan atau instrumen kekuasaan.",
+    "detail": "Di era digital: emosi kolektif dikomodifikasi dan dimonetisasi. Kemarahan dan ketakutan kolektif dapat dimobilisasi untuk kepentingan politik — ini yang dieksploitasi algoritma media sosial.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Relativisme Emosional",
+    "cat": "filosofi",
+    "def": "Pandangan bahwa semua ekspresi emosional memiliki nilai setara dan \"apa yang dirasakan\" adalah otomatis benar. Kritik terhadap humanisme yang tidak kritis.",
+    "detail": "Berbahaya karena tidak semua emosi mengarah pada pemahaman lebih baik — sebagian memperkuat bias dan prasangka.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Konstruksi Sosial",
+    "cat": "sosial",
+    "def": "Konsep bahwa berbagai fenomena sosial (gender, ras, nilai moral, rasionalitas) tidak bersifat alamiah tapi dibentuk melalui interaksi sosial, budaya, dan sejarah.",
+    "detail": "Boas, Geertz, Benedict. Implikasi: apa yang dianggap \"rasional\" atau \"normal\" berbeda antar budaya — tidak ada satu standar universal.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Patriarki",
+    "cat": "sosial",
+    "def": "Sistem sosial di mana laki-laki memegang kekuasaan dominan dalam hampir semua aspek kehidupan — politik, moral, sosial, dan ekonomi.",
+    "detail": "Feminisme berupaya menghapus patriarki. Penting: patriarki tidak hanya merugikan perempuan — juga membentuk maskulinitas toksik yang merugikan laki-laki juga.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Hegemoni Budaya",
+    "cat": "sosial",
+    "def": "Konsep Gramsci — kelas dominan mempertahankan kekuasaan melalui konsensus budaya: ideologi mereka tampak sebagai \"akal sehat\" universal.",
+    "detail": "Common sense yang kita terima sehari-hari adalah produk hegemoni. Berguna untuk mosi tentang media, pendidikan, dan ideologi dominan.",
+    "ex": "\"Kapitalisme tampak alami karena hegemoni budaya membuatnya terlihat seperti satu-satunya cara mengorganisir ekonomi.\"",
+    "domain": null
+  },
+  {
+    "term": "Alienasi (Marx)",
+    "cat": "sosial",
+    "def": "Kondisi di mana manusia terputus dari produk kerja, proses produksi, sesama manusia, dan potensi kemanusiaan mereka — akibat sistem kapitalisme.",
+    "detail": "Berguna untuk mosi tentang kerja, teknologi, konsumerisme, dan kesehatan mental. Alienasi modern: gig economy, platform capitalism, manusia sebagai \"human capital\".",
+    "ex": "\"Ketika pekerja tidak memiliki kontrol atas apa yang mereka buat, kerja berhenti menjadi ekspresi kemanusiaan dan menjadi sekadar komoditas.\"",
+    "domain": null
+  },
+  {
+    "term": "Panoptisisme",
+    "cat": "sosial",
+    "def": "Konsep Foucault dari Panopticon Bentham — pengawasan yang membuat orang berperilaku seolah selalu diawasi meski tidak selalu diawasi nyata. Kekuasaan bekerja melalui internalisasi pengawasan.",
+    "detail": "Sangat relevan untuk mosi surveillance, media sosial, CCTV, big data. Pengawasan digital adalah bentuk panoptisisme yang jauh lebih efisien dari penjara fisik.",
+    "ex": "\"Media sosial menciptakan Panopticon modern — kesadaran bahwa kita bisa diawasi mengubah perilaku kita secara fundamental.\"",
+    "domain": null
+  },
+  {
+    "term": "Biopower (Foucault)",
+    "cat": "sosial",
+    "def": "Bentuk kekuasaan yang mengatur populasi dan kehidupan biologis manusia secara masif — melalui kebijakan kesehatan, demografi, seksualitas, dan norma tubuh.",
+    "detail": "Berbeda dari kekuasaan sovereign (hak untuk membunuh) — biopower adalah kekuasaan untuk menghidupi dan membiarkan mati. Berguna untuk mosi kesehatan publik, reproduksi, euthanasia.",
+    "ex": "\"Kebijakan pandemi bukan hanya tentang kesehatan — ia adalah ekspresi biopower negara: siapa yang dilindungi, siapa yang dianggap expendable.\"",
+    "domain": null
+  },
+  {
+    "term": "Surplus Value",
+    "cat": "ekonomi",
+    "def": "Konsep Marx — nilai yang diciptakan pekerja melebihi nilai tenaga kerja yang mereka terima sebagai upah. Perbedaan ini adalah sumber profit kapitalis dan dasar eksploitasi.",
+    "detail": "Berguna untuk mosi hak buruh, kesenjangan upah, gig economy. Counter argumen \"kontrak bebas\": asimetri kepemilikan modal membuat kontrak tidak pernah setara.",
+    "ex": "\"Pekerja Amazon menerima upah minimum sementara menciptakan miliaran dalam nilai surplus — ini bukan hadiah efisiensi, ini transfer kekayaan yang sistematis.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Tragedy of the Commons",
+    "cat": "ekonomi",
+    "def": "Konsep Garrett Hardin — sumber daya bersama yang diakses bebas akan dieksploitasi berlebihan oleh individu rasional yang bertindak demi kepentingan sendiri.",
+    "detail": "Penting: Elinor Ostrom menunjukkan commons bisa dikelola sustainable melalui institusi komunal — tragedy bukan inevitable. Berguna untuk mosi lingkungan, regulasi, kebijakan publik.",
+    "ex": "\"Lautan bukan tragedy of the commons karena manusia irasional — tapi karena tidak ada struktur regulasi yang menginternalisasi biaya eksploitasi.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Path Dependency",
+    "cat": "ekonomi",
+    "def": "Keputusan masa lalu membatasi pilihan yang tersedia saat ini — bahkan ketika kondisi sudah berubah. Sejarah matters.",
+    "detail": "Counter argumen yang assume bisa \"mulai dari nol.\" Berguna untuk mosi reformasi institusi, kebijakan transisi, dan dekolonisasi.",
+    "ex": "\"Kita tidak bisa hanya adopt best practices dari negara lain karena path dependency — institusi dan norma yang terbentuk selama dekade tidak bisa diganti overnight.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Structural Violence",
+    "cat": "sosial",
+    "def": "Konsep Johan Galtung — kekerasan yang tertanam dalam struktur sosial, ekonomi, dan politik yang mencegah individu memenuhi kebutuhan dasar — meski tidak ada aktor kekerasan spesifik.",
+    "detail": "Berguna untuk mosi kemiskinan, ketimpangan, kesehatan. Berbeda dari direct violence — structural violence bekerja tanpa \"penjahat\" yang bisa diidentifikasi.",
+    "ex": "\"Ketika anak miskin meninggal karena tidak bisa akses pengobatan yang ada, itu bukan nasib — itu structural violence. Ada sistem yang membuatnya tidak bisa bertahan.\"",
+    "domain": null
+  },
+  {
+    "term": "Democratic Backsliding",
+    "cat": "sosial",
+    "def": "Proses gradual di mana demokrasi melemah melalui tindakan-tindakan yang secara individual tampak kecil tapi secara kumulatif menghancurkan institusi demokratis.",
+    "detail": "Berbeda dari kudeta — terjadi dari dalam, sering oleh pemimpin yang dipilih secara demokratis. Berguna untuk mosi populisme, kebebasan pers, independensi yudisial.",
+    "ex": "\"Yang berbahaya dari democratic backsliding adalah tidak ada satu momen di mana demokrasi mati — ia mati dari seribu luka kecil.\"",
+    "domain": null
+  },
+  {
+    "term": "Overton Window",
+    "cat": "sosial",
+    "def": "Spektrum kebijakan yang dianggap dapat diterima dalam diskursus publik pada waktu tertentu. Ide di luar window dianggap radikal atau ekstrem.",
+    "detail": "Gerakan sosial bekerja dengan menggeser Overton Window — yang tampak radikal hari ini bisa menjadi mainstream esok. Berguna untuk mosi perubahan kebijakan dan reformasi.",
+    "ex": "\"Universal basic income dianggap ide fringe 10 tahun lalu — pandemi menggeser Overton Window sehingga sekarang dibahas serius di level kebijakan.\"",
+    "domain": null
+  },
+  {
+    "term": "Constructivism (HI)",
+    "cat": "sosial",
+    "def": "Teori HI — identitas dan kepentingan negara bukan given atau fixed, tapi dibentuk secara sosial melalui interaksi, norma, dan ide.",
+    "detail": "Berlawanan dengan Realisme (power) dan Liberalisme (wealth). Berguna untuk mosi norma internasional, soft power, perubahan kebijakan luar negeri.",
+    "ex": "\"Mengapa negara mau mengikat diri pada perjanjian HAM tanpa enforcement? Constructivism: identitas sebagai negara beradab menjadi bagian dari kepentingan nasional itu sendiri.\"",
+    "domain": null
+  },
+  {
+    "term": "Dialektika",
+    "cat": "filosofi",
+    "def": "Metode berpikir Hegel dan Marx — thesis berbenturan dengan antithesis menghasilkan synthesis yang lebih tinggi. Sejarah berkembang melalui kontradiksi.",
+    "detail": "Marx membalik Hegel: bukan ide yang menggerakkan sejarah, tapi kondisi material (dialektika materialisme). Berguna untuk mosi perubahan sosial, sejarah, ideologi.",
+    "ex": "\"Kapitalisme mengandung kontradiksi internalnya sendiri yang akan menghasilkan synthesisnya — bukan dari luar, tapi dari dalam sistem itu sendiri.\"",
+    "domain": null
+  },
+  {
+    "term": "Cognitive Dissonance",
+    "cat": "filosofi",
+    "def": "Ketidaknyamanan psikologis ketika seseorang memegang dua keyakinan yang bertentangan, atau keyakinan yang bertentangan dengan tindakan mereka.",
+    "detail": "Counter terhadap argumen \"orang akan berubah jika diberi informasi benar\" — cognitive dissonance menunjukkan orang sering mempertegas keyakinan lama ketika dikonfrontasi fakta baru.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Negative Externality",
+    "cat": "ekonomi",
+    "def": "Biaya dari aktivitas ekonomi yang ditanggung pihak ketiga yang tidak terlibat dalam transaksi — tanpa kompensasi.",
+    "detail": "Fondasi argumen untuk regulasi dan pajak Pigouvian. Polusi karbon adalah contoh klasik — biaya ditanggung masyarakat dan generasi mendatang.",
+    "ex": "\"Harga rokok tidak mencerminkan biaya sebenarnya — biaya kesehatan publik adalah negative externality yang di-subsidi oleh seluruh masyarakat.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Soft Power",
+    "cat": "sosial",
+    "def": "Konsep Joseph Nye — kemampuan mempengaruhi negara lain melalui daya tarik budaya, nilai, dan kebijakan daripada paksaan militer atau ekonomi.",
+    "detail": "Hard power memaksa, soft power menarik. Berguna untuk mosi diplomasi, media internasional, kebijakan luar negeri.",
+    "ex": "",
+    "domain": null
+  },
+  {
+    "term": "Episteme",
+    "cat": "filosofi",
+    "def": "Konsep Foucault — kerangka pengetahuan yang menentukan apa yang bisa diketahui dan dianggap benar dalam suatu zaman. Setiap era memiliki epistemenya sendiri.",
+    "detail": "Berguna untuk mosi sains, pendidikan, dan cara kita mengetahui sesuatu. Klaim \"berbasis sains\" tidak netral — sains beroperasi dalam episteme yang menentukan pertanyaan apa yang boleh diajukan.",
+    "ex": "\"Homoseksualitas diklasifikasikan sebagai penyakit mental hingga 1973 — ini bukan karena sains berubah, tapi karena episteme yang menentukan apa itu patologi berubah.\"",
+    "domain": null
+  },
+  {
+    "term": "Fiat (Debat)",
+    "cat": "debate",
+    "def": "Pembuktian yang tidak perlu dibuktikan dalam debat karena sudah diasumsikan ideal supaya debat lebih mudah diikuti. Tim Pro cukup debatkan dampak, bukan feasibility.",
+    "detail": "Banyak dijumpai di mosi \"Dewan ini memilih dunia\" karena dunia khayalan baru diasumsikan sepenuhnya. Fiat berbeda dari mekanisme — fiat adalah asumsi bahwa proposal TERJADI, mekanisme adalah cara proposal bekerja.",
+    "ex": "\"Dengan asumsi keterjadian, dewan ini akan memprioritaskan individu terampil dalam evakuasi planet\" — fiat: teknologi evakuasi planet sudah ada dan berfungsi.",
+    "domain": null
+  },
+  {
+    "term": "Kontrafaktual",
+    "cat": "debate",
+    "def": "Argumen yang menyatakan apa yang AKAN TERJADI jika sesuatu yang ada di Status Quo tidak ada. Senjata unik mosi penyesalan.",
+    "detail": "Tim Pro mosi penyesalan bisa argue: \"Kalau hal yang kita sesali ini tidak ada, dunia akan lebih baik karena X.\" Ini berbeda dari menunjukkan bahwa objek yang disesali itu buruk — tapi menunjukkan alternatif yang lebih baik.",
+    "ex": "\"Kalau MKPK tidak diwajibkan, mahasiswa bisa fokus pada pengalaman akademis yang lebih bermakna dan mendalam.\"",
+    "domain": null
+  },
+  {
+    "term": "Status Quo (SQ)",
+    "cat": "debate",
+    "def": "Kondisi dunia sebagaimana adanya saat ini — sebelum proposal yang diperdebatkan diterapkan. Baseline yang selalu dirujuk dalam debat.",
+    "detail": "Tim yang mempertahankan SQ harus buktikan bahwa kondisi saat ini sudah baik atau lebih baik dari alternatif yang diajukan. Tim yang menyerang SQ harus buktikan ada masalah fundamental yang tidak bisa diselesaikan tanpa perubahan.",
+    "ex": "\"Di status quo, sistem ranking universitas bergantung pada kuantitas jurnal yang tidak mencerminkan dampak nyata.\"",
+    "domain": null
+  },
+  {
+    "term": "Ekslusifitas",
+    "cat": "debate",
+    "def": "Argumen bahwa proposal yang diajukan adalah SATU-SATUNYA cara untuk menyelesaikan masalah yang ada. Salah satu burden penting dalam mosi kebijakan.",
+    "detail": "Lawan bisa counter ekslusifitas dengan menunjukkan bahwa alternatif di Status Quo sudah ada dan lebih baik. Pro harus buktikan mengapa alternatif lain tidak memadai.",
+    "ex": "\"Sistem ranking berbasis dampak sosial adalah satu-satunya cara memastikan universitas akuntabel terhadap masyarakat karena metrik lain (jurnal, reputasi) mudah dimanipulasi.\"",
+    "domain": null
+  },
+  {
+    "term": "Penyesalan (Regret Mosi)",
+    "cat": "debate",
+    "def": "Jenis mosi yang menganalisis hal yang sudah ada di status quo dan sudah lama terjadi. Bersifat reflektif dan historis — fokus pada apakah hal tersebut membawa dampak baik atau buruk.",
+    "detail": "Tim Pro mosi penyesalan diperbolehkan membawa kontrafaktual. Tim Kontra harus defend bahwa hal yang disesali memiliki lebih banyak manfaat dari mudaratnya.",
+    "ex": "\"Dewan ini menyesali meningkatnya komersialisasi kematian\" — Pro harus tunjukkan bahwa komersialisasi ini membawa dampak negatif yang lebih besar dari manfaatnya.",
+    "domain": null
+  },
+  {
+    "term": "Urgensi",
+    "cat": "debate",
+    "def": "Argumentasi tentang seberapa penting dan mendesak masalah yang dibahas sehingga mosi ini harus diterima atau ditolak sekarang.",
+    "detail": "Urgensi yang baik menunjukkan: (1) besarnya masalah, (2) mengapa sekarang bukan nanti, (3) apa yang hilang jika tidak segera ditangani. Tanpa urgensi, argumen terasa abstrak dan kurang compelling.",
+    "ex": "\"Komersialisasi kematian terus meningkat secara eksponensial — setiap tahun yang berlalu, lebih banyak tradisi bermakna digantikan oleh layanan berbayar yang merusak proses berduka.\"",
+    "domain": null
+  },
+  {
+    "term": "Salindia Informasi",
+    "cat": "debate",
+    "def": "Satu atau beberapa slide presentasi atau dokumen tertulis yang berisi konteks, latar belakang, atau informasi tambahan khusus terkait topik atau mosi yang akan diperdebatkan. Tujuannya mempermudah konteks agar debat terpetakan dengan baik.",
+    "detail": "Salindia diberikan sebelum atau saat prep time. Membaca dan memahami salindia dengan cermat sangat penting karena sering berisi definisi teknis, konteks historis, atau batasan mosi yang mempengaruhi seluruh argumen.",
+    "ex": "Salindia untuk mosi komersialisasi kematian menjelaskan definisi \"komersialisasi kematian\" sebagai proses sosiologis dan ekonomi yang spesifik.",
+    "domain": null
+  },
+  {
+    "term": "Weighing (Penimbangan)",
+    "cat": "debate",
+    "def": "Proses membandingkan dan memprioritaskan dampak — argumen mana yang lebih berat, lebih luas, lebih pasti, atau lebih penting dalam konteks debat.",
+    "detail": "5 dimensi weighing: Skala dampak (scope), Proses waktu (timeline), Kepastian hasil (certainty), Keparahan (severity), Irreversibilitas. Weighing yang baik tidak hanya klaim \"ini lebih penting\" tapi jelaskan MENGAPA dengan reasoning yang konkret.",
+    "ex": "\"Weighing skala dampak: dampak kami menyentuh seluruh masyarakat sedangkan kekhawatiran lawan hanya menyentuh individu tertentu — maka kepentingan kolektif harus diutamakan.\"",
+    "domain": null
+  },
+  {
+    "term": "Overview (P3)",
+    "cat": "debate",
+    "def": "Bagian awal speech P3 di mana pembicara merangkum bagaimana perjalanan debat dari kedua sisi berjalan — apa yang sudah dibuktikan dan apa yang sudah dibantah.",
+    "detail": "Overview yang baik: (1) Apa goals lawan dan kenapa tidak bisa terwujud atau trade-off-nya besar, (2) Apa yang tim kita sudah bawa dan tetap tegak, (3) Apa yang sudah berhasil kita patahkan dari lawan.",
+    "ex": "\"Overview juri — di sisi Gov, dari P1 sampai P3 kami telah membuktikan bahwa komersialisasi kematian secara fundamental mengubah hubungan manusia dengan grief. Di sisi Opp, mereka belum menjawab argumen kami tentang erosi makna ritual.\"",
+    "domain": null
+  },
+  {
+    "term": "Even If (Even If Killer)",
+    "cat": "debate",
+    "def": "Teknik rebuttal di mana kamu mengakui sebagian argumen lawan sebagai benar, lalu tunjukkan bahwa hal itu tetap tidak mengubah outcome yang kamu perjuangkan.",
+    "detail": "Formula: \"Even if [konsesi ke lawan], tetap [argumen kami lebih kuat karena alasan X].\" Ini lebih powerful dari penolakan langsung karena menunjukkan kamu telah mempertimbangkan posisi terkuat lawan.",
+    "ex": "\"Even if komersialisasi membawa efisiensi, itu tetap tidak cukup untuk mengkompensasi hilangnya makna ritualistik yang tidak bisa diukur secara ekonomi.\"",
+    "domain": null
+  },
+  {
+    "term": "Selinear",
+    "cat": "debate",
+    "def": "Teknik rebuttal di mana kamu menunjukkan bahwa masalah yang lawan tuduhkan ada di sisi kamu, sebenarnya JUGA ADA atau bahkan lebih parah di sisi lawan.",
+    "detail": "Formula: \"Iya, ini memang terjadi di sisi kami, tapi ini selinear karena di sisi lawan hal yang sama terjadi DAN BAHKAN LEBIH PARAH karena [reasoning].\" Harus bisa jelaskan kenapa di lawan lebih buruk.",
+    "ex": "\"Iya, ada risiko dependensi pada subsidi, tapi ini selinear karena di sisi lawan, tanpa bantuan apapun, masyarakat malah akan sangat tergantung pada kondisi pasar yang fluktuatif — jauh lebih tidak stabil.\"",
+    "domain": null
+  },
+  {
+    "term": "Flip",
+    "cat": "debate",
+    "def": "Teknik membalikkan kasus yang lawan bilang sehingga menjadi bumerang untuk mereka sendiri — apa yang lawan klaim sebagai kelebihan mereka justru menjadi masalah besar di sisi mereka.",
+    "detail": "Flip yang kuat tidak hanya membalik klaim, tapi menjelaskan mengapa kondisi yang sama yang lawan gambarkan justru lebih buruk dari yang lawan sadari.",
+    "ex": "\"Flip ini juri — lawan bilang tidak adanya standar membebaskan mahasiswa. Tapi ketika tidak ada standar, justru perusahaan dan pasar yang menentukan nilai lulusan, bukan institusi akademis — mahasiswa justru lebih tidak bebas.\"",
+    "domain": null
+  },
+  {
+    "term": "Beban Moral (Moral Imperative)",
+    "cat": "debate",
+    "def": "Dimensi etis dalam weighing — apakah ada kewajiban moral yang membuat suatu tindakan atau kebijakan tidak bisa diabaikan, terlepas dari kalkulasi untung-rugi.",
+    "detail": "Moral imperative paling kuat ketika menyangkut perlindungan kelompok yang paling rentan, atau ketika inaksi sama dengan menjadi complicit dalam harm. Harus didukung dengan reasoning tentang mengapa kewajiban moral ini ada.",
+    "ex": "\"Kita memiliki moral imperative untuk melindungi anak-anak dari konten berbahaya — karena mereka tidak memiliki kapasitas untuk melindungi diri sendiri, negara harus hadir.\"",
+    "domain": null
+  },
+  {
+    "term": "Responsibilitas Melindungi (R2P)",
+    "cat": "hubungan-internasional",
+    "def": "Responsibility to Protect — prinsip hukum internasional bahwa komunitas internasional memiliki tanggung jawab untuk melindungi warga sipil ketika pemerintah suatu negara gagal melakukannya atau justru menjadi pelaku kejahatan.",
+    "detail": "R2P memiliki tiga pilar: pencegahan, reaksi, dan rekonstruksi. Diakui oleh PBB dalam World Summit 2005. Sering diperdebatkan: kapan R2P membenarkan intervensi militer vs hak kedaulatan nasional.",
+    "ex": "\"Berdasarkan R2P, komunitas internasional memiliki kewajiban hukum dan moral untuk berintervensi ketika terbukti ada genosida yang sedang terjadi.\"",
+    "domain": null
+  },
+  {
+    "term": "Deterrence",
+    "cat": "hubungan-internasional",
+    "def": "Strategi mencegah serangan dari pihak lain dengan mengancam pembalasan yang terlalu mahal atau menyakitkan. Paling sering dikaitkan dengan senjata nuklir (nuclear deterrence).",
+    "detail": "MAD (Mutually Assured Destruction) adalah bentuk paling ekstrem dari nuclear deterrence. Debat: apakah deterrence yang berhasil membuktikan nilainya, atau hanya menunda konflik sambil menciptakan risiko eskalasi yang lebih besar.",
+    "ex": "\"Argumen deterrence nuklir: tidak ada perang besar-besaran sejak 1945 karena potensi kehancuran mutual yang terlalu besar untuk dipikirkan.\"",
+    "domain": null
+  },
+  {
+    "term": "Precautionary Principle",
+    "cat": "filosofi",
+    "def": "Prinsip etis dan kebijakan: ketika suatu tindakan memiliki risiko menyebabkan harm yang serius atau tidak dapat diperbaiki, beban pembuktian jatuh pada pihak yang ingin mengambil tindakan untuk membuktikan bahwa tidak ada harm.",
+    "detail": "Sangat relevan untuk debat tentang perubahan iklim, GMO, AI, dan teknologi baru. Counter: precautionary principle terlalu konservatif dan bisa mencegah inovasi yang menguntungkan jika diterapkan terlalu luas.",
+    "ex": "\"Precautionary principle menyatakan: kita tidak perlu tunggu bukti sempurna tentang kerusakan iklim — cukup ada risiko irreversible yang signifikan untuk mengambil tindakan sekarang.\"",
+    "domain": null
+  },
+  {
+    "term": "Uti Possidetis",
+    "cat": "hubungan-internasional",
+    "def": "Prinsip hukum internasional yang menyatakan bahwa perbatasan yang ada ketika suatu negara memperoleh kemerdekaan harus tetap diakui, meskipun perbatasan tersebut mungkin arbitrer secara historis.",
+    "detail": "Dikembangkan pertama kali dalam konteks dekolonisasi Amerika Latin, kemudian diterapkan di Afrika dan bekas Uni Soviet. Tujuannya mencegah konflik perbatasan berkepanjangan, tapi sering dikritik karena membekukan ketidakadilan historis.",
+    "ex": "\"Uti possidetis menjelaskan mengapa komunitas internasional menolak perubahan perbatasan sepihak — karena preseden ini bisa membuka kotak pandora konflik perbatasan global.\"",
+    "domain": null
+  },
+  {
+    "term": "Race to the Bottom",
+    "cat": "ekonomi",
+    "def": "Fenomena di mana persaingan antar yurisdiksi (negara, daerah) mendorong penurunan standar regulasi, pajak, atau perlindungan pekerja demi menarik investasi atau bisnis.",
+    "detail": "Contoh: negara menurunkan standar lingkungan untuk menarik manufaktur, atau menurunkan pajak korporasi untuk menarik perusahaan. Sering dikaitkan dengan globalisasi dan perdagangan bebas.",
+    "ex": "\"Race to the bottom dalam standar lingkungan: ketika satu negara melonggarkan regulasi untuk menarik pabrik, negara tetangga terpaksa melakukan hal yang sama untuk bersaing.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Kontrafakta (Counterfactual)",
+    "cat": "debate",
+    "def": "Pernyataan tentang apa yang AKAN atau MUNGKIN terjadi jika kondisi tertentu berbeda dari kenyataannya. Alat analisis kritis yang kuat dalam debat historis dan kebijakan.",
+    "detail": "Berbeda dari prediksi (apa yang AKAN terjadi). Kontrafakta menganalisis \"apa yang AKAN terjadi JIKA X tidak ada/berbeda.\" Kekuatannya bergantung pada seberapa credible analisis kausalnya.",
+    "ex": "\"Kontrafakta: jika tidak ada Prohibition di AS pada 1920-1933, apakah konsumsi alkohol akan lebih tinggi atau lebih rendah? Bukti dari negara lain tanpa Prohibition menunjukkan...\"",
+    "domain": null
+  },
+  {
+    "term": "Meritokrasi vs Ekuitas",
+    "cat": "sosial",
+    "def": "Dua pendekatan berbeda tentang keadilan: meritokrasi (hadiah berdasarkan kemampuan dan usaha, start yang sama) vs ekuitas (hadiah berdasarkan kebutuhan, start yang berbeda-beda disesuaikan).",
+    "detail": "Meritokrasi formal mengasumsikan semua orang dimulai dari posisi yang sama — tapi ekuitas menunjukkan bahwa starting point berbeda-beda karena diskriminasi historis dan struktural. Yang satu bisa mensyaratkan yang lain.",
+    "ex": "\"Meritokrasi sejati membutuhkan ekuitas: tidak ada gunanya perlakuan formal yang sama jika kondisi awal sangat berbeda — anak dari keluarga miskin tidak bisa \"bersaing secara adil\" tanpa investasi awal yang setara.\"",
+    "domain": null
+  },
+  {
+    "term": "Signaling (Efek Sinyal)",
+    "cat": "ekonomi",
+    "def": "Fenomena di mana suatu tindakan atau kebijakan memberikan \"sinyal\" tentang nilai atau niat kepada pihak lain, terlepas dari konten substantif tindakan tersebut.",
+    "detail": "Contoh: gelar universitas sebagai sinyal kemampuan kepada employer (bukan hanya tentang pengetahuan yang didapat). Hukuman berat sebagai sinyal bahwa kejahatan tidak akan ditoleransi. Sering diperdebatkan: apakah sinyal ini akurat dan berapa biaya sosialnya.",
+    "ex": "\"Hukuman mati mengirimkan sinyal bahwa beberapa kejahatan sangat berat sehingga masyarakat tidak sanggup mentoleransinya — nilai simbolis ini melampaui fungsi deterrence empirisnya.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Libertarianisme",
+    "cat": "filosofi",
+    "def": "Filosofi politik yang menekankan kebebasan individual secara maksimal, minimal intervensi negara, dan hak kepemilikan yang kuat. Percaya bahwa individu harus bebas bertindak selama tidak melanggar hak orang lain.",
+    "detail": "Libertarianisme kiri menekankan kebebasan dari hierarki ekonomi. Libertarianisme kanan menekankan kebebasan dari regulasi pemerintah dan kepemilikan privat. Keduanya setuju tentang kebebasan sipil tapi berbeda tentang peran kapital.",
+    "ex": "\"Argumen libertarian: legalisasi ganja — kalau seseorang memilih mengonsumsi zat yang tidak membahayakan orang lain, itu adalah pilihan individual yang tidak boleh dikriminalisasi.\"",
+    "domain": null
+  },
+  {
+    "term": "Harm Principle (Prinsip Mill)",
+    "cat": "filosofi",
+    "def": "Prinsip John Stuart Mill: satu-satunya tujuan yang membenarkan penggunaan kekuasaan terhadap individu adalah mencegah harm kepada orang lain. Bukan harm kepada diri sendiri.",
+    "detail": "Menjadi landasan filosofi liberal tentang kebebasan individual. Sering dikritik: bagaimana mendefinisikan \"harm\"? Apakah harm tidak langsung (seperti polusi yang mempengaruhi komunitas) masuk kategori ini?",
+    "ex": "\"Berdasarkan Harm Principle Mill, negara tidak bisa melarang konsumsi alkohol di rumah karena itu hanya berpotensi merugikan si pengonsumsi sendiri — bukan orang lain secara langsung.\"",
+    "domain": null
+  },
+  {
+    "term": "Hak Positif vs Negatif",
+    "cat": "filosofi",
+    "def": "Hak negatif: hak untuk tidak diganggu oleh negara atau pihak lain (kebebasan berbicara, privasi). Hak positif: hak untuk mendapatkan sesuatu dari negara atau pihak lain (pendidikan, kesehatan, pangan).",
+    "detail": "Perbedaan ini fundamental dalam debat kebijakan: hak negatif mensyaratkan negara TIDAK BERTINDAK, hak positif mensyaratkan negara BERTINDAK. Keduanya bisa bertentangan — mewujudkan hak positif sering membutuhkan pembatasan hak negatif.",
+    "ex": "\"Hak atas kesehatan adalah hak positif: tidak cukup bagi negara untuk tidak menghalangi akses ke layanan kesehatan — negara harus aktif memastikan layanan itu tersedia dan terjangkau untuk semua.\"",
+    "domain": null
+  },
+  {
+    "term": "Disonance Kognitif (Cognitive Dissonance)",
+    "cat": "filosofi",
+    "def": "Ketidaknyamanan psikologis yang muncul ketika seseorang memegang dua keyakinan yang bertentangan, atau ketika keyakinan bertentangan dengan tindakan. Cenderung diatasi dengan mengubah keyakinan, bukan perilaku.",
+    "detail": "Relevan untuk argumen tentang perubahan kebijakan: orang dan institusi sering merasionalisasi status quo untuk menghindari cognitive dissonance daripada mengakui bahwa mereka selama ini salah.",
+    "ex": "\"Produsen rokok mengalami cognitive dissonance antara pengetahuan bahwa produk mereka membunuh dan keinginan untuk terus berbisnis — yang mereka pilih adalah merasionalisasi dengan mempermasalahkan metodologi penelitian.\"",
+    "domain": null
+  },
+  {
+    "term": "First Principle (Prinsip Pertama)",
+    "cat": "pendidikan-term",
+    "def": "Fondasi argumen paling dasar yang tidak bisa dikonteskan lagi — prinsip yang menjadi akar dari seluruh kasus. Menyerang lawan di level First Principle = menyerang fondasi, bukan konsekuensi.",
+    "detail": "Tiga First Principle utama pendidikan: (1) Untuk apa pendidikan? (2) Siapa yang berhak mendapatkannya? (3) Siapa yang berhak mengaturnya? Mosi pendidikan hampir selalu berujung pada salah satu dari tiga pertanyaan ini.",
+    "ex": "\"Mosi ini bukan tentang teknis penerapan — tapi tentang First Principle: apakah negara atau orang tua yang paling berhak menentukan konten pendidikan anak?\"",
+    "domain": null
+  },
+  {
+    "term": "Paternalisme Negara",
+    "cat": "pendidikan-term",
+    "def": "Pandangan bahwa negara berhak dan bertanggung jawab membatasi kebebasan individu demi melindungi mereka dari keputusan buruk — seperti orang tua yang mengatur anak.",
+    "detail": "Dalam debat pendidikan: paternalisme negara = negara wajib memastikan semua anak mendapat pendidikan berkualitas, meski orang tua tidak menginginkannya. Counter: hak prerogatif orang tua lebih kuat dari klaim negara.",
+    "ex": "\"Mewajibkan pendidikan seks komprehensif di sekolah adalah bentuk paternalisme negara — tapi paternalisme yang justified karena orang tua secara statistik tidak memberikan informasi yang memadai.\"",
+    "domain": null
+  },
+  {
+    "term": "Hak Prerogatif Orang Tua",
+    "cat": "pendidikan-term",
+    "def": "Pandangan bahwa orang tua memiliki hak alami dan legal untuk menentukan bagaimana anak mereka dididik, apa nilai yang ditanamkan, dan kurikulum apa yang diterima.",
+    "detail": "Berbenturan langsung dengan paternalisme negara dalam banyak mosi pendidikan. Klaim ini kuat secara intuisi tapi sering dikritik: hak ini berakhir di mana kepentingan anak mulai.",
+    "ex": "\"Orang tua yang menolak vaksinasi anak mengklaim hak prerogatif orang tua — tapi negara bisa counter bahwa hak anak atas kesehatan melampaui preferensi orang tua.\"",
+    "domain": null
+  },
+  {
+    "term": "Social Leveler",
+    "cat": "pendidikan-term",
+    "def": "Mekanisme atau kebijakan yang mengurangi perbedaan status sosial-ekonomi antar individu — membuat semua orang terlihat atau diperlakukan setara terlepas dari latar belakang.",
+    "detail": "Seragam sekolah sering diargumentasikan sebagai social leveler — semua siswa terlihat sama tanpa memandang kekayaan keluarga. Kritis: apakah ini benar-benar efektif atau hanya surface-level equality?",
+    "ex": "\"Seragam sekolah sebagai social leveler: menghilangkan tekanan membeli pakaian branded dan memungkinkan siswa dari keluarga miskin tidak langsung teridentifikasi kelasnya.\"",
+    "domain": null
+  },
+  {
+    "term": "Teaching to the Test",
+    "cat": "pendidikan-term",
+    "def": "Fenomena di mana guru dan sekolah memprioritaskan persiapan siswa untuk ujian standar di atas pendidikan yang lebih luas, mengorbankan kreativitas dan pemikiran kritis.",
+    "detail": "Kritik utama terhadap ujian standar nasional. Counter: ujian standar memberikan akuntabilitas yang diperlukan dan siswa masih bisa mengembangkan kreativitas di luar persiapan ujian.",
+    "ex": "\"Di Indonesia, kritik terhadap sistem UN: guru terpaksa fokus pada latihan soal daripada mengembangkan kemampuan berpikir kritis siswa — karena nilai UN menentukan nasib sekolah.\"",
+    "domain": null
+  },
+  {
+    "term": "Abstinence-Only Education",
+    "cat": "pendidikan-term",
+    "def": "Program pendidikan seks yang hanya mengajarkan pantang seksual sebagai satu-satunya pilihan, tanpa informasi tentang kontrasepsi atau metode perlindungan lainnya.",
+    "detail": "Penelitian konsisten menunjukkan program ini tidak efektif menunda aktivitas seksual dan justru meningkatkan kehamilan remaja karena kurangnya pengetahuan tentang perlindungan.",
+    "ex": "\"Abstinence-only education: studi di Amerika menunjukkan siswa yang menerima program ini memiliki tingkat kehamilan remaja yang sama atau lebih tinggi dari yang menerima pendidikan seks komprehensif.\"",
+    "domain": null
+  },
+  {
+    "term": "Sovereignty (Kedaulatan)",
+    "cat": "hubungan-internasional",
+    "def": "Prinsip bahwa sebuah negara memiliki otoritas tertinggi atas wilayah dan warganya, bebas dari intervensi eksternal. Salah satu prinsip fundamental hukum internasional.",
+    "detail": "Selalu berbenturan dengan norma HAM internasional dan R2P. Debat: apakah kedaulatan bersifat absolut atau kondisional (bergantung pada bagaimana negara memperlakukan warganya)?",
+    "ex": "\"China mengklaim kedaulatan atas kebijakan Xinjiang sebagai urusan internal — tapi komunitas internasional mengargumentasikan bahwa kejahatan kemanusiaan melampaui batas kedaulatan.\"",
+    "domain": null
+  },
+  {
+    "term": "Soft Power",
+    "cat": "hubungan-internasional",
+    "def": "Kemampuan mempengaruhi perilaku atau pikiran melalui daya tarik dan bujukan (budaya, nilai, diplomasi) daripada paksaan militer atau ekonomi.",
+    "detail": "Konsep Joseph Nye. Kontras dengan hard power (kekuatan militer dan ekonomi). Contoh: film Hollywood mempromosikan nilai-nilai Amerika, K-Wave Korea meningkatkan citra dan pengaruh Korea di Asia.",
+    "ex": "\"Soft power China melalui Confucius Institutes di universitas dunia — memberikan beasiswa dan pengajaran bahasa Mandarin sebagai alat pengaruh budaya dan ideologis.\"",
+    "domain": null
+  },
+  {
+    "term": "Democratic Backsliding",
+    "cat": "hubungan-internasional",
+    "def": "Proses gradual di mana demokrasi melemah melalui tindakan yang secara individual tampak kecil tapi secara kumulatif menghancurkan institusi demokratis — berbeda dari kudeta karena terjadi dari dalam.",
+    "detail": "Contoh: memperluas kewenangan eksekutif, melemahkan independensi yudisial, menyerang kebebasan pers, mengubah aturan pemilu. Ciri khasnya: setiap langkah tampak legal dan bertahap.",
+    "ex": "\"Democratic backsliding di Hungaria: Orbán menggunakan mayoritas legislatif yang sah untuk mengubah konstitusi, melemahkan pengadilan independen, dan mengontrol media — tanpa satu momen kudeta pun.\"",
+    "domain": null
+  },
+  {
+    "term": "Uti Possidetis",
+    "cat": "hubungan-internasional",
+    "def": "Prinsip hukum internasional bahwa perbatasan yang ada ketika suatu negara memperoleh kemerdekaan harus tetap diakui, meskipun perbatasan tersebut arbitrer secara historis.",
+    "detail": "Mencegah chaos perbatasan pasca-dekolonisasi tapi membekukan ketidakadilan colonial boundaries. Diterapkan di Afrika, Amerika Latin, dan bekas Soviet. Berbenturan dengan hak penentuan nasib sendiri.",
+    "ex": "\"Uti possidetis menjelaskan mengapa komunitas internasional menolak perubahan perbatasan Ukraina oleh Rusia — meski Rusia mengklaim hak historis, prinsip ini melarang perubahan sepihak.\"",
+    "domain": null
+  },
+  {
+    "term": "Sanctions (Sanksi Ekonomi)",
+    "cat": "hubungan-internasional",
+    "def": "Pembatasan ekonomi yang dikenakan oleh satu atau lebih negara terhadap negara target sebagai alat tekanan politik, menghindari konflik militer langsung.",
+    "detail": "Efektivitas sanksi sangat diperdebatkan: sanksi terhadap Cuba selama 60+ tahun tidak mengubah rezim. Sanksi terhadap Iran berhasil membawa ke meja perundingan nuklir. Kunci: apakah target lebih peduli pada ekonomi atau ideologi?",
+    "ex": "\"Sanksi ekonomi Barat terhadap Rusia pasca-invasi Ukraina 2022 — debat: apakah ini efektif menghentikan perang, atau hanya menyakiti rakyat biasa Rusia tanpa mengubah kebijakan Kremlin?\"",
+    "domain": null
+  },
+  {
+    "term": "Complementarity Principle",
+    "cat": "hubungan-internasional",
+    "def": "Prinsip ICC bahwa pengadilan internasional hanya berwenang menangani kasus ketika pengadilan nasional tidak mau atau tidak mampu melakukannya secara jujur.",
+    "detail": "Membatasi yurisdiksi ICC secara signifikan dan menjadi argumen mengapa ICC tidak \"mengintervensi\" kedaulatan negara yang pengadilan nasionalnya berfungsi dengan baik.",
+    "ex": "\"ICC tidak bisa mengadili orang Amerika atas kejahatan perang di Afghanistan jika AS sendiri mau mengadili mereka — tapi kenyataannya AS menolak, sehingga muncul pertanyaan tentang complementarity.\"",
+    "domain": null
+  },
+  {
+    "term": "Just War Theory",
+    "cat": "hubungan-internasional",
+    "def": "Kerangka etis tentang kapan penggunaan kekerasan militer dapat dibenarkan secara moral. Kriteria utama: just cause, right intention, last resort, proportionality, discrimination (antara kombatan dan sipil).",
+    "detail": "Dikembangkan dari tradisi Kristen (Augustine, Aquinas) dan dimodernisasi oleh Michael Walzer. Sangat sering dikutip dalam debat tentang intervensi militer, perang preventif, dan drone warfare.",
+    "ex": "\"Invasi Irak 2003 gagal memenuhi kriteria Just War Theory: tidak ada just cause yang terbukti (WMD tidak ditemukan), tidak melewati last resort (inspeksi sedang berjalan), dan tidak proporsional.\"",
+    "domain": null
+  },
+  {
+    "term": "Proximate vs Distal Cause",
+    "cat": "debate",
+    "def": "Proximate cause: penyebab langsung dan paling dekat dari suatu efek. Distal cause: penyebab yang lebih jauh dan mendasar. Dalam debat, argumen tentang akar masalah vs gejala berkaitan dengan ini.",
+    "detail": "Kebijakan yang hanya menyerang proximate cause gagal mengatasi distal cause — dan masalah akan kembali dalam bentuk lain. Powerful untuk menunjukkan bahwa proposal lawan hanya \"obat pereda\" bukan \"obat penyembuh\".",
+    "ex": "\"Membangun lebih banyak penjara hanya menyerang proximate cause kejahatan (penjahat bebas). Distal cause-nya adalah kemiskinan struktural dan kurangnya kesempatan — yang tidak tersentuh.\"",
+    "domain": null
+  },
+  {
+    "term": "Slippery Slope (yang Valid)",
+    "cat": "debate",
+    "def": "Argumen bahwa memperbolehkan X akan mengarah ke Y yang tidak diinginkan melalui serangkaian langkah logis. Dalam debat hukum dan etika, slippery slope bisa sangat valid — bukan selalu fallacy.",
+    "detail": "Slippery slope valid ketika: (1) ada mekanisme kausal yang jelas, (2) ada precedent historis, (3) tidak ada mekanisme berhenti yang credible. Tidak valid ketika hanya mengandalkan \"hal ini bisa disalahgunakan.\"",
+    "ex": "\"Slippery slope yang valid: melegalkan euthanasia untuk terminal illness → tekanan halus pada disable dan elderly untuk tidak menjadi \"beban\" → Belanda menunjukkan perluasan bertahap yang membenarkan kekhawatiran ini.\"",
+    "domain": null
+  },
+  {
+    "term": "Moral Hazard",
+    "cat": "ekonomi",
+    "def": "Kecenderungan untuk mengambil lebih banyak risiko ketika terlindungi dari konsekuensi negatif. Muncul ketika ada asymmetry antara yang menanggung risiko dan yang merasakan manfaat.",
+    "detail": "Contoh klasik: bank yang tahu akan di-bailout oleh pemerintah akan berani mengambil risiko berlebihan. Asuransi yang terlalu komprehensif menurunkan insentif kehati-hatian. Relevan dalam debat kesehatan, regulasi keuangan, kebijakan sosial.",
+    "ex": "\"Bailout bank di 2008 menciptakan moral hazard — bank tahu bahwa kalau mereka too big to fail, pemerintah akan menyelamatkan mereka — sehingga perilaku berisiko ini terjadi lagi di masa depan.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Adverse Selection",
+    "cat": "ekonomi",
+    "def": "Fenomena di mana satu pihak dalam transaksi memiliki informasi lebih baik dari pihak lain, menyebabkan produk atau layanan buruk mengusir yang baik dari pasar.",
+    "detail": "Contoh klasik George Akerlof (pasar mobil bekas): penjual tahu kondisi mobilnya lebih baik dari pembeli → harga mencerminkan average quality → penjual mobil bagus keluar dari pasar karena harga terlalu rendah.",
+    "ex": "\"Adverse selection di asuransi kesehatan: jika premi ditentukan sama untuk semua, hanya yang sakit yang mau beli → perusahaan rugi → naikkan premi → yang sehat keluar → spiral adverse selection.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Eksternalitas Positif",
+    "cat": "ekonomi",
+    "def": "Manfaat dari suatu aktivitas ekonomi yang dirasakan oleh pihak ketiga yang tidak terlibat dalam transaksi, tanpa mereka membayar untuk manfaat tersebut.",
+    "detail": "Contoh: vaksinasi — individu divaksin melindungi orang di sekitarnya (herd immunity). Karena pembeli vaksin tidak bisa menangkap seluruh manfaat sosialnya, pasar akan menyediakan lebih sedikit dari yang optimal.",
+    "ex": "\"Eksternalitas positif pendidikan: individu yang terdidik lebih produktif, lebih sehat, lebih sedikit melakukan kejahatan — manfaat ini tidak sepenuhnya ditangkap oleh individu tersebut tapi dinikmati seluruh masyarakat.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Framing Effect",
+    "cat": "filosofi",
+    "def": "Fenomena psikologis di mana cara suatu informasi disajikan (framing) mempengaruhi bagaimana informasi tersebut dipersepsi dan keputusan apa yang diambil — meski konten objektifnya sama.",
+    "detail": "Relevan untuk debat tentang media, propaganda, dan pengaruh framing dalam kebijakan publik. Menunjukkan mengapa framing awal dalam debat begitu kritis — framing yang ditetapkan di awal menentukan bagaimana semua argumen berikutnya dievaluasi.",
+    "ex": "\"Sama persis: operasi dengan tingkat kematian 10% vs tingkat keberhasilan 90%. Framing survival rate lebih dipilih orang — meski secara objektif identik. Ini adalah framing effect dalam kebijakan kesehatan.\"",
+    "domain": null
+  },
+  {
+    "term": "Principal-Agent Problem",
+    "cat": "ekonomi",
+    "def": "Konflik kepentingan yang muncul ketika satu pihak (agent) bertindak atas nama pihak lain (principal) tapi memiliki kepentingan yang berbeda dan informasi yang asimetris.",
+    "detail": "Contoh: politisi (agent) seharusnya bertindak untuk rakyat (principal) tapi punya insentif untuk melayani donor kampanye atau kepentingan pribadi. Manajer (agent) vs pemegang saham (principal) dalam korporasi.",
+    "ex": "\"Principal-agent problem dalam sistem kesehatan: dokter (agent) memiliki insentif meresepkan obat mahal (dari bonus farmasi) meski pasien (principal) cukup dengan obat generik yang lebih murah.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Framing Effect",
+    "cat": "filosofi",
+    "def": "Cara penyajian informasi mempengaruhi keputusan — konten objektif sama, tapi framing berbeda menghasilkan pilihan yang berbeda.",
+    "detail": "Relevan untuk debat tentang media, propaganda, dan kebijakan publik. Framing yang ditetapkan di awal debat menentukan bagaimana semua argumen berikutnya dievaluasi.",
+    "ex": "\"Operasi dengan 10% kematian\" vs \"operasi dengan 90% keberhasilan\" — identik, tapi orang lebih suka yang kedua. Framing effect dalam kebijakan kesehatan.",
+    "domain": null
+  },
+  {
+    "term": "Fiat (Debat)",
+    "cat": "debate",
+    "def": "Pembuktian yang diasumsikan sudah ideal — Tim Pro tidak perlu buktikan feasibility, cukup debatkan dampak.",
+    "detail": "Banyak dijumpai di mosi \"Dewan ini memilih dunia\" karena dunia khayalan baru diasumsikan sepenuhnya terwujud. Fiat berbeda dari mekanisme — fiat adalah asumsi bahwa proposal TERJADI.",
+    "ex": "\"Dengan asumsi keterjadian, dewan ini akan memprioritaskan individu terampil dalam evakuasi planet\" — fiat: teknologi evakuasi sudah ada dan berfungsi sempurna.",
+    "domain": null
+  },
+  {
+    "term": "Kontrafaktual",
+    "cat": "debate",
+    "def": "Argumen tentang apa yang AKAN terjadi jika kondisi berbeda dari kenyataan. Senjata unik mosi penyesalan.",
+    "detail": "Tim Pro mosi penyesalan bisa argue: \"Kalau hal yang kita sesali tidak ada, dunia akan lebih baik karena X.\" Kekuatannya bergantung pada seberapa credible analisis kausalnya.",
+    "ex": "\"Kalau MKPK tidak diwajibkan, mahasiswa bisa fokus pada pengalaman akademis yang lebih bermakna dan relevan.\"",
+    "domain": null
+  },
+  {
+    "term": "Status Quo (SQ)",
+    "cat": "debate",
+    "def": "Kondisi dunia sebagaimana adanya saat ini — baseline yang selalu dirujuk dalam debat sebelum proposal diterapkan.",
+    "detail": "Tim yang mempertahankan SQ harus buktikan kondisi saat ini lebih baik dari alternatif. Tim yang menyerang SQ harus buktikan ada masalah fundamental yang tidak bisa diselesaikan tanpa perubahan.",
+    "ex": "\"Di status quo, sistem ranking universitas bergantung pada kuantitas jurnal yang mudah dimanipulasi tanpa menghasilkan dampak nyata.\"",
+    "domain": null
+  },
+  {
+    "term": "Proximate vs Distal Cause",
+    "cat": "kausalistik",
+    "def": "Proximate cause = penyebab langsung dan terdekat. Distal cause = penyebab yang lebih jauh dan mendasar (akar masalah).",
+    "detail": "Kebijakan yang hanya menyerang proximate cause gagal mengatasi distal cause. Powerful untuk menunjukkan bahwa proposal lawan hanya \"obat pereda\" bukan \"obat penyembuh\".",
+    "ex": "\"Membangun lebih banyak penjara hanya menyerang proximate cause kejahatan. Distal cause-nya adalah kemiskinan struktural dan kurangnya kesempatan — yang tidak tersentuh sama sekali.\"",
+    "domain": null
+  },
+  {
+    "term": "Moral Hazard",
+    "cat": "ekonomi",
+    "def": "Kecenderungan mengambil lebih banyak risiko ketika terlindungi dari konsekuensinya. Muncul ketika ada asimetri antara yang menanggung risiko dan yang merasakan manfaat.",
+    "detail": "Contoh: bank yang tahu akan di-bailout akan berani mengambil risiko berlebihan. Asuransi terlalu komprehensif menurunkan insentif kehati-hatian.",
+    "ex": "\"Bailout bank di 2008 menciptakan moral hazard — bank tahu bahwa kalau terlalu besar untuk gagal, pemerintah akan menyelamatkan mereka — sehingga perilaku berisiko terulang.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Adverse Selection",
+    "cat": "ekonomi",
+    "def": "Fenomena di mana satu pihak memiliki informasi lebih baik, menyebabkan produk atau layanan buruk mengusir yang baik dari pasar.",
+    "detail": "Contoh klasik Akerlof: pasar mobil bekas — penjual tahu kondisi mobilnya, pembeli tidak. Harga mencerminkan average quality → penjual mobil bagus keluar karena harga terlalu rendah.",
+    "ex": "\"Adverse selection di asuransi kesehatan: jika premi sama untuk semua, hanya yang sakit yang mau beli → perusahaan rugi → premi naik → yang sehat keluar → spiral.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Principal-Agent Problem",
+    "cat": "ekonomi",
+    "def": "Konflik kepentingan ketika satu pihak (agent) bertindak untuk pihak lain (principal) tapi memiliki kepentingan yang berbeda dan informasi asimetris.",
+    "detail": "Politisi (agent) seharusnya bertindak untuk rakyat (principal) tapi punya insentif melayani donor kampanye. Manajer vs pemegang saham dalam korporasi.",
+    "ex": "\"Dokter memiliki insentif meresepkan obat mahal dari bonus farmasi meski pasien cukup dengan obat generik yang lebih murah dan sama efektifnya.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Just War Theory",
+    "cat": "hubungan-internasional",
+    "def": "Kerangka etis tentang kapan penggunaan kekerasan militer dapat dibenarkan secara moral. Kriteria: just cause, right intention, last resort, proportionality, discrimination.",
+    "detail": "Dikembangkan dari tradisi Kristen (Augustine, Aquinas) dan dimodernisasi oleh Michael Walzer. Sangat sering dikutip dalam debat tentang intervensi militer dan perang preventif.",
+    "ex": "\"Invasi Irak 2003 gagal memenuhi Just War Theory: tidak ada just cause terbukti (WMD tidak ditemukan), tidak last resort (inspeksi masih berjalan), dan tidak proporsional.\"",
+    "domain": null
+  },
+  {
+    "term": "Responsibility to Protect (R2P)",
+    "cat": "hubungan-internasional",
+    "def": "Prinsip hukum internasional bahwa komunitas internasional bertanggung jawab melindungi warga sipil ketika pemerintahnya gagal atau justru menjadi pelaku kejahatan.",
+    "detail": "Tiga pilar: pencegahan, reaksi, rekonstruksi. Diakui PBB dalam World Summit 2005. Berbenturan langsung dengan prinsip kedaulatan nasional.",
+    "ex": "\"Berdasarkan R2P, komunitas internasional memiliki kewajiban hukum dan moral untuk berintervensi ketika terbukti ada genosida yang sedang terjadi dan negara bersangkutan tidak mampu atau tidak mau bertindak.\"",
+    "domain": null
+  },
+  {
+    "term": "Soft Power",
+    "cat": "hubungan-internasional",
+    "def": "Kemampuan mempengaruhi negara lain melalui daya tarik budaya, nilai, dan diplomasi daripada paksaan militer atau ekonomi.",
+    "detail": "Konsep Joseph Nye. Kontras dengan hard power (kekuatan militer dan ekonomi). Contoh nyata: film Hollywood mempromosikan nilai Amerika, K-Wave meningkatkan pengaruh Korea di Asia.",
+    "ex": "\"Soft power China melalui Confucius Institutes di universitas dunia — memberikan beasiswa dan pengajaran Mandarin sebagai alat pengaruh budaya dan ideologis yang halus.\"",
+    "domain": null
+  },
+  {
+    "term": "Democratic Backsliding",
+    "cat": "hubungan-internasional",
+    "def": "Proses gradual di mana demokrasi melemah melalui tindakan yang tampak kecil secara individual tapi secara kumulatif menghancurkan institusi demokratis.",
+    "detail": "Berbeda dari kudeta — terjadi dari dalam, sering oleh pemimpin yang dipilih secara demokratis. Ciri khas: memperluas kewenangan eksekutif, melemahkan yudisial, menyerang pers.",
+    "ex": "\"Democratic backsliding di Hungaria: Orbán menggunakan mayoritas legislatif yang sah untuk mengubah konstitusi dan melemahkan pengadilan independen — tanpa satu momen kudeta pun.\"",
+    "domain": null
+  },
+  {
+    "term": "Signaling (Efek Sinyal)",
+    "cat": "ekonomi",
+    "def": "Tindakan atau kebijakan yang memberikan sinyal tentang nilai atau niat kepada pihak lain, terlepas dari konten substantif tindakan tersebut.",
+    "detail": "Gelar universitas sebagai sinyal kemampuan kepada employer. Hukuman berat sebagai sinyal bahwa kejahatan tidak ditoleransi. Sering diperdebatkan: apakah sinyal ini akurat?",
+    "ex": "\"Hukuman mati mengirimkan sinyal bahwa beberapa kejahatan sangat berat sehingga masyarakat tidak sanggup mentoleransinya — nilai simbolis ini melampaui fungsi deterrence empirisnya.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Harm Principle (Mill)",
+    "cat": "filosofi",
+    "def": "Prinsip John Stuart Mill: satu-satunya tujuan yang membenarkan penggunaan kekuasaan terhadap individu adalah mencegah harm kepada orang LAIN — bukan harm kepada diri sendiri.",
+    "detail": "Fondasi filosofi liberal tentang kebebasan individual. Sering dikritik: bagaimana mendefinisikan \"harm\"? Apakah harm tidak langsung (polusi yang mempengaruhi komunitas) masuk kategori ini?",
+    "ex": "\"Berdasarkan Harm Principle Mill, negara tidak bisa melarang konsumsi alkohol di rumah karena itu hanya berpotensi merugikan si pengonsumsi sendiri, bukan orang lain secara langsung.\"",
+    "domain": null
+  },
+  {
+    "term": "Hak Positif vs Negatif",
+    "cat": "filosofi",
+    "def": "Hak negatif: hak untuk tidak diganggu (kebebasan berbicara, privasi). Hak positif: hak untuk mendapatkan sesuatu dari negara (pendidikan, kesehatan, pangan).",
+    "detail": "Perbedaan ini fundamental dalam debat kebijakan: hak negatif mensyaratkan negara TIDAK BERTINDAK, hak positif mensyaratkan negara AKTIF BERTINDAK. Keduanya bisa bertentangan.",
+    "ex": "\"Hak atas kesehatan adalah hak positif — tidak cukup negara tidak menghalangi akses, negara harus aktif memastikan layanan itu tersedia dan terjangkau untuk semua warga.\"",
+    "domain": null
+  },
+  {
+    "term": "Eksternalitas Positif",
+    "cat": "ekonomi",
+    "def": "Manfaat dari aktivitas ekonomi yang dirasakan pihak ketiga yang tidak terlibat dalam transaksi, tanpa mereka membayar untuk manfaat tersebut.",
+    "detail": "Contoh: vaksinasi — individu yang divaksin melindungi orang di sekitarnya (herd immunity). Karena pembeli vaksin tidak bisa menangkap seluruh manfaat sosialnya, pasar menyediakan kurang dari yang optimal.",
+    "ex": "\"Eksternalitas positif pendidikan: individu yang terdidik lebih produktif, lebih sehat, lebih sedikit melakukan kejahatan — manfaat ini dinikmati seluruh masyarakat tapi tidak sepenuhnya ditangkap oleh individu.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Interseksionalitas",
+    "cat": "sosial",
+    "def": "Konsep Kimberlé Crenshaw — penindasan berdasarkan gender, ras, kelas, dan identitas lain tidak terpisah, mereka berinteraksi menciptakan pengalaman unik yang tidak bisa dipahami secara terpisah.",
+    "detail": "Perempuan kulit hitam mengalami diskriminasi yang berbeda dari diskriminasi yang dialami perempuan kulit putih atau laki-laki kulit hitam — keduanya tidak cukup menggambarkan pengalaman mereka.",
+    "ex": "\"Kebijakan feminisme mainstream sering gagal mempertimbangkan perempuan kulit berwarna, miskin, atau dari kelas tertentu — karena interseksionalitas menunjukkan pengalaman mereka sangat berbeda.\"",
+    "domain": null
+  },
+  {
+    "term": "Ekstternalitas Negatif",
+    "cat": "ekonomi",
+    "def": "Biaya dari aktivitas ekonomi yang ditanggung pihak ketiga yang tidak terlibat dalam transaksi — tanpa kompensasi.",
+    "detail": "Fondasi argumen untuk regulasi dan pajak Pigouvian. Polusi karbon adalah contoh klasik — biaya lingkungan ditanggung masyarakat dan generasi mendatang, bukan produsen.",
+    "ex": "\"Harga rokok tidak mencerminkan biaya sebenarnya — biaya kesehatan publik dan produktivitas yang hilang adalah negative externality yang di-subsidi oleh seluruh masyarakat melalui pajak.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Path Dependency",
+    "cat": "ekonomi",
+    "def": "Keputusan masa lalu membatasi pilihan yang tersedia saat ini — bahkan ketika kondisi sudah berubah. Sejarah matters.",
+    "detail": "Counter argumen yang assume bisa \"mulai dari nol.\" Berguna untuk mosi reformasi institusi, kebijakan transisi, dan dekolonisasi.",
+    "ex": "\"Kita tidak bisa hanya mengadopsi best practices dari negara lain karena path dependency — institusi, norma, dan ekspektasi yang terbentuk selama dekade tidak bisa diganti dalam semalam.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Tragedy of the Commons",
+    "cat": "ekonomi",
+    "def": "Konsep Garrett Hardin — sumber daya bersama yang diakses bebas akan dieksploitasi berlebihan oleh individu rasional yang bertindak demi kepentingan sendiri, merugikan semua.",
+    "detail": "Penting: Elinor Ostrom menunjukkan commons bisa dikelola sustainable melalui institusi komunal — tragedy bukan inevitable. Berguna untuk mosi lingkungan dan regulasi.",
+    "ex": "\"Lautan bukan tragedy of the commons karena manusia irasional — tapi karena tidak ada struktur regulasi yang menginternalisasi biaya eksploitasi ke dalam harga ikan.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Overton Window",
+    "cat": "sosial",
+    "def": "Spektrum kebijakan yang dianggap dapat diterima dalam diskursus publik pada waktu tertentu. Ide di luar window dianggap radikal atau ekstrem.",
+    "detail": "Gerakan sosial bekerja dengan menggeser Overton Window — yang tampak radikal hari ini bisa menjadi mainstream esok hari melalui advocacy yang konsisten dan terorganisir.",
+    "ex": "\"Universal basic income dianggap ide fringe 10 tahun lalu — pandemi menggeser Overton Window sehingga sekarang dibahas serius di level kebijakan nasional di berbagai negara.\"",
+    "domain": null
+  },
+  {
+    "term": "Surplus Value (Marx)",
+    "cat": "ekonomi",
+    "def": "Nilai yang diciptakan pekerja melebihi nilai tenaga kerja yang mereka terima sebagai upah. Perbedaan ini adalah sumber profit kapitalis dan dasar eksploitasi.",
+    "detail": "Berguna untuk mosi tentang kesenjangan upah, hak buruh, gig economy. Counter \"kontrak bebas\": asimetri kepemilikan modal membuat kontrak tidak pernah benar-benar setara.",
+    "ex": "\"Pekerja Amazon menerima upah minimum sementara menciptakan miliaran dalam nilai surplus — ini bukan hadiah efisiensi, ini transfer kekayaan yang sistematis dari bawah ke atas.\"",
+    "domain": "ekonomi"
+  },
+  {
+    "term": "Hegemoni Budaya (Gramsci)",
+    "cat": "sosial",
+    "def": "Kelas dominan mempertahankan kekuasaan melalui konsensus budaya — ideologi mereka tampak sebagai \"akal sehat\" universal yang diterima tanpa pertanyaan.",
+    "detail": "\"Common sense\" yang kita terima sehari-hari adalah produk hegemoni. Berguna untuk mosi tentang media, pendidikan, dan ideologi dominan yang mengaku netral.",
+    "ex": "\"Kapitalisme tampak alami karena hegemoni budaya membuatnya terlihat seperti satu-satunya cara mengorganisir ekonomi — bukan karena ia memang optimal secara objektif.\"",
+    "domain": null
+  },
+  {
+    "term": "Structural Violence",
+    "cat": "sosial",
+    "def": "Konsep Johan Galtung — kekerasan yang tertanam dalam struktur sosial, ekonomi, dan politik yang mencegah individu memenuhi kebutuhan dasar mereka, tanpa aktor kekerasan yang spesifik.",
+    "detail": "Berbeda dari direct violence — structural violence bekerja tanpa \"penjahat\" yang bisa diidentifikasi. Berguna untuk mosi kemiskinan, ketimpangan, dan kesehatan.",
+    "ex": "\"Ketika anak miskin meninggal karena tidak bisa akses pengobatan yang ada, itu bukan nasib — itu structural violence. Ada sistem yang membuatnya tidak bisa bertahan hidup.\"",
+    "domain": null
+  },
+  {
+    "term": "Homo Homini Lupus",
+    "en": "Man is wolf to man",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Ungkapan Latin dari Hobbes — manusia pada dasarnya adalah ancaman bagi sesamanya. Dipakai untuk melandasi argumen bahwa negara/aturan diperlukan untuk menahan sifat alami manusia."
+  },
+  {
+    "term": "Bellum Omnium",
+    "en": "War of all against all",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Keadaan hipotetis Hobbes di mana tanpa otoritas, semua manusia saling berperang. Kontras dengan kondisi sosial kontraktual."
+  },
+  {
+    "term": "Tabula Rasa",
+    "en": "Blank slate",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Konsep Locke bahwa manusia lahir tanpa pengetahuan bawaan — semua pengetahuan berasal dari pengalaman. Relevan dalam debat nature vs nurture."
+  },
+  {
+    "term": "Solipsisme",
+    "en": "Solipsism",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Pandangan bahwa hanya pikiran sendiri yang dapat dipastikan ada. Dipakai sebagai serangan terhadap klaim epistemic yang terlalu absolut."
+  },
+  {
+    "term": "Nihilisme",
+    "en": "Nihilism",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Pandangan bahwa hidup tidak memiliki makna objektif. Penting dalam debat nilai moral — jika nihilisme benar, klaim moral pihak lawan runtuh."
+  },
+  {
+    "term": "Determinisme",
+    "en": "Determinism",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Keyakinan bahwa setiap kejadian ditentukan sepenuhnya oleh sebab-sebab sebelumnya. Berimplikasi pada konsep tanggung jawab moral."
+  },
+  {
+    "term": "Falsifikabilitas",
+    "en": "Falsifiability",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Kriteria Popper: klaim ilmiah harus bisa dibantah secara prinsip. Sering dipakai untuk menyerang argumen yang tak dapat diuji."
+  },
+  {
+    "term": "Parsimoni",
+    "en": "Parsimony / Occam's Razor",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Pisau Occam — antara dua penjelasan, pilih yang paling sederhana. Argumen dengan asumsi minimal lebih kuat."
+  },
+  {
+    "term": "Modus Ponens",
+    "en": "Modus Ponens",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Bentuk argumen valid: jika P maka Q; P benar; maka Q benar. Pondasi logika deduktif."
+  },
+  {
+    "term": "Modus Tollens",
+    "en": "Modus Tollens",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Jika P maka Q; Q salah; maka P salah. Digunakan untuk menyerang premis lawan dengan menunjukkan konsekuensinya absurd."
+  },
+  {
+    "term": "Petitio Principii",
+    "en": "Begging the question",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Sesat pikir circular — kesimpulan sudah diasumsikan di dalam premis. Serangan klasik untuk argumen yang membuktikan dirinya sendiri."
+  },
+  {
+    "term": "Ad Hominem",
+    "en": "Ad Hominem",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Menyerang karakter orang bukan argumennya. Sesat pikir yang sering terjadi di debat; berguna untuk diidentifikasi dan dilabeli."
+  },
+  {
+    "term": "Straw Man",
+    "en": "Straw Man",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Mendistorsi posisi lawan menjadi versi yang lebih mudah diserang. Salah satu sesat pikir paling umum dalam debat."
+  },
+  {
+    "term": "False Dichotomy",
+    "en": "False Dichotomy",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Menyajikan dua pilihan seolah tidak ada pilihan lain, padahal ada. Sering muncul dalam framing isu biner."
+  },
+  {
+    "term": "Post Hoc Ergo Propter Hoc",
+    "en": "Post hoc ergo propter hoc",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Setelah X terjadi, Y terjadi — maka X menyebabkan Y. Sesat pikir kausalitas yang sering muncul dalam argumen empiris."
+  },
+  {
+    "term": "Ekuivokasi",
+    "en": "Equivocation",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Menggunakan kata yang sama dengan dua makna berbeda dalam satu argumen. Cara lawan menyembunyikan lompatan logika."
+  },
+  {
+    "term": "Ampliasi Tidak Sah",
+    "en": "Hasty Generalization",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Menarik kesimpulan umum dari sampel yang terlalu kecil atau tidak representatif."
+  },
+  {
+    "term": "Eksklusi Tengah",
+    "en": "Law of Excluded Middle",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Setiap proposisi harus benar atau salah — tidak ada posisi tengah. Relevan dalam debat nilai yang bersifat binary."
+  },
+  {
+    "term": "Koherentisme",
+    "en": "Coherentism",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Teori kebenaran berdasarkan konsistensi internal sistem kepercayaan. Lawan dari Foundationalisme."
+  },
+  {
+    "term": "Foundasionalisme",
+    "en": "Foundationalism",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Keyakinan bahwa pengetahuan bertumpu pada fondasi dasar yang tidak perlu dibuktikan (aksioma). Dipakai untuk menjustifikasi premis awal."
+  },
+  {
+    "term": "Pragmatisme",
+    "en": "Pragmatism",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Kebenaran diukur dari kegunaan praktisnya. Argumen pragmatis: 'kebijakan ini bekerja dalam praktik, maka ia benar secara kebijakan.'"
+  },
+  {
+    "term": "Fenomenologi",
+    "en": "Phenomenology",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Studi tentang pengalaman subjektif sebagaimana adanya. Relevan saat membahas perspektif korban atau kelompok terdampak."
+  },
+  {
+    "term": "Hermeneutika",
+    "en": "Hermeneutics",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Seni interpretasi teks atau tindakan. Dipakai saat mendebat makna kata dalam mosi atau regulasi."
+  },
+  {
+    "term": "Intersubjektivitas",
+    "en": "Intersubjectivity",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Pengetahuan atau nilai yang dibagi dan disepakati antar-subjek. Dasar klaim normatif yang melampaui relativisme total."
+  },
+  {
+    "term": "Alienasi",
+    "en": "Alienation",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Konsep Marx — terputusnya manusia dari produk kerja, sesama, atau hakikatnya. Relevan dalam debat buruh, kapitalisme."
+  },
+  {
+    "term": "Reifikasi",
+    "en": "Reification",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Memperlakukan abstraksi (konsep, institusi) seolah-olah benda nyata. Kritik terhadap argumen yang menganggap pasar/negara sebagai agen."
+  },
+  {
+    "term": "Hegemoni",
+    "en": "Hegemony (Gramsci)",
+    "cat": "sosiol",
+    "domain": "sosial",
+    "def": "Dominasi ideologis kelas penguasa yang diterima secara 'sukarela' oleh yang didominasi. Konsep Gramsci untuk menjelaskan kekuasaan tanpa kekerasan."
+  },
+  {
+    "term": "Panoptikon",
+    "en": "Panopticon",
+    "cat": "sosiol",
+    "domain": "sosial",
+    "def": "Metafora Foucault tentang pengawasan total yang membuat subjek mengatur diri sendiri. Dipakai dalam debat privasi, surveillance."
+  },
+  {
+    "term": "Biopower",
+    "en": "Biopower",
+    "cat": "sosiol",
+    "domain": "sosial",
+    "def": "Foucault — kekuasaan yang bekerja melalui pengelolaan kehidupan biologis (populasi, kesehatan, reproduksi)."
+  },
+  {
+    "term": "Modal Sosial",
+    "en": "Social Capital",
+    "cat": "sosiol",
+    "domain": "sosial",
+    "def": "Nilai jaringan hubungan sosial — kepercayaan, norma, dan koneksi yang memungkinkan tindakan kolektif."
+  },
+  {
+    "term": "Moral Panic",
+    "en": "Moral Panic",
+    "cat": "sosiol",
+    "domain": "sosial",
+    "def": "Reaksi sosial berlebihan terhadap perilaku atau kelompok yang dianggap mengancam nilai masyarakat. Sering dipicu media."
+  },
+  {
+    "term": "Anomie",
+    "en": "Anomie (Durkheim)",
+    "cat": "sosiol",
+    "domain": "sosial",
+    "def": "Kondisi ketidakjelasan norma sosial — biasanya saat transisi sosial cepat. Berkaitan dengan disorganisasi dan perilaku menyimpang."
+  },
+  {
+    "term": "Dilemma Tahanan",
+    "en": "Prisoner's Dilemma",
+    "cat": "ekonomi",
+    "domain": "ekonomi",
+    "def": "Situasi game theory di mana dua pihak rasional memilih opsi yang buruk bagi keduanya karena ketidakpercayaan. Dasar argumen regulasi kolektif."
+  },
+  {
+    "term": "Keseimbangan Nash",
+    "en": "Nash Equilibrium",
+    "cat": "ekonomi",
+    "domain": "ekonomi",
+    "def": "Kondisi di mana tidak ada pemain yang bisa meningkatkan hasil dengan mengubah strategi secara sepihak. Dasar analisis game theory."
+  },
+  {
+    "term": "Kurva Laffer",
+    "en": "Laffer Curve",
+    "cat": "ekonomi",
+    "domain": "ekonomi",
+    "def": "Hubungan bel antara tarif pajak dan pendapatan pajak — terlalu tinggi justru menurunkan penerimaan. Argumen populer anti-pajak tinggi."
+  },
+  {
+    "term": "Efek Cobra",
+    "en": "Cobra Effect",
+    "cat": "ekonomi",
+    "domain": "ekonomi",
+    "def": "Kebijakan yang justru memperburuk masalah yang ingin diselesaikan — dari kasus Inggris membayar per kobra mati di India."
+  },
+  {
+    "term": "Crowding Out",
+    "en": "Crowding Out",
+    "cat": "ekonomi",
+    "domain": "ekonomi",
+    "def": "Belanja pemerintah yang besar mendorong suku bunga naik dan menggantikan investasi swasta. Argumen fiskal konservatif."
+  },
+  {
+    "term": "Rente Ekonomi",
+    "en": "Economic Rent",
+    "cat": "ekonomi",
+    "domain": "ekonomi",
+    "def": "Pembayaran melebihi biaya oportunitas minimum yang diperlukan untuk mempertahankan faktor produksi. Sering dikritik sebagai ekstraksi tanpa nilai."
+  },
+  {
+    "term": "Asimetri Informasi",
+    "en": "Asymmetric Information",
+    "cat": "ekonomi",
+    "domain": "ekonomi",
+    "def": "Satu pihak dalam transaksi memiliki informasi lebih dari pihak lain — menyebabkan adverse selection atau moral hazard."
+  },
+  {
+    "term": "Pasar Lemon",
+    "en": "Market for Lemons",
+    "cat": "ekonomi",
+    "domain": "ekonomi",
+    "def": "Akerlof — asimetri informasi menyebabkan kualitas produk di pasar menurun karena pembeli tak bisa membedakan barang baik dan buruk."
+  },
+  {
+    "term": "Biaya Transaksi",
+    "en": "Transaction Costs (Coase)",
+    "cat": "ekonomi",
+    "domain": "ekonomi",
+    "def": "Biaya negosiasi, informasi, dan enforcement yang menentukan apakah aktivitas dilakukan lewat pasar atau hierarki."
+  },
+  {
+    "term": "Teorema Coase",
+    "en": "Coase Theorem",
+    "cat": "ekonomi",
+    "domain": "ekonomi",
+    "def": "Jika hak properti jelas dan biaya transaksi nol, pihak-pihak akan bernegosiasi ke hasil efisien tanpa perlu intervensi negara."
+  },
+  {
+    "term": "Barang Publik",
+    "en": "Public Goods",
+    "cat": "ekonomi",
+    "domain": "ekonomi",
+    "def": "Non-rival dan non-excludable — konsumsi satu orang tidak mengurangi ketersediaan bagi orang lain. Contoh: pertahanan nasional, udara bersih."
+  },
+  {
+    "term": "Rent-Seeking",
+    "en": "Rent-Seeking",
+    "cat": "ekonomi",
+    "domain": "ekonomi",
+    "def": "Upaya memperoleh keuntungan ekonomi melalui manipulasi regulasi/politik daripada penciptaan nilai. Kritik terhadap lobi dan proteksionisme."
+  },
+  {
+    "term": "Volatilitas Sistemik",
+    "en": "Systemic Risk",
+    "cat": "ekonomi",
+    "domain": "ekonomi",
+    "def": "Risiko keruntuhan keseluruhan sistem — satu kegagalan memicu kegagalan berantai. Argumen utama regulasi sektor keuangan."
+  },
+  {
+    "term": "Ultra Vires",
+    "en": "Ultra Vires",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Tindakan di luar kewenangan yang diberikan hukum. Argumen untuk membatalkan regulasi atau keputusan pejabat publik."
+  },
+  {
+    "term": "Presumsi Inokens",
+    "en": "Presumption of Innocence",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Seseorang dianggap tidak bersalah sampai terbukti sebaliknya. Standar beban pembuktian dalam pidana."
+  },
+  {
+    "term": "Standar Pembuktian",
+    "en": "Standard of Proof",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Tingkat keyakinan yang diperlukan: 'beyond reasonable doubt' (pidana) vs 'balance of probabilities' (perdata). Penting dalam debat keadilan."
+  },
+  {
+    "term": "Doktrin Proporsionalitas",
+    "en": "Proportionality",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Tindakan harus sebanding dengan tujuan — dasar judicial review atas kebijakan yang membatasi hak asasi."
+  },
+  {
+    "term": "Parens Patriae",
+    "en": "Parens Patriae",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Negara sebagai 'orang tua' yang melindungi warga yang tidak mampu melindungi diri. Dasar intervensi negara atas anak atau orang dengan disabilitas."
+  },
+  {
+    "term": "Res Judicata",
+    "en": "Res Judicata",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Perkara yang sudah diputus tidak bisa diperkarakan ulang. Prinsip kepastian hukum dan efisiensi yudisial."
+  },
+  {
+    "term": "Stare Decisis",
+    "en": "Stare Decisis",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Keterikatan pada preseden — pengadilan mengikuti putusan sebelumnya. Dasar konsistensi dalam common law."
+  },
+  {
+    "term": "Onus Probandi",
+    "en": "Onus Probandi",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Beban pembuktian — siapa yang membuat klaim harus membuktikannya. Prinsip latin yang berlaku dalam debat maupun hukum."
+  },
+  {
+    "term": "Lex Specialis",
+    "en": "Lex Specialis",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Aturan khusus mengalahkan aturan umum. Argumen untuk memprioritaskan regulasi sektoral atas regulasi umum."
+  },
+  {
+    "term": "Efek Halo",
+    "en": "Halo Effect",
+    "cat": "psikologi",
+    "domain": "psikologi",
+    "def": "Kesan positif pada satu aspek seseorang memengaruhi penilaian aspek lainnya. Bias kognitif yang mempengaruhi pengambilan keputusan."
+  },
+  {
+    "term": "Efek Dunning-Kruger",
+    "en": "Dunning-Kruger Effect",
+    "cat": "psikologi",
+    "domain": "psikologi",
+    "def": "Orang dengan kompetensi rendah cenderung menilai kemampuannya terlalu tinggi, karena tidak cukup tahu untuk menyadari ketidaktahuannya."
+  },
+  {
+    "term": "Konfirmasi Bias",
+    "en": "Confirmation Bias",
+    "cat": "psikologi",
+    "domain": "psikologi",
+    "def": "Kecenderungan mencari dan menginterpretasi informasi yang mengonfirmasi keyakinan yang sudah ada. Kritik terhadap selektivitas bukti lawan."
+  },
+  {
+    "term": "Bias Status Quo",
+    "en": "Status Quo Bias",
+    "cat": "psikologi",
+    "domain": "psikologi",
+    "def": "Preferensi untuk mempertahankan kondisi sekarang — perubahan dirasakan sebagai kerugian meski secara objektif menguntungkan."
+  },
+  {
+    "term": "Prospek Teori",
+    "en": "Prospect Theory (Kahneman)",
+    "cat": "psikologi",
+    "domain": "psikologi",
+    "def": "Manusia lebih sensitif terhadap kerugian daripada keuntungan setara. 'Loss aversion' — dasar framing kerugian lebih efektif dari framing keuntungan."
+  },
+  {
+    "term": "Anchoring",
+    "en": "Anchoring Bias",
+    "cat": "psikologi",
+    "domain": "psikologi",
+    "def": "Kecenderungan terlalu bergantung pada informasi pertama yang diterima saat membuat keputusan. Dipakai dalam negosiasi dan framing angka."
+  },
+  {
+    "term": "Availability Heuristic",
+    "en": "Availability Heuristic",
+    "cat": "psikologi",
+    "domain": "psikologi",
+    "def": "Menilai probabilitas berdasarkan seberapa mudah contoh muncul di pikiran. Membuat risiko dramatis (pesawat jatuh) dianggap lebih besar dari yang sebenarnya."
+  },
+  {
+    "term": "Efek Bystander",
+    "en": "Bystander Effect",
+    "cat": "psikologi",
+    "domain": "psikologi",
+    "def": "Semakin banyak orang hadir, semakin kecil kemungkinan seseorang membantu korban. Relevan dalam debat tanggung jawab kolektif."
+  },
+  {
+    "term": "Learned Helplessness",
+    "en": "Learned Helplessness",
+    "cat": "psikologi",
+    "domain": "psikologi",
+    "def": "Seligman — setelah berulang kali gagal mengontrol situasi, subjek berhenti mencoba bahkan saat kontrol dimungkinkan. Relevan dalam kemiskinan, trauma."
+  },
+  {
+    "term": "Disonansi Pasca-Keputusan",
+    "en": "Post-decision Dissonance",
+    "cat": "psikologi",
+    "domain": "psikologi",
+    "def": "Keraguan dan ketidaknyamanan setelah membuat keputusan besar. Menyebabkan rasionalisasi berlebihan atas pilihan yang telah dibuat."
+  },
+  {
+    "term": "Framing Kehilangan",
+    "en": "Loss Framing",
+    "cat": "psikologi",
+    "domain": "psikologi",
+    "def": "Menyajikan isu sebagai apa yang akan hilang jika tidak bertindak — secara psikologis lebih memotivasi daripada framing keuntungan."
+  },
+  {
+    "term": "Empati Kognitif vs Afektif",
+    "en": "Cognitive vs Affective Empathy",
+    "cat": "psikologi",
+    "domain": "psikologi",
+    "def": "Memahami perspektif orang lain (kognitif) vs merasakan apa yang mereka rasakan (afektif). Relevan dalam debat kebijakan sosial."
+  },
+  {
+    "term": "Reproduksi Sosial",
+    "en": "Social Reproduction",
+    "cat": "sosiol",
+    "domain": "sosial",
+    "def": "Proses yang mempertahankan struktur kelas antar generasi — pendidikan, warisan, koneksi sosial."
+  },
+  {
+    "term": "Stigmatisasi",
+    "en": "Stigmatization",
+    "cat": "sosiol",
+    "domain": "sosial",
+    "def": "Goffman — proses sosial yang mendiskreditkan dan mengucilkan individu berdasarkan atribut tertentu. Memperburuk siklus marginalisasi."
+  },
+  {
+    "term": "Efek Matthias",
+    "en": "Matthew Effect",
+    "cat": "sosiol",
+    "domain": "sosial",
+    "def": "'Yang kaya makin kaya' — keuntungan awal (akses, jaringan) menghasilkan keuntungan lebih besar di masa depan. Memperkuat ketimpangan."
+  },
+  {
+    "term": "Ekologi Sosial",
+    "en": "Social Ecology",
+    "cat": "sosiol",
+    "domain": "sosial",
+    "def": "Studi tentang bagaimana struktur sosial dan lingkungan fisik saling membentuk. Relevan dalam debat tata kota dan kriminalitas."
+  },
+  {
+    "term": "Stratifikasi Sosial",
+    "en": "Social Stratification",
+    "cat": "sosiol",
+    "domain": "sosial",
+    "def": "Pembagian hierarkis masyarakat berdasarkan kelas, status, atau kekuasaan — dan bagaimana hal itu direproduksi."
+  },
+  {
+    "term": "Mobilitas Sosial",
+    "en": "Social Mobility",
+    "cat": "sosiol",
+    "domain": "sosial",
+    "def": "Kemampuan individu atau kelompok untuk berpindah antar lapisan sosial. Indikator kunci keadilan struktural."
+  },
+  {
+    "term": "Katharsis",
+    "en": "Catharsis",
+    "cat": "retorika",
+    "domain": "filsafat",
+    "def": "Aristoteles — pemurnian emosi penonton melalui seni/drama. Dipakai dalam retorika untuk menjelaskan daya pembersihan argumen emosional."
+  },
+  {
+    "term": "Logos, Ethos, Pathos",
+    "en": "Logos, Ethos, Pathos",
+    "cat": "retorika",
+    "domain": "filsafat",
+    "def": "Tiga pilar persuasi Aristoteles: logika (logos), kredibilitas pembicara (ethos), dan emosi audiens (pathos)."
+  },
+  {
+    "term": "Kairos",
+    "en": "Kairos",
+    "cat": "retorika",
+    "domain": "filsafat",
+    "def": "Momen yang tepat — timing dan konteks yang membuat argumen atau tindakan efektif. Lawannya adalah argumen yang benar tapi tidak tepat waktu."
+  },
+  {
+    "term": "Antitesis",
+    "en": "Antithesis",
+    "cat": "retorika",
+    "domain": "filsafat",
+    "def": "Mempertentangkan dua ide secara langsung dalam satu kalimat untuk efek dramatis dan kejelasan. 'Bukan apa yang negara bisa berikan…'"
+  },
+  {
+    "term": "Anastrof",
+    "en": "Anastrophe",
+    "cat": "retorika",
+    "domain": "filsafat",
+    "def": "Pembalikan urutan kata normal untuk penekanan — gaya retorika yang membuat pernyataan lebih berkesan."
+  },
+  {
+    "term": "Epanalepsis",
+    "en": "Epanalepsis",
+    "cat": "retorika",
+    "domain": "filsafat",
+    "def": "Mengulang kata yang sama di awal dan akhir kalimat/paragraf untuk efek simetris dan penekanan."
+  },
+  {
+    "term": "Hiperbolisme",
+    "en": "Hyperbole",
+    "cat": "retorika",
+    "domain": "filsafat",
+    "def": "Pernyataan berlebihan yang disengaja untuk menekankan poin — bukan kebohongan, tapi amplifikasi retoris."
+  },
+  {
+    "term": "Litotes",
+    "en": "Litotes",
+    "cat": "retorika",
+    "domain": "filsafat",
+    "def": "Pernyataan meremehkan (understatement) melalui negasi — 'tidak buruk' untuk 'sangat baik.' Efek ironis dalam debat."
+  },
+  {
+    "term": "Chiasmus",
+    "en": "Chiasmus",
+    "cat": "retorika",
+    "domain": "filsafat",
+    "def": "Struktur silang: 'A B : B' A' — 'Bukan hanya bekerja keras tapi keras bekerja.' Kuat untuk punchline dan oposisi."
+  },
+  {
+    "term": "Praeteritio",
+    "en": "Praeteritio (Paralipsis)",
+    "cat": "retorika",
+    "domain": "filsafat",
+    "def": "Menyebut sesuatu sambil berpura-pura tidak menyebutnya — 'Saya tidak akan membahas skandal itu...' Cara menyentuh isu tanpa tampak mengangkatnya."
+  },
+  {
+    "term": "Enthymeme",
+    "en": "Enthymeme",
+    "cat": "retorika",
+    "domain": "filsafat",
+    "def": "Silogisme yang satu premisnya disembunyikan karena dianggap sudah dipahami pendengar. Sering lebih persuasif dari silogisme lengkap."
+  },
+  {
+    "term": "Poliptoton",
+    "en": "Polyptoton",
+    "cat": "retorika",
+    "domain": "filsafat",
+    "def": "Mengulang kata dari akar yang sama dalam bentuk berbeda — 'Kita dipilih untuk memilih, bukan dipilih tanpa pilihan.'"
+  },
+  {
+    "term": "Reduksi Infinitum",
+    "en": "Infinite Regress",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Jika setiap X membutuhkan penjelasan Y, maka Y juga membutuhkan Z, dan seterusnya tanpa henti. Dipakai untuk menyerang rantai kausalitas."
+  },
+  {
+    "term": "Korelasi vs Kausalitas",
+    "en": "Correlation vs Causation",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Dua hal yang berkorelasi belum tentu ada hubungan sebab-akibat. Serangan standar terhadap argumen empiris berbasis data korelasional."
+  },
+  {
+    "term": "Paradoks Sorites",
+    "en": "Sorites Paradox",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Paradoks timbunan — kapan satu biji gandum menjadi setumpuk? Dipakai untuk menyerang definisi yang bergantung pada garis batas arbitrer."
+  },
+  {
+    "term": "Paradoks Russell",
+    "en": "Russell's Paradox",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Himpunan semua himpunan yang tidak memuat dirinya sendiri — memuat dirinya atau tidak? Contoh limit dari definisi sendiri-referensial."
+  },
+  {
+    "term": "Dilema Trilemma Agrippa",
+    "en": "Agrippa's Trilemma",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Setiap justifikasi berujung pada tiga masalah: regres tak berhenti, sirkularitas, atau asumsi dogmatis. Argumen skeptisisme epistemik."
+  },
+  {
+    "term": "Prinsip Subsidiaritas",
+    "en": "Subsidiarity",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Keputusan harus dibuat di level serendah mungkin yang masih kompeten. Dasar desentralisasi dan federalisme."
+  },
+  {
+    "term": "Doktrin Efek Berganda",
+    "en": "Doctrine of Double Effect",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Tindakan yang menghasilkan efek buruk bisa dibenarkan jika efek baik bukan akibat dari efek buruk itu. Dipakai dalam etika medis dan perang."
+  },
+  {
+    "term": "Margin Apresiasi",
+    "en": "Margin of Appreciation",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Ruang gerak yang diberikan kepada negara dalam menginterpretasi dan membatasi hak asasi sesuai konteks nasional. Konsep hukum HAM internasional."
+  },
+  {
+    "term": "Estoppel",
+    "en": "Estoppel",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Pihak tidak boleh mengingkari pernyataan atau tindakan sebelumnya yang telah diandalkan pihak lain. Prinsip konsistensi dalam hukum."
+  },
+  {
+    "term": "Nemo Judex in Causa Sua",
+    "en": "Nemo Judex in Causa Sua",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Tidak seorang pun boleh menjadi hakim dalam perkaranya sendiri. Prinsip independensi dan imparsialitas yudisial."
+  },
+  {
+    "term": "Audi Alteram Partem",
+    "en": "Audi Alteram Partem",
+    "cat": "hukum",
+    "domain": "hukum",
+    "def": "Dengarkan pihak lain — kedua belah pihak berhak didengar sebelum keputusan dibuat. Prinsip natural justice."
+  },
+  {
+    "term": "Incommensurabilitas",
+    "en": "Incommensurability",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Dua nilai atau sistem yang tidak bisa dibandingkan dengan satuan ukur yang sama. Tantangan terbesar dalam weighing lintas kategori."
+  },
+  {
+    "term": "Konsekuensialisme Aturan",
+    "en": "Rule Consequentialism",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Tindakan benar jika mengikuti aturan yang, jika diikuti secara umum, menghasilkan konsekuensi terbaik. Jembatan antara utilitarianisme dan deontologi."
+  },
+  {
+    "term": "Kontraktarianisme Gauthier",
+    "en": "Contractarianism (Gauthier)",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Gauthier — moralitas adalah sistem aturan yang disepakati oleh aktor rasional yang saling menguntungkan. Berbeda dengan Rawls yang berorientasi keadilan."
+  },
+  {
+    "term": "Absolutisme Moral",
+    "en": "Moral Absolutism",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Beberapa tindakan selalu salah tanpa kecuali, terlepas dari konsekuensi. Kontras dengan relativisme dan konsekuensialisme."
+  },
+  {
+    "term": "Esensialisme",
+    "en": "Essentialism",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Keyakinan bahwa kategori memiliki sifat esensial yang pasti. Sering dikritik dalam debat gender, ras, dan identitas."
+  },
+  {
+    "term": "Telos",
+    "en": "Telos",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Tujuan akhir atau fungsi sejati dari sesuatu (Aristoteles). Argumen teleologis menilai kebijakan dari apakah ia mencapai tujuan hakikinya."
+  },
+  {
+    "term": "Kosmopolitanisme",
+    "en": "Cosmopolitanism",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Semua manusia adalah warga dunia — kewajiban moral tidak berhenti di batas negara. Dasar argumen solidaritas global."
+  },
+  {
+    "term": "Komunitarianisme",
+    "en": "Communitarianism",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Nilai dan identitas dibentuk komunitas — lawan libertarianisme individual. Argumen bahwa masyarakat punya klaim atas individu."
+  },
+  {
+    "term": "Teori Pemberlakuan Balik",
+    "en": "Retroactivity Problem",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Apakah kebijakan baru boleh berlaku untuk tindakan masa lalu? Relevan dalam debat hukum retrospektif dan amnesti."
+  },
+  {
+    "term": "Dilema Trolley",
+    "en": "Trolley Problem",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Haruskah Anda mengalihkan kereta untuk membunuh satu orang guna menyelamatkan lima? Dipakai untuk mengeksplorasi intuisi moral dan trade-off."
+  },
+  {
+    "term": "Akibat Tak Disengaja",
+    "en": "Unintended Consequences",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Efek kebijakan yang tidak direncanakan dan sering berlawanan dengan tujuan awal. Argumen kehati-hatian dalam reformasi struktural."
+  },
+  {
+    "term": "Norma Kontra-Faktual",
+    "en": "Counterfactual Norm",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Standar penilaian berdasarkan 'apa yang seharusnya terjadi jika tidak ada X.' Dipakai dalam analisis dampak kebijakan."
+  },
+  {
+    "term": "Slippery Slope Empiris",
+    "en": "Empirical Slippery Slope",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Berbeda dari versi logika — berargumen bahwa secara empiris, langkah A cenderung diikuti B. Dapat valid jika ada bukti mekanisme kausal."
+  },
+  {
+    "term": "Komparativisme",
+    "en": "Comparativism",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Memutuskan antara dua skenario berdasarkan mana yang lebih baik, bukan mana yang sempurna. Relevan dalam debat kebijakan pragmatik."
+  },
+  {
+    "term": "Efek Chilling",
+    "en": "Chilling Effect",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Undang-undang atau sanksi yang terlalu luas membekukan ekspresi atau tindakan yang sebenarnya legal, karena orang takut masuk zona abu-abu."
+  },
+  {
+    "term": "Semiosis",
+    "en": "Semiotics / Semiosis",
+    "cat": "retorika",
+    "domain": "filsafat",
+    "def": "Studi tanda dan makna — bagaimana kata, simbol, dan gambar menghasilkan makna. Relevan dalam debat bahasa dan framing."
+  },
+  {
+    "term": "False Equivalence",
+    "en": "False Equivalence",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Menyamakan dua hal yang tampak serupa tapi secara fundamental berbeda dalam skala atau jenis. Sesat pikir yang sering dipakai untuk menetralkan kritik."
+  },
+  {
+    "term": "Whataboutism",
+    "en": "Whataboutism",
+    "cat": "logika",
+    "domain": "filsafat",
+    "def": "Merespons kritik dengan menunjuk kesalahan pihak lain — alih-alih menjawab substansi. Taktik defleksi retoris."
+  },
+  {
+    "term": "Teknokratisme",
+    "en": "Technocracy",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Sistem pemerintahan di mana keputusan dibuat oleh para ahli teknis, bukan politisi. Argumen pro dan kontra: efisiensi vs legitimasi demokratis."
+  },
+  {
+    "term": "Voice, Exit, Loyalty",
+    "en": "Voice, Exit, Loyalty (Hirschman)",
+    "cat": "debat",
+    "domain": "filsafat_mosi",
+    "def": "Tiga respons terhadap kemunduran organisasi/negara: bersuara, pergi, atau tetap setia. Dipakai dalam debat emigrasi, reformasi, dan revolusi."
+  },
+  {
+    "term": "Dikotomi Is-Ought",
+    "en": "Is-Ought Problem (Hume)",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Hume — tidak bisa menyimpulkan apa yang seharusnya (ought) dari apa yang ada (is). Kritik terhadap naturalistic fallacy dalam argumen normatif."
+  },
+  {
+    "term": "Naturalisme Etis",
+    "en": "Ethical Naturalism",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Klaim moral bisa direduksi menjadi fakta alam yang dapat diverifikasi secara empiris. Lawan dari non-naturalisme Moore."
+  },
+  {
+    "term": "Konstruktivisme Moral",
+    "en": "Moral Constructivism",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Kebenaran moral adalah hasil konstruksi prosedur yang benar (seperti negosiasi ideal), bukan fakta independen."
+  },
+  {
+    "term": "Aretaisme",
+    "en": "Virtue Ethics (Aretaism)",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Etika berpusat pada karakter dan kebajikan pelaku — bukan aturan atau konsekuensi. Agen bermoral adalah yang memiliki disposisi bajik."
+  },
+  {
+    "term": "Egalitarianisme Keberuntungan",
+    "en": "Luck Egalitarianism",
+    "cat": "filsafat",
+    "domain": "filsafat",
+    "def": "Ketimpangan yang disebabkan keberuntungan (lahir kaya/miskin, berbakat/tidak) adalah tidak adil; yang disebabkan pilihan sadar bisa dibenarkan."
+  }
+]

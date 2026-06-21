@@ -1,0 +1,582 @@
+{
+  "schools": [
+    {
+      "id": "manic",
+      "nama": "MAN Insan Cendekia Siak",
+      "short": "MAN IC SIAK",
+      "tag": "halaldebate-chaos",
+      "teams": [
+        {
+          "id": "manic-t1",
+          "label": "Tim 1",
+          "speakers": [
+            {
+              "id": "manic-t1-p1",
+              "nama": "Aqeel",
+              "fullname": "M. Aqeel Faizullah",
+              "role": "p1"
+            },
+            {
+              "id": "manic-t1-p2",
+              "nama": "Ghina",
+              "fullname": "Ghina Luthfiyyah Arifah",
+              "role": "p2",
+              "replyOf": "p2"
+            },
+            {
+              "id": "manic-t1-p3",
+              "nama": "Wangy",
+              "fullname": "Wangy Noffidtri",
+              "role": "p3",
+              "crown": "best-speaker"
+            }
+          ]
+        },
+        {
+          "id": "manic-t2",
+          "label": "Tim 2",
+          "speakers": [
+            {
+              "id": "manic-t2-p1",
+              "nama": "Akram",
+              "fullname": "Akram Graha Mahesa Z",
+              "role": "p1"
+            },
+            {
+              "id": "manic-t2-p2",
+              "nama": "Azzam",
+              "fullname": "Azzam Ramadhan",
+              "role": "p2",
+              "replyOf": "p2"
+            },
+            {
+              "id": "manic-t2-p3",
+              "nama": "Najwa",
+              "fullname": "Najwa Anindya Kaffa",
+              "role": "p3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cendana",
+      "nama": "SMAS Cendana Mandau",
+      "short": "CENDANA",
+      "teams": [
+        {
+          "id": "cendana-t1",
+          "label": "Tim 1",
+          "speakers": [
+            {
+              "id": "cendana-p1",
+              "nama": "Alisya",
+              "role": "p1",
+              "replyOf": "p1"
+            },
+            {
+              "id": "cendana-p2",
+              "nama": "Assa",
+              "role": "p2"
+            },
+            {
+              "id": "cendana-p3",
+              "nama": "Ghani",
+              "role": "p3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sman8",
+      "nama": "SMAN 8 Pekanbaru",
+      "short": "SMAN 8 PKU",
+      "teams": [
+        {
+          "id": "sman8-t1",
+          "label": "Tim 1",
+          "speakers": [
+            {
+              "id": "sman8-t1-p1",
+              "nama": "Carissa",
+              "role": "p1",
+              "replyOf": "p1"
+            },
+            {
+              "id": "sman8-t1-p2",
+              "nama": "Dhira",
+              "role": "p2"
+            },
+            {
+              "id": "sman8-t1-p3",
+              "nama": "Farhan",
+              "role": "p3"
+            }
+          ]
+        },
+        {
+          "id": "sman8-t2",
+          "label": "Tim 2",
+          "speakers": [
+            {
+              "id": "sman8-t2-p1",
+              "nama": "Khesya",
+              "role": "p1",
+              "replyOf": "p1"
+            },
+            {
+              "id": "sman8-t2-p2",
+              "nama": "Christine",
+              "role": "p2"
+            },
+            {
+              "id": "sman8-t2-p3",
+              "nama": "Nurhairani",
+              "role": "p3"
+            }
+          ]
+        },
+        {
+          "id": "sman8-t3",
+          "label": "Tim 3",
+          "speakers": [
+            {
+              "id": "sman8-t3-p1",
+              "nama": "Nur Maia Octha",
+              "role": "p1",
+              "replyOf": "p1"
+            },
+            {
+              "id": "sman8-t3-p2",
+              "nama": "Luqyana Farafasya",
+              "role": "p2"
+            },
+            {
+              "id": "sman8-t3-p3",
+              "nama": "Fattah Waabiyyu Darsa",
+              "role": "p3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sman5tualang",
+      "nama": "SMAN 5 Tualang",
+      "short": "SMAN 5 TUALANG",
+      "teams": [
+        {
+          "id": "sman5tualang-t1",
+          "label": "Tim 1",
+          "speakers": [
+            {
+              "id": "sman5tualang-p1",
+              "nama": "Saron",
+              "role": "p1"
+            },
+            {
+              "id": "sman5tualang-p2",
+              "nama": "Yemima",
+              "role": "p2",
+              "replyOf": "p2"
+            },
+            {
+              "id": "sman5tualang-p3",
+              "nama": "Artika",
+              "role": "p3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "darmayudha",
+      "nama": "SMAS Darma Yudha",
+      "short": "DARMA YUDHA",
+      "teams": [
+        {
+          "id": "darmayudha-t1",
+          "label": "Tim 1",
+          "speakers": [
+            {
+              "id": "darmayudha-t1-p1",
+              "nama": "Jordyn",
+              "fullname": "Jordyn Anderson Wu",
+              "role": "p1",
+              "replyOf": "p1"
+            },
+            {
+              "id": "darmayudha-t1-p2",
+              "nama": "Syelin",
+              "fullname": "Syelin Marcella",
+              "role": "p2"
+            },
+            {
+              "id": "darmayudha-t1-p3",
+              "nama": "Mikael",
+              "fullname": "Mikael Akbar",
+              "role": "p3"
+            }
+          ]
+        },
+        {
+          "id": "darmayudha-t2",
+          "label": "Tim 2",
+          "speakers": [
+            {
+              "id": "darmayudha-t2-p1",
+              "nama": "Cathryne",
+              "role": "p1",
+              "replyOf": "p1"
+            },
+            {
+              "id": "darmayudha-t2-p2",
+              "nama": "Johana",
+              "role": "p2"
+            },
+            {
+              "id": "darmayudha-t2-p3",
+              "nama": "Abel",
+              "role": "p3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "azzuhra",
+      "nama": "SMAIT Az Zuhra Islamic School",
+      "short": "AZ ZUHRA",
+      "teams": [
+        {
+          "id": "azzuhra-t1",
+          "label": "Tim 1",
+          "speakers": [
+            {
+              "id": "azzuhra-p1",
+              "nama": "Balqis",
+              "role": "p1",
+              "replyOf": "p1"
+            },
+            {
+              "id": "azzuhra-p2",
+              "nama": "Fitri",
+              "role": "p2"
+            },
+            {
+              "id": "azzuhra-p3",
+              "nama": "Atika",
+              "role": "p3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "witama",
+      "nama": "SMAS Witama Nasional Plus",
+      "short": "WITAMA",
+      "teams": [
+        {
+          "id": "witama-t1",
+          "label": "Tim 1",
+          "speakers": [
+            {
+              "id": "witama-t1-p1",
+              "nama": "Felissa Hanson",
+              "role": "p1",
+              "replyOf": "p1"
+            },
+            {
+              "id": "witama-t1-p2",
+              "nama": "Kianto Pangestu",
+              "role": "p2"
+            },
+            {
+              "id": "witama-t1-p3",
+              "nama": "Gracelynne Jacinda Cua",
+              "role": "p3"
+            }
+          ]
+        },
+        {
+          "id": "witama-t2",
+          "label": "Tim 2",
+          "speakers": [
+            {
+              "id": "witama-t2-p1",
+              "nama": "Honey Angelica",
+              "role": "p1",
+              "replyOf": "p1"
+            },
+            {
+              "id": "witama-t2-p2",
+              "nama": "Wilson Nathaneil Wijaya",
+              "role": "p2"
+            },
+            {
+              "id": "witama-t2-p3",
+              "nama": "Felicia Angelina",
+              "role": "p3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sman1pku",
+      "nama": "SMAN 1 Pekanbaru",
+      "short": "SMAN 1 PKU",
+      "teams": [
+        {
+          "id": "sman1pku-t1",
+          "label": "Tim 1",
+          "speakers": [
+            {
+              "id": "sman1pku-t1-p1",
+              "nama": "Daffa",
+              "fullname": "Daffa Rixandra Aginta T",
+              "role": "p1",
+              "replyOf": "p1"
+            },
+            {
+              "id": "sman1pku-t1-p2",
+              "nama": "Zaki",
+              "fullname": "Zaki Azalian Syach",
+              "role": "p2"
+            },
+            {
+              "id": "sman1pku-t1-p3",
+              "nama": "Zahara",
+              "fullname": "Zahara Ef Syafira",
+              "role": "p3"
+            }
+          ]
+        },
+        {
+          "id": "sman1pku-t2",
+          "label": "Tim 2",
+          "speakers": [
+            {
+              "id": "sman1pku-t2-p1",
+              "nama": "Siti Fadila",
+              "role": "p1",
+              "replyOf": "p1"
+            },
+            {
+              "id": "sman1pku-t2-p2",
+              "nama": "Rossamaria",
+              "role": "p2",
+              "crown": "best-speaker"
+            },
+            {
+              "id": "sman1pku-t2-p3",
+              "nama": "Gealava Trisy",
+              "role": "p3"
+            }
+          ]
+        },
+        {
+          "id": "sman1pku-t3",
+          "label": "Tim 3",
+          "speakers": [
+            {
+              "id": "sman1pku-t3-p1",
+              "nama": "Nehaya Mawla Aji",
+              "role": "p1",
+              "replyOf": "p1"
+            },
+            {
+              "id": "sman1pku-t3-p2",
+              "nama": "Tita Chairuni",
+              "role": "p2"
+            },
+            {
+              "id": "sman1pku-t3-p3",
+              "nama": "M. Ridho W.",
+              "role": "p3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sman12pku",
+      "nama": "SMAN 12 Pekanbaru",
+      "short": "SMAN 12 PKU",
+      "teams": [
+        {
+          "id": "sman12pku-t1",
+          "label": "Tim 1",
+          "speakers": [
+            {
+              "id": "sman12pku-p1",
+              "nama": "Siti Angelina",
+              "role": "p1"
+            },
+            {
+              "id": "sman12pku-p2",
+              "nama": "Santa Lisa",
+              "role": "p2",
+              "replyOf": "p2"
+            },
+            {
+              "id": "sman12pku-p3",
+              "nama": "Robby Febrian",
+              "role": "p3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ipicbs",
+      "nama": "SMA IP-ICBS Riau",
+      "short": "IP-ICBS",
+      "teams": [
+        {
+          "id": "ipicbs-t1",
+          "label": "Tim 1",
+          "speakers": [
+            {
+              "id": "ipicbs-p1",
+              "nama": "Alya",
+              "role": "p1"
+            },
+            {
+              "id": "ipicbs-p2",
+              "nama": "Tazkia",
+              "role": "p2",
+              "replyOf": "p2"
+            },
+            {
+              "id": "ipicbs-p3",
+              "nama": "Keisha",
+              "role": "p3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dharmaloka",
+      "nama": "SMA Dharma Loka",
+      "short": "DHARMA LOKA",
+      "teams": [
+        {
+          "id": "dharmaloka-t1",
+          "label": "Tim 1",
+          "speakers": [
+            {
+              "id": "dharmaloka-p1",
+              "nama": "Lusi",
+              "fullname": "Lusi Blessing Manurung",
+              "role": "p1"
+            },
+            {
+              "id": "dharmaloka-p2",
+              "nama": "Evelyn",
+              "fullname": "Evelyn Thalia Dearly",
+              "role": "p2",
+              "replyOf": "p2"
+            },
+            {
+              "id": "dharmaloka-p3",
+              "nama": "Jesselyn",
+              "fullname": "Jesselyn Paramitha",
+              "role": "p3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taruna",
+      "nama": "SMA Taruna Pekanbaru",
+      "short": "TARUNA",
+      "teams": [
+        {
+          "id": "taruna-t1",
+          "label": "Tim 1",
+          "speakers": [
+            {
+              "id": "taruna-t1-p1",
+              "nama": "Varas Oktaviani",
+              "role": "p1",
+              "replyOf": "p1"
+            },
+            {
+              "id": "taruna-t1-p2",
+              "nama": "Jubel",
+              "fullname": "Jubel Kristian Simanjuntak",
+              "role": "p2"
+            },
+            {
+              "id": "taruna-t1-p3",
+              "nama": "Claudia",
+              "fullname": "Claudia Novita Sari br. Manik",
+              "role": "p3"
+            }
+          ]
+        },
+        {
+          "id": "taruna-t2",
+          "label": "Tim 2",
+          "speakers": [
+            {
+              "id": "taruna-t2-p1",
+              "nama": "Rafka",
+              "fullname": "Rafka Fahri Ardiansyah",
+              "role": "p1",
+              "replyOf": "p1"
+            },
+            {
+              "id": "taruna-t2-p2",
+              "nama": "Wily",
+              "fullname": "Muhamad Wily Andika",
+              "role": "p2"
+            },
+            {
+              "id": "taruna-t2-p3",
+              "nama": "Choky Andri",
+              "role": "p3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "man1pku",
+      "nama": "MAN 1 Pekanbaru",
+      "short": "MAN 1 PKU",
+      "teams": [
+        {
+          "id": "man1pku-t1",
+          "label": "Tim 1",
+          "speakers": [
+            {
+              "id": "man1pku-p1",
+              "nama": "Abdullah",
+              "fullname": "Abdullah Rausan Fikri",
+              "role": "p1"
+            },
+            {
+              "id": "man1pku-p2",
+              "nama": "Ibnaty",
+              "fullname": "Ibnaty Khairunnisa'",
+              "role": "p2",
+              "replyOf": "p2"
+            },
+            {
+              "id": "man1pku-p3",
+              "nama": "Bibo",
+              "fullname": "Bibo Yazid Nugroho",
+              "role": "p3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schools": [
+    {
+      "id": "smandash-active",
+      "nama": "SMANDASH · Active Member",
+      "short": "ACTIVE MEMBER",
+      "home": true,
+      "teams": [
+        {
+          "id": "sman2sh-t1",
+          "label": "Tim 1",
+          "speakers": [
+            { "id": "sman2sh-t1-p1", "nama": "Nabila",    "fullname": "Nabila Meysun Nur Fitriana",     "role": "p1" },
+            { "id": "sman2sh-t1-p2", "nama": "Valentino", "fullname": "Valentino Alexandros Saragih",   "role": "p2", "replyOf": "p2" },
+            { "id": "sman2sh-t1-p3", "nama": "Hatta",     "fullname": "Hatta Pandya Bumi Ath",          "role": "p3" }
+          ]
+        },
+        {
+          "id": "sman2sh-t2",
+          "label": "Tim 2",
+          "speakers": [
+            { "id": "sman2sh-t2-p1", "nama": "Pramudya",  "fullname": "Pramudya Fathur Roza",           "role": "p1" },
+            { "id": "sman2sh-t2-p2", "nama": "Nur Amirah","fullname": "Nur Amirah Syahnas Nasution",    "role": "p2", "crown": "best-speaker", "replyOf": "p2" },
+            { "id": "sman2sh-t2-p3", "nama": "Enp Iryany","fullname": "Enp Iryany Sangjia Putri",       "role": "p3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smandash-coach",
+      "nama": "SMANDASH · Coach",
+      "short": "COACH",
+      "teams": [
+        {
+          "id": "smandash-coach-roster",
+          "label": "Coaches",
+          "speakers": [
+            { "id": "coach-sultan",  "nama": "Sultan Fadillah", "fullname": "Sultan Fadillah Efendi, S.H.", "role": "p1" },
+            { "id": "coach-ibnu",    "nama": "Bang Ibnu",       "fullname": "Bang Ibnu — Coach Misterius (Gacor)", "role": "p2" },
+            { "id": "coach-nafizha", "nama": "Kak Nafizha",     "fullname": "Nafizha Shakira — Active Coach, G.O.A.T (LDI Nasional)", "role": "p3", "crown": "best-speaker" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smandash-rotasi",
+      "nama": "SMANDASH · Rotasi Team",
+      "short": "ROTASI TEAM",
+      "teams": []
+    }
+  ]
+}

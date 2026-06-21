@@ -1,0 +1,1509 @@
+[
+  {
+    "id": "m001",
+    "title": "Aborsi Atas Permintaan",
+    "orig": "Abortion on Demand",
+    "cat": "filosofi",
+    "type": "pandangan",
+    "ctx": "Hak reproduksi perempuan vs hak hidup janin. Salah satu debat moral paling fundamental dalam masyarakat modern.",
+    "pro": [
+      "Hak reproduksi adalah bagian otonomi tubuh yang tidak bisa dicabut negara",
+      "Melarang aborsi hanya mendorongnya ke jalur ilegal yang berbahaya",
+      "Memaksa kelahiran dari pemerkosaan adalah kekerasan negara",
+      "Anak tidak diinginkan berisiko kemiskinan dan penelantaran"
+    ],
+    "kon": [
+      "Janin adalah kehidupan sejak pembuahan yang harus dilindungi",
+      "Adopsi adalah alternatif etis yang tersedia",
+      "Negara wajib melindungi yang paling rentan",
+      "Aborsi atas permintaan meremehkan nilai kehidupan"
+    ],
+    "terms": [
+      "Otonomi",
+      "Pro-choice",
+      "Pro-life",
+      "Hak Reproduksi"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame sebagai pertanyaan tentang siapa yang berhak mengontrol tubuh perempuan — negara atau individu. Establish bahwa kehamilan paksa adalah bentuk kekerasan negara yang tidak bisa dibenarkan dalam masyarakat yang menghargai otonomi. Anchor ke data: di negara dengan larangan aborsi, tingkat aborsi tidak turun — hanya menjadi lebih berbahaya (WHO 2022: 45 juta aborsi/tahun, 25 juta tidak aman). Ideal frame: \"Pertanyaannya bukan apakah aborsi terjadi — tapi apakah ia aman.\"<br><br>\n<strong>OPP (Ideal):</strong> Jangan argue larangan total — argue regulasi dan batasan. Frame sebagai pertanyaan tentang kapan kepentingan janin mulai mengalahkan kepentingan ibu. Establish bahwa janin memiliki moral status yang meningkat seiring perkembangan. Counter dengan opsi adopsi dan dukungan sosial yang robust.",
+    "research": "<strong>Alan Guttmacher Institute (2023):</strong> Negara dengan akses aborsi legal dan aman memiliki tingkat kematian ibu jauh lebih rendah. <strong>Judith Thomson \"A Defense of Abortion\" (1971):</strong> Argumen klasik — bahkan jika janin adalah person penuh, orang tidak berkewajiban menggunakan tubuhnya untuk menopang kehidupan lain. Analogi violinist: kamu tidak wajib tetap terhubung ke musisi yang membutuhkan ginjalmu meski itu menyelamatkan hidupnya. <strong>Don Marquis \"Why Abortion Is Immoral\" (1989):</strong> Membunuh janin merampas \"future like ours\" — nilai semua pengalaman masa depan yang akan dimilikinya. Ini adalah counter filosofis terkuat."
+  },
+  {
+    "id": "m002",
+    "title": "Aksi Afirmatif",
+    "orig": "Affirmative Action",
+    "cat": "sosial",
+    "type": "kebijakan",
+    "ctx": "Kebijakan pertimbangan khusus bagi kelompok yang secara historis terpinggirkan dalam pendidikan dan pekerjaan.",
+    "pro": [
+      "Membuka potensi jutaan orang yang terhambat kurangnya kesempatan historis",
+      "Anggota minoritas sukses menjadi role model mendorong generasi muda",
+      "Representasi proporsional penting untuk menghapus institutional racism"
+    ],
+    "kon": [
+      "Menghasilkan kandidat kurang kompeten mengisi posisi penting",
+      "Meremehkan pencapaian anggota minoritas",
+      "Diskriminasi terbalik tidak menyelesaikan akar ketidaksetaraan"
+    ],
+    "terms": [
+      "Meritokrasi",
+      "Ekuitas",
+      "Diskriminasi Positif",
+      "Interseksionalitas"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame sebagai masalah structural disadvantage bukan preferensi individual. Kunci: buktikan bahwa tanpa aksi afirmatif, meritokrasi formal hanya mengabadikan ketidaksetaraan karena kondisi awal yang sangat berbeda. Gunakan data konkret: Harvard study (Chetty et al. 2023) menunjukkan anak dari keluarga kaya 7x lebih mungkin berkuliah di universitas elite meski kemampuan akademik sama. Frame: \"Aksi afirmatif bukan memilih yang kurang kompeten — tapi mengkoreksi sistem yang secara sistematis mengidentifikasi 'kompetensi' dengan cara yang bias.\"<br><br>\n<strong>OPP (Ideal):</strong> Argue bahwa kelas sosial-ekonomi lebih tepat sebagai dasar aksi afirmatif dari ras — ini lebih adil dan lebih efektif dalam membantu yang benar-benar terpinggirkan. Tunjukkan bahwa aksi afirmatif berbasis ras sering menguntungkan kelas menengah minoritas, bukan yang paling miskin.",
+    "research": "<strong>Chetty et al. \"Mobility Report Cards\" (2023):</strong> Probabilitas naik dari kuintil bawah ke atas berdasarkan institusi pendidikan — menunjukkan universitas elite memperkuat privilege lebih dari mendistribusikannya. <strong>Steele & Aronson \"Stereotype Threat\" (1995):</strong> Anggota minoritas yang tahu stereotip negatif tentang kelompok mereka underperform bahkan ketika kemampuan identik — aksi afirmatif mengurangi stereotype threat environment. <strong>Grutter v. Bollinger (2003):</strong> Supreme Court AS: diversity di pendidikan adalah \"compelling interest\" yang membenarkan pertimbangan ras dalam admisi."
+  },
+  {
+    "id": "m003",
+    "title": "Hukuman Mati",
+    "orig": "Capital Punishment",
+    "cat": "hukum",
+    "type": "kebijakan",
+    "ctx": "Hak negara mengeksekusi warga atas kejahatan paling berat. Dimensi moral, empiris (efek jera), dan HAM.",
+    "pro": [
+      "Beberapa kejahatan sangat berat sehingga hanya hukuman mati yang setimpal",
+      "Menghilangkan risiko penjahat berbahaya kembali ke masyarakat",
+      "Memberikan keadilan retributif bagi keluarga korban"
+    ],
+    "kon": [
+      "Sistem peradilan tidak sempurna — orang tidak bersalah telah dieksekusi",
+      "Tidak ada bukti kuat efek jera lebih besar dari penjara seumur hidup",
+      "Negara tidak boleh melakukan pembunuhan yang disengaja"
+    ],
+    "terms": [
+      "Retribusi",
+      "Deterrence",
+      "Due Process",
+      "Hak Hidup"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Jangan argue deterrence (data tidak mendukung) — argue retribusi dan nilai simbolis. Frame: beberapa kejahatan sangat berat sehingga masyarakat tidak bisa meresponnya dengan kurang dari pengakhiran hidup pelaku — ini bukan soal efek jera, tapi soal proporsi moral. Anchor ke kasus genosida dan pembunuhan massal berencana. Countering: \"Kalau state tidak bisa salah, kenapa ada innocence projects?\"<br><br>\n<strong>OPP (Ideal):</strong> Frame sebagai irreversibility — ini adalah satu-satunya hukuman yang tidak bisa dikoreksi jika sistem salah. Gunakan data Innocence Project: 190+ orang dieksekusi, kemudian ditemukan tidak bersalah sejak 1973 di AS. Frame: \"Kita tidak argue bahwa pelaku kejahatan berat tidak pantas dihukum berat — kita argue bahwa negara tidak boleh mengambil resiko mengeksekusi yang tidak bersalah.\"",
+    "research": "<strong>Ehrlich (1975) vs Donohue & Wolfers (2005):</strong> Debat paling penting tentang deterrence — Ehrlich claim 1 eksekusi mencegah 8 pembunuhan, Donohue & Wolfers membantah metodologinya secara telak. Konsensus akademis sekarang: tidak ada bukti kuat deterrence. <strong>Van den Haag \"Punishing Criminals\" (1975):</strong> Argumen retributif klasik — bahkan tanpa deterrence, keadilan retributif mensyaratkan hukuman mati untuk kejahatan paling berat. <strong>Amnesty International (2023):</strong> 55 negara masih menerapkan hukuman mati, tren global adalah abolisi — 106 negara sudah abolisi untuk semua kejahatan."
+  },
+  {
+    "id": "m004",
+    "title": "Kontrol Senjata Api",
+    "orig": "Gun Control",
+    "cat": "hukum",
+    "type": "kebijakan",
+    "ctx": "Regulasi kepemilikan senjata api antara hak konstitusional, keamanan publik, dan otonomi individu.",
+    "pro": [
+      "Proliferasi senjata berkorelasi langsung dengan kekerasan bersenjata",
+      "Hak untuk hidup lebih fundamental dari hak kepemilikan senjata",
+      "Negara dengan kontrol ketat memiliki angka kematian akibat senjata lebih rendah"
+    ],
+    "kon": [
+      "Hak kepemilikan senjata adalah hak konstitusional yang tidak bisa dibatasi sewenang-wenang",
+      "Penjahat tetap mendapat senjata meski ada larangan",
+      "Senjata penting untuk pertahanan diri di daerah terpencil"
+    ],
+    "terms": [
+      "Second Amendment",
+      "Proliferasi",
+      "Deterrence Sipil"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame sebagai pertanyaan tentang definisi \"keamanan\" — keamanan dari kejahatan individual vs keamanan dari negara yang mengontrol. Establish bahwa hak kepemilikan senjata adalah check terhadap tyranny, bukan hanya tool pertahanan diri. Untuk konteks non-AS: frame sebagai autonomy dan self-defense rights di daerah terpencil jauh dari institusi keamanan.<br><br>\n<strong>OPP (Ideal):</strong> Frame menggunakan comparative data — negara-negara dengan kontrol senjata ketat (Jepang, Australia, UK) memiliki angka kematian akibat senjata 10-100x lebih rendah dari AS. Tunjukkan bahwa senjata dalam rumah tangga lebih sering digunakan untuk bunuh diri dan kecelakaan dari pada pertahanan diri (Harvard Injury Control Research Center).",
+    "research": "<strong>Kellermann et al. \"Gun Ownership as a Risk Factor\" (1993):</strong> Senjata di rumah tangga meningkatkan risiko kematian akibat senjata (termasuk bunuh diri dan pembunuhan anggota keluarga) secara signifikan, bukan menguranginya. <strong>Kleck & Gertz (1995):</strong> Counter-claim: 2.5 juta defensive gun uses per tahun di AS — studi ini sering dikritik metodologinya tapi masih dikutip pro-gun advocates. <strong>Australia NFA (1996):</strong> Setelah Port Arthur massacre, Australia melakukan buyback massal — studi selanjutnya menunjukkan zero mass shootings dalam 20 tahun berikutnya dan penurunan signifikan homicide by firearm."
+  },
+  {
+    "id": "m005",
+    "title": "Ujaran Kebencian di Kampus",
+    "orig": "Hate Speech on Campus",
+    "cat": "sosial",
+    "type": "kebijakan",
+    "ctx": "Apakah universitas harus melarang ujaran kebencian? Kebebasan akademik vs lingkungan yang aman.",
+    "pro": [
+      "Lingkungan penuh ujaran kebencian merusak kemampuan belajar mahasiswa marginal",
+      "Universitas wajib menciptakan lingkungan aman untuk semua",
+      "Ujaran kebencian bukan debat intelektual yang sah — ia serangan terhadap identitas"
+    ],
+    "kon": [
+      "Kebebasan akademik mensyaratkan mengekspresikan pandangan tidak populer",
+      "Definisi \"kebencian\" sangat subjektif dan sering disalahgunakan",
+      "Mahasiswa perlu terpapar pandangan tidak menyenangkan untuk menjadi warga kritis"
+    ],
+    "terms": [
+      "Kebebasan Berbicara",
+      "Safe Space",
+      "Cancel Culture",
+      "Chilling Effect"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame sebagai kebebasan akademik vs safety. Kausalistik: ujaran kebencian → normalize discrimination → hostile environment → exclude minority students. Even If: bahkan jika kampus harus toleran terhadap ide kontroversial, ujaran yang targeted bukan ide tapi serangan personal.<br><br><strong>OPP (Ideal):</strong> Frame sebagai slippery slope censorship. Siapa yang mendefinisikan hate speech? Power akan disalahgunakan untuk silence legitimate dissent. Counter-speech lebih efektif. Expose students ke hostile ideas justru mempersiapkan mereka untuk dunia nyata."
+  },
+  {
+    "id": "m006",
+    "title": "Layanan Kesehatan Universal",
+    "orig": "Universal Health Care",
+    "cat": "ekonomi",
+    "type": "kebijakan",
+    "ctx": "Kesehatan sebagai hak fundamental yang dijamin negara vs tanggung jawab individu dan mekanisme pasar.",
+    "pro": [
+      "Kesehatan adalah prasyarat dasar kehidupan bermartabat — bukan komoditas",
+      "Sistem pasar menghasilkan ketidakefisienan masif dan ketidaksetaraan moral",
+      "Negara dengan sistem universal mencapai outcome lebih baik dengan biaya lebih rendah"
+    ],
+    "kon": [
+      "Sistem universal menciptakan daftar tunggu panjang dan kualitas menurun",
+      "Individu harus bertanggung jawab atas pilihan kesehatan mereka sendiri",
+      "Biaya tidak berkelanjutan dan menghambat inovasi medis"
+    ],
+    "terms": [
+      "Hak Positif",
+      "Moral Hazard",
+      "Universal Coverage",
+      "Single-Payer"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame sebagai market failure argument — kesehatan bukan pasar normal karena: (1) information asymmetry antara dokter dan pasien, (2) adverse selection membuat pasar privat tidak efisien, (3) negative externality ketika yang tidak tervaksin menyebarkan penyakit. Establish bahwa Single-payer system lebih efisien secara cost daripada sistem campuran (US spending 2x OECD average untuk outcome yang lebih buruk).<br><br>\n<strong>OPP (Ideal):</strong> Jangan argue \"tidak ada hak atas kesehatan\" — argue tentang mekanisme delivery. Frame: sistem universal yang dikelola birokrasi menciptakan rationing melalui antrian panjang, insentif inovasi menurun. Argue untuk \"universal coverage\" melalui mekanisme pasar yang diregulasi (managed competition) bukan sistem single-payer monolitik.",
+    "research": "<strong>Woolf et al. \"Mortality and Morbidity\" (2022):</strong> AS menghabiskan $12,000/kapita untuk kesehatan vs rata-rata OECD $5,000, tapi life expectancy lebih rendah dan infant mortality lebih tinggi. <strong>Arrow \"Uncertainty and the Welfare Economics of Medical Care\" (1963):</strong> Paper foundational yang membuktikan kesehatan bukan pasar normal — article ini menjadi basis argumen untuk intervensi pemerintah dalam healthcare. <strong>Hsiao \"What is a Health System?\" (1995):</strong> Taiwan universal healthcare reform — dari 40% uninsured ke universal coverage dalam 2 tahun, cost-effective, dengan outcome yang meningkat signifikan."
+  },
+  {
+    "id": "m007",
+    "title": "Sensor Internet",
+    "orig": "Internet Censorship",
+    "cat": "teknologi",
+    "type": "kebijakan",
+    "ctx": "Regulasi konten internet antara keamanan publik dan kebebasan berekspresi digital.",
+    "pro": [
+      "Konten berbahaya (terorisme, eksploitasi anak) harus dibatasi demi keamanan",
+      "Regulasi internet tidak berbeda dengan regulasi media lain yang sudah lazim",
+      "Perusahaan teknologi tidak cukup mengatur diri sendiri"
+    ],
+    "kon": [
+      "Sensor internet adalah alat kontrol politik yang mudah disalahgunakan",
+      "Definisi \"berbahaya\" sering digunakan untuk membungkam oposisi",
+      "Internet harus tetap menjadi ruang bebas global"
+    ],
+    "terms": [
+      "Net Neutrality",
+      "Panoptisisme Digital",
+      "Chilling Effect",
+      "Disinformasi"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame sebagai pertanyaan tentang siapa yang mendefinisikan \"berbahaya\" — tunjukkan bahwa setiap rezim sensor pasti melibatkan gatekeeping yang rentan terhadap penyalahgunaan. Establish bahwa konten yang paling berbahaya (rekrutmen terorisme, disinformasi terorganisir) membutuhkan kerjasama platform, bukan sensor negara yang kasar. Cite: Reporters Without Borders Index menunjukkan korelasi kuat antara sensor internet dan represi politik.<br><br>\n<strong>OPP (Ideal):</strong> Frame sebagai harm reduction — regulation ≠ censorship. Establish diferensiasi: regulasi konten yang jelas berbahaya (CSAM, direct incitement) sangat berbeda dari sensor opini politik. Gunakan model Jerman yang berhasil melarang Holocaust denial tanpa menghancurkan kebebasan berekspresi.",
+    "research": "<strong>Freedom House \"Freedom on the Net\" (2023):</strong> 76% pengguna internet dunia tinggal di negara dengan internet yang \"not free\" atau \"partly free\" — mayoritas pembatasan bersifat politis. <strong>Sunstein \"Republic.com 2.0\" (2007):</strong> Filter bubble theory — algoritma menciptakan echo chambers yang lebih berbahaya dari sensor pemerintah, tapi lebih sulit diregulasi. <strong>Facebook Myanmar Reports (2018):</strong> Kasus nyata di mana platform gagal meregulasi diri sendiri — hate speech di Facebook berkontribusi signifikan pada genosida Rohingya, memperkuat argumen bahwa regulasi external diperlukan."
+  },
+  {
+    "id": "m008",
+    "title": "Pemanasan Global dan Kebijakan Iklim",
+    "orig": "Global Warming",
+    "cat": "lingkungan",
+    "type": "kebijakan",
+    "ctx": "Respons kebijakan terhadap perubahan iklim — seberapa agresif dan siapa yang menanggung biayanya.",
+    "pro": [
+      "Perubahan iklim adalah ancaman eksistensial yang membutuhkan respons segera",
+      "Biaya inaksi jauh lebih besar dari biaya transisi ke energi bersih",
+      "Negara kaya yang paling berkontribusi wajib memimpin dan membiayai transisi global"
+    ],
+    "kon": [
+      "Transisi energi terlalu cepat merusak ekonomi negara berkembang",
+      "Negara berkembang tidak boleh dipaksa mengorbankan pertumbuhan",
+      "Solusi teknologi (carbon capture) bisa mengatasi masalah tanpa restriksi radikal"
+    ],
+    "terms": [
+      "Carbon Tax",
+      "Net Zero",
+      "Precautionary Principle",
+      "Climate Justice"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame menggunakan economic argument — biaya inaction vs biaya action. Stern Review (2006): inaction akan cost 5-20% GDP global permanen, action cost hanya 1% GDP. Jangan argue tentang scientific consensus (sudah selesai) — argue tentang distribusi biaya: negara kaya yang paling bertanggung jawab secara historis harus memimpin dan membiayai transisi. Gunakan climate justice frame: negara paling terdampak (Bangladesh, Maladewa, negara Afrika) paling sedikit berkontribusi.<br><br>\n<strong>OPP (Ideal):</strong> Argue tentang pace dan mechanism, bukan tentang perlu-tidaknya action. Frame: transisi yang terlalu cepat tanpa safety net akan menghancurkan kehidupan pekerja industri di negara berkembang. Argue untuk \"just transition\" yang memberi waktu adaptasi vs kebijakan yang terlalu agresif.",
+    "research": "<strong>IPCC AR6 (2023):</strong> 1.5°C threshold kemungkinan terlampaui pada awal 2030s — window of action sangat sempit. <strong>Nordhaus vs Stern Debate:</strong> Nordhaus (Nobel 2018): gunakan discount rate tinggi, action moderat lebih optimal secara ekonomi. Stern: discount rate rendah untuk intergenerational equity, action agresif lebih justified. Perdebatan ini adalah inti debat climate policy. <strong>IEA \"Net Zero by 2050\" (2021):</strong> Pathway teknis ada — tapi membutuhkan \"no new fossil fuel development beyond those already approved\" mulai sekarang, yang sangat kontroversial secara geopolitik."
+  },
+  {
+    "id": "m009",
+    "title": "Hak Hewan",
+    "orig": "Animal Rights",
+    "cat": "filosofi",
+    "type": "pandangan",
+    "ctx": "Apakah hewan memiliki hak moral yang harus dilindungi? Batas lingkaran moral dan spesiesisme.",
+    "pro": [
+      "Kapasitas menderita — bukan kecerdasan — yang menentukan status moral (Peter Singer)",
+      "Spesiesisme sama problematis secara logis dengan rasisme dan seksisme",
+      "Industri peternakan pabrik adalah penderitaan sistemik terbesar yang ada"
+    ],
+    "kon": [
+      "Hak membutuhkan kemampuan menanggung kewajiban timbal balik",
+      "Kebutuhan manusia secara sah dapat melebihi kepentingan hewan",
+      "Peraturan kesejahteraan hewan sudah cukup tanpa framework hak penuh"
+    ],
+    "terms": [
+      "Spesiesisme",
+      "Peter Singer",
+      "Sentience",
+      "Animal Welfare vs Animal Rights"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame menggunakan Peter Singer's Expanding Circle — kita sudah memperluas lingkaran moral dari keluarga ke komunitas ke bangsa ke semua manusia; langkah logis berikutnya adalah memasukkan makhluk yang bisa menderita. Establish bahwa speciesism adalah bias yang tidak bisa dibenarkan secara filosofis — kemampuan menderita, bukan kecerdasan atau spesies, yang menentukan moral considerability.<br><br>\n<strong>OPP (Ideal):</strong> Distinguish antara hak (rights) dan welfare (kesejahteraan) — setuju hewan tidak boleh disiksa tanpa alasan (welfare approach), tapi reject framework hak penuh yang menghalangi semua penggunaan hewan. Frame: hak mensyaratkan kapabilitas moral reciprocity yang hewan tidak miliki.",
+    "research": "<strong>Singer \"Animal Liberation\" (1975):</strong> Text foundational — utilitarian argument bahwa pain is pain regardless of species. Berpengaruh sangat besar dalam gerakan hak hewan. <strong>Regan \"The Case for Animal Rights\" (1983):</strong> Deontological approach — hewan adalah \"subjects-of-a-life\" yang memiliki inherent value yang tidak bisa dikompromikan bahkan demi utilitas manusia. <strong>Cohen \"The Case for the Use of Animals in Biomedical Research\" (1986):</strong> Counter-argument — moral rights mensyaratkan moral agency. Hewan tidak memiliki kapasitas untuk merespon moral claims, sehingga tidak bisa menjadi rights-holders."
+  },
+  {
+    "id": "m010",
+    "title": "Eutanasia / Assisted Suicide",
+    "orig": "Assisted Suicide",
+    "cat": "filosofi",
+    "type": "pandangan",
+    "ctx": "Hak individu mengakhiri hidup dengan bantuan medis ketika menderita penyakit terminal.",
+    "pro": [
+      "Otonomi fundamental — termasuk hak menentukan kapan dan bagaimana seseorang meninggal",
+      "Memaksa hidup dalam penderitaan ekstrem adalah kekejaman dari negara",
+      "Belanda dan Belgia telah berhasil mengimplementasikan ini dengan perlindungan kuat"
+    ],
+    "kon": [
+      "Risiko slippery slope — dari penyakit terminal ke depresi ke \"beban keluarga\"",
+      "Dokter tidak boleh berperan sebagai agen kematian — melanggar Sumpah Hippocrates",
+      "Tekanan keluarga dapat membuat keputusan tidak benar-benar sukarela"
+    ],
+    "terms": [
+      "Otonomi Pasien",
+      "Sumpah Hippocrates",
+      "Palliative Care",
+      "Slippery Slope"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame menggunakan \"mercy argument\" — membiarkan seseorang menderita tanpa harapan ketika mereka meminta mengakhiri penderitaan bukan tindakan berbelas kasih, tapi kekejaman yang terselubung sebagai virtue. Establish bahwa autonomy mencakup keputusan paling personal — bagaimana dan kapan seseorang meninggal. Counter slippery slope dengan bukti empiris dari Belanda/Belgia yang menunjukkan safeguards bekerja.<br><br>\n<strong>OPP (Ideal):</strong> Argue bukan dari posisi religius tapi dari posisi structural vulnerability — pasien terminal dalam kondisi psikologis yang sangat rentan, menerima informasi yang tidak sempurna, dan dapat terpengaruh oleh tekanan halus dari keluarga atau sistem kesehatan. \"True autonomy\" dalam kondisi extreme pain dan morphine tidak mungkin.",
+    "research": "<strong>van der Maas et al. \"Euthanasia and Other Medical Decisions\" (1991-2011):</strong> Study longitudinal di Belanda — tidak ditemukan systematic slippery slope ke involuntary euthanasia selama 20 tahun. <strong>Oregon Death with Dignity Act (1997):</strong> Data 25 tahun menunjukkan penggunaan yang konsisten dan terbatas, dengan mayoritas pasien yang mendapat prescription tidak menggunakannya — tapi merasa lebih tenang dengan pilihan itu ada. <strong>Dworkin \"Life's Dominion\" (1993):</strong> Euthanasia sebagai ekspresi tertinggi dari self-authorship — kehidupan yang bermakna bagi individu harus mencakup hak menentukan akhirnya."
+  },
+  {
+    "id": "m011",
+    "title": "Legalisasi Ganja",
+    "orig": "Marijuana Legalization",
+    "cat": "hukum",
+    "type": "kebijakan",
+    "ctx": "Legalisasi ganja untuk penggunaan rekreasi dewasa — antara otonomi individu dan kesehatan publik.",
+    "pro": [
+      "Larangan ganja telah gagal — konsumsi tinggi, miliaran habis untuk penegakan tidak efektif",
+      "Legalisasi memungkinkan regulasi kualitas, pajak, dan pengurangan pasar gelap",
+      "Otonomi individu mencakup hak mengonsumsi zat yang tidak membahayakan orang lain"
+    ],
+    "kon": [
+      "Legalisasi menormalkan penggunaan zat yang memiliki risiko kesehatan nyata bagi remaja",
+      "Ketergantungan dan penyalahgunaan meningkat dengan aksesibilitas lebih mudah",
+      "Mengirimkan pesan yang salah kepada generasi muda"
+    ],
+    "terms": [
+      "Dekriminalisasi",
+      "Harm Reduction",
+      "Gateway Drug Hypothesis",
+      "War on Drugs"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame menggunakan evidence-based policy — Portugal decriminalization 2001 adalah natural experiment terbaik: drug use tidak meningkat, HIV infections dari injection turun 95%, drug-related deaths turun 80%. Establish bahwa war on drugs adalah expensive failure yang secara tidak proporsional memenjarakan komunitas miskin dan minoritas tanpa mengurangi drug use. Anchor ke racial justice dimension: di AS, Black Americans 3.73x lebih mungkin ditangkap atas marijuana meski usage rates identical.<br><br>\n<strong>OPP (Ideal):</strong> Distinguish antara decriminalization dan full legalization — setuju decriminalization for personal use (Portugal model) tapi argue against commercialization yang menciptakan profit motive untuk meningkatkan addiction rates. Tembakau dan alkohol industri adalah warning signs.",
+    "research": "<strong>Caitlin Hughes & Alex Stevens \"What Can We Learn from the Portuguese Decriminalization of Illicit Drugs?\" (2010):</strong> Studi most-cited tentang Portugal model — menunjukkan bahwa framing as health issue bukan criminal issue menghasilkan outcomes yang jauh lebih baik. <strong>Colorado/Washington Legalization Data (2012-2022):</strong> 10 tahun data menunjukkan: tax revenue significant, youth usage tidak meningkat secara signifikan, traffic fatalities inconclusive, racial disparities berkurang. <strong>WHO \"Cannabis: A Public Health Perspective\" (2021):</strong> Merekomendasikan descheduling dari Schedule IV berdasarkan evidence base — tapi note bahwa legalization model memerlukan strong regulation untuk melindungi youth."
+  },
+  {
+    "id": "m012",
+    "title": "Perdagangan Bebas",
+    "orig": "Free Trade",
+    "cat": "ekonomi",
+    "type": "pandangan",
+    "ctx": "Apakah perdagangan bebas tanpa hambatan tarif menguntungkan semua negara secara adil?",
+    "pro": [
+      "Meningkatkan efisiensi global melalui spesialisasi komparatif yang terbukti empiris",
+      "Konsumen mendapat produk lebih murah dan pilihan lebih banyak",
+      "Mengintegrasikan negara berkembang ke rantai nilai global menciptakan lapangan kerja"
+    ],
+    "kon": [
+      "Menguntungkan negara maju yang memiliki daya saing struktural lebih tinggi",
+      "Menghancurkan industri domestik yang tidak bisa bersaing",
+      "\"Free trade\" asimetris — negara kaya masih subsidi pertanian sambil paksa negara miskin buka pasar"
+    ],
+    "terms": [
+      "Comparative Advantage",
+      "Protektionisme",
+      "WTO",
+      "Race to the Bottom"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Comparative advantage — semua negara benefit dari specialization. 800 juta orang keluar dari kemiskinan berkat integrasi global sejak 1990. Trade → competition → efficiency → lower prices → accessible goods for poor.<br><br><strong>OPP (Ideal):</strong> Free trade dalam sistem unequal → race to bottom. Terms of trade trap: developing countries export raw materials. Deindustrialization di rust belt. Strategic industrial policy (South Korea, China) produced better development outcomes."
+  },
+  {
+    "id": "m013",
+    "title": "Kebebasan Berbicara dan Batasannya",
+    "orig": "Free Speech Restrictions",
+    "cat": "hukum",
+    "type": "pandangan",
+    "ctx": "Apakah kebebasan berbicara absolut atau dapat dibatasi demi mencegah bahaya?",
+    "pro": [
+      "Kebebasan berbicara adalah fondasi demokrasi — tanpanya semua kebebasan lain terancam",
+      "Menentukan siapa yang berwenang membatasi lebih berbahaya dari ucapan itu sendiri",
+      "Ide yang salah harus dilawan dengan lebih banyak argumen, bukan sensor"
+    ],
+    "kon": [
+      "Ucapan yang membahayakan nyawa secara langsung (incitement) bukan ekspresi yang dilindungi",
+      "Kebebasan tanpa batas melindungi yang kuat dan membungkam yang lemah",
+      "Regulasi ujaran kebencian mencegah normalisasi diskriminasi"
+    ],
+    "terms": [
+      "Incitement",
+      "Chilling Effect",
+      "Mill Harm Principle",
+      "Counter-Speech"
+    ],
+    "ideal": "<strong>PRO kebebasan (Ideal):</strong> Mill — bad speech countered by more speech, not censorship. Government yang authorize define harmful speech akan abuse power. Speech restrictions disproportionately harms minority voices. Chilling effect on legitimate dissent.<br><br><strong>OPP/batasan (Ideal):</strong> Algorithmic amplification changes calculus — bad speech tidak naturally countered digital era. Hate speech silences marginalized voices. Platform ≠ government: different normative questions untuk platform with public square scale."
+  },
+  {
+    "id": "m014",
+    "title": "Adopsi Gay",
+    "orig": "Gay Adoption",
+    "cat": "sosial",
+    "type": "kebijakan",
+    "ctx": "Haruskah pasangan sesama jenis diizinkan mengadopsi anak?",
+    "pro": [
+      "Banyak anak membutuhkan keluarga — menolak adopsi gay merugikan anak-anak ini",
+      "Penelitian konsisten menunjukkan anak pasangan gay tidak mengalami kerugian psikologis",
+      "Orientasi seksual orang tua tidak menentukan kualitas pengasuhan"
+    ],
+    "kon": [
+      "Anak idealnya memiliki figur ibu dan ayah untuk perkembangan psikologis optimal",
+      "Keyakinan agama dan budaya mayoritas harus dipertimbangkan dalam kebijakan publik",
+      "Hak anak memiliki orang tua dari kedua jenis kelamin harus diutamakan"
+    ],
+    "terms": [
+      "Kepentingan Terbaik Anak",
+      "Hak Adopsi",
+      "Kesetaraan LGBT"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Focus pada kepentingan anak — evidence shows same-sex couples yang stable menghasilkan equally good outcomes. Discrimination dalam adopsi harms children in foster care who need homes.<br><br><strong>OPP (Ideal):</strong> Religious agencies memiliki First Amendment protection. Compromise: secular agencies handle same-sex adoptions, religious agencies exempt. Tidak perlu prohibition tapi tidak harus mandate seluruh adopsi."
+  },
+  {
+    "id": "m015",
+    "title": "Pernikahan Sesama Jenis",
+    "orig": "Gay Marriage",
+    "cat": "sosial",
+    "type": "kebijakan",
+    "ctx": "Haruskah pernikahan sesama jenis diakui secara hukum dengan hak yang sama?",
+    "pro": [
+      "Hak atas pernikahan adalah hak fundamental yang tidak boleh dibedakan berdasarkan orientasi seksual",
+      "Pengakuan hukum memberikan perlindungan nyata: warisan, hak rumah sakit, adopsi",
+      "Tidak ada kerugian yang terbukti bagi pernikahan heteroseksual"
+    ],
+    "kon": [
+      "Definisi tradisional pernikahan memiliki akar budaya dan agama yang sangat dalam",
+      "Negara tidak harus mengubah institusi fundamental hanya karena tuntutan minoritas",
+      "Civil union dapat memberikan proteksi hukum tanpa mengubah institusi pernikahan"
+    ],
+    "terms": [
+      "Civil Union",
+      "Equal Protection",
+      "LGBTQ+ Rights"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Equal protection — denial of marriage adalah denial of tangible legal benefits (insurance, inheritance, hospital visitation). Loving v Virginia parallel: jika ras tidak bisa restrict marriage, orientation juga tidak bisa.<br><br><strong>OPP/kompromi (Ideal):</strong> State seharusnya offer civil unions to all, leave marriage definition ke religious institutions. Separates religious definition dari legal benefits — solusi yang respects kedua sisi."
+  },
+  {
+    "id": "m016",
+    "title": "Rekayasa Genetik Manusia",
+    "orig": "Genetic Screening",
+    "cat": "teknologi",
+    "type": "kebijakan",
+    "ctx": "Apakah skrining dan rekayasa genetik pada embrio manusia diizinkan? Batas antara pengobatan dan desainer bayi.",
+    "pro": [
+      "Mencegah penyakit genetik yang menyebabkan penderitaan parah adalah kewajiban moral",
+      "Orang tua berhak menginginkan anak yang sehat tanpa penyakit herediter yang dapat dicegah",
+      "Teknologi selalu membawa implikasi etis baru yang harus dihadapi bukan dihindari"
+    ],
+    "kon": [
+      "Membuka pintu eugenika modern — anak sebagai \"produk\" yang didesain",
+      "Memperlebar kesenjangan antara yang mampu dan tidak mampu membayar teknologi ini",
+      "Embrio manusia memiliki status moral yang harus dilindungi"
+    ],
+    "terms": [
+      "Eugenika",
+      "CRISPR",
+      "Designer Baby",
+      "Bioethics"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Therapeutic genetic engineering untuk eliminate hereditary diseases adalah continuous dengan medical ethics existing. Non-identity problem: future person benefits dari modification. Regulatory framework bisa contain slippery slope.<br><br><strong>OPP (Ideal):</strong> Germline modifications irreversible dan heritable. Unknown off-target effects compound across generations. Enhancement creates genetic aristocracy. Distinction therapy vs enhancement impossible maintain — moratorium justified, not ban on all research."
+  },
+  {
+    "id": "m017",
+    "title": "Globalisasi dan Kemiskinan",
+    "orig": "Globalization and the Poor",
+    "cat": "ekonomi",
+    "type": "pandangan",
+    "ctx": "Apakah globalisasi ekonomi menguntungkan atau merugikan komunitas termiskin di dunia?",
+    "pro": [
+      "Ratusan juta berhasil keluar kemiskinan berkat integrasi ekonomi global terutama di Asia",
+      "Investasi asing menciptakan lapangan kerja dan transfer teknologi ke negara berkembang",
+      "Perdagangan memberikan konsumen akses ke barang lebih murah"
+    ],
+    "kon": [
+      "Globalisasi memperkaya yang sudah kaya dan marginalisasi yang sudah miskin",
+      "Perusahaan multinasional mengeksploitasi standar tenaga kerja dan lingkungan yang lebih rendah",
+      "Korporasi global menghindari pajak di negara asal dan tujuan — merampas sumber daya publik"
+    ],
+    "terms": [
+      "FDI",
+      "Race to the Bottom",
+      "Washington Consensus",
+      "Inequality"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> 1.2 billion orang keluar dari kemiskinan 1990-2015 berkat globalisasi. Inequality WITHIN countries naik tapi inequality BETWEEN countries turun — yang lebih important dari global justice perspective.<br><br><strong>OPP (Ideal):</strong> Globalisasi dalam sistem structured untuk benefit wealthy nations. Resource extraction, brain drain, financial crisis contagion disproportionately harm poor countries. WTO rules written by rich countries untuk rich country benefit."
+  },
+  {
+    "id": "m018",
+    "title": "Privasi vs Keamanan",
+    "orig": "Privacy v. Security",
+    "cat": "hukum",
+    "type": "pandangan",
+    "ctx": "Seberapa jauh negara boleh memantau warganya demi keamanan nasional?",
+    "pro": [
+      "Keamanan adalah prasyarat semua kebebasan lain",
+      "Program surveilans yang ditarget terbukti mencegah serangan teroris",
+      "Regulasi yang tepat memastikan pengawasan tidak disalahgunakan"
+    ],
+    "kon": [
+      "Surveilans massal adalah ciri rezim otoriter, bukan demokrasi sehat",
+      "Hak atas privasi tidak bisa dikorbankan demi keamanan kolektif",
+      "Kekuasaan surveilans selalu disalahgunakan — NSA, Stasi membuktikannya"
+    ],
+    "terms": [
+      "Panoptisisme",
+      "Mass Surveillance",
+      "Right to Privacy",
+      "NSA Snowden"
+    ],
+    "ideal": "<strong>PRO privasi (Ideal):</strong> Privacy adalah foundation dari autonomy dan dignity. Surveillance chilling effect pada democracy. Mass surveillance tidak effectively prevent terrorism. Targeted surveillance with judicial oversight lebih effective.<br><br><strong>OPP/security (Ideal):</strong> Absolute privacy impossible dan undesirable. Modern threats require modern tools. Metadata bukan content — patterns less invasive than reading messages. Democratic oversight prevents abuse."
+  },
+  {
+    "id": "m019",
+    "title": "Legalisasi Prostitusi",
+    "orig": "Prostitution Legalization",
+    "cat": "hukum",
+    "type": "kebijakan",
+    "ctx": "Legalisasi dan regulasi prostitusi — perbandingan model kriminalisasi, legalisasi, dan Nordic.",
+    "pro": [
+      "Legalisasi melindungi pekerja seks dari eksploitasi dan kekerasan melalui regulasi kesehatan",
+      "Otonomi tubuh mencakup hak transaksi seksual sukarela antar dewasa",
+      "Model kriminalisasi mendorong prostitusi ke bawah tanah yang jauh lebih berbahaya"
+    ],
+    "kon": [
+      "Prostitusi secara inheren eksploitatif dalam konteks kemiskinan sistemik",
+      "Legalisasi meningkatkan permintaan dan bersamaan meningkatkan trafficking manusia",
+      "Model Nordic lebih efektif melindungi pekerja seks"
+    ],
+    "terms": [
+      "Model Nordic",
+      "Sex Work",
+      "Trafficking",
+      "Decriminalization"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Nordic Model adalah straw man yang tidak bekerja seperti yang diklaim — kriminalisasi pembeli mendorong sex work lebih underground, membuat pekerja seks lebih rentan karena harus tergesa-gesa tanpa screening klien. Cite: laporan dari sex worker organisations (SWEAT, SWOP) konsisten bahwa mereka lebih memilih decriminalization dari Nordic Model. Frame: sex workers sendiri sebagai rights-holders yang harus punya agency dalam kebijakan yang mempengaruhi mereka.<br><br>\n<strong>OPP (Ideal):</strong> Jangan argue total abolisi — argue bahwa legalization menciptakan demand yang hanya bisa dipenuhi oleh trafficking. Cite: Cho et al. (2013) menunjukkan negara dengan legalized prostitution memiliki trafficking inflows yang lebih tinggi secara statistik.",
+    "research": "<strong>Cho, Dreher & Neumayer \"Does Legalized Prostitution Increase Human Trafficking?\" (2013):</strong> Cross-country study yang kontroversial — menemukan korelasi positif antara legalization dan trafficking, tapi dikritik karena endogeneity issues. <strong>New Zealand Prostitution Reform Act (2003):</strong> Natural experiment decriminalization — 10 year review menunjukkan improved safety untuk street-based workers, no increase in numbers, increased willingness to report violence. <strong>Amnesty International Position (2016):</strong> Mendukung full decriminalization atas dasar human rights — ini menjadi posisi resmi yang kontroversial dalam gerakan feminis."
+  },
+  {
+    "id": "m020",
+    "title": "Agama: Konflik atau Perdamaian?",
+    "orig": "Religion: Source of Conflict or Peace?",
+    "cat": "agama",
+    "type": "pandangan",
+    "ctx": "Apakah agama secara neto berkontribusi pada konflik atau perdamaian dalam sejarah manusia?",
+    "pro": [
+      "Agama memberikan makna, komunitas, dan nilai moral yang menstabilkan masyarakat",
+      "Gerakan perdamaian terbesar terinspirasi agama: MLK, Gandhi, Mandela",
+      "Faktor politik dan ekonomi lebih dominan dalam perang daripada agama"
+    ],
+    "kon": [
+      "Agama historis digunakan untuk membenarkan perang, persekusi, dan diskriminasi",
+      "Fundamentalisme agama adalah ancaman keamanan global yang nyata",
+      "Keyakinan bahwa Tuhan berada di pihakmu membuat kompromi lebih sulit"
+    ],
+    "terms": [
+      "Sekularisme",
+      "Fundamentalisme",
+      "Religion and Violence"
+    ],
+    "ideal": "<strong>PRO konflik (Ideal):</strong> Religious identity → in-group favoritism → out-group dehumanization → intergroup violence. Historical evidence dari Crusades ke Myanmar, Nigeria. Religious institutions resist compromise on core tenets.<br><br><strong>OPP/perdamaian (Ideal):</strong> Konflik yang labeled religious biasanya memiliki underlying economic dan political drivers. Religious institutions juga driven abolition, civil rights, anti-apartheid. Religion sebagai cover for power struggle, bukan cause."
+  },
+  {
+    "id": "m021",
+    "title": "Kepemilikan Senjata Nuklir",
+    "orig": "Nuclear Weapons",
+    "cat": "hubungan-internasional",
+    "type": "pandangan",
+    "ctx": "Apakah kepemilikan senjata nuklir dapat dibenarkan secara moral sebagai deterrent strategis?",
+    "pro": [
+      "Deterrence nuklir telah mencegah perang besar-besaran sejak 1945 — \"Long Peace\"",
+      "Negara dengan kapabilitas nuklir lebih aman dari invasi konvensional",
+      "Perlucutan senjata unilateral berbahaya jika musuh mempertahankan senjatanya"
+    ],
+    "kon": [
+      "Senjata yang membunuh jutaan warga sipil secara inheren tidak bermoral",
+      "Proliferasi nuklir meningkatkan risiko kecelakaan dan terorisme nuklir",
+      "Non-proliferasi membutuhkan kepemimpinan moral dari negara yang sudah punya senjata nuklir"
+    ],
+    "terms": [
+      "Deterrence",
+      "MAD",
+      "Nuclear Proliferation",
+      "NPT"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame menggunakan \"stability through terror\" argument — MAD telah mencegah great power war lebih lama dari periode manapun dalam sejarah modern. \"Long Peace\" sejak 1945 adalah empirical fact. Establish bahwa perlucutan senjata unilateral menciptakan power vacuum yang lebih berbahaya dari status quo. Counter moral argument: deterrence bukan niat membunuh jutaan — itu adalah sinyal untuk mencegah perang sama sekali.<br><br>\n<strong>OPP (Ideal):</strong> Frame menggunakan close calls argument — dunia hampir berakhir beberapa kali (Cuban Missile Crisis 1962, Able Archer 83, Petrov incident 1983) bukan karena rational deterrence tapi karena keberuntungan. Establish bahwa risiko accidental launch atau miscalculation meningkat seiring proliferasi. Cite: setiap negara baru yang mendapat nuklir (Pakistan, North Korea) meningkatkan eksponensial risiko.",
+    "research": "<strong>Pinker \"The Better Angels of Our Nature\" (2011):</strong> Data komprehensif yang mendukung \"Long Peace\" thesis — interstate war menurun drastis sejak 1945, korelasi dengan nuclear deterrence significant. <strong>Sagan & Waltz \"The Spread of Nuclear Weapons\" (2003):</strong> Debat paling penting dalam nuclear IR — Waltz argue proliferation creates stability (deterrence), Sagan argue organizational failures make accidents inevitable. <strong>Lewis \"The Bomb\" (2018):</strong> Dokumentasi puluhan near-misses yang tidak pernah dipublish — menunjukkan bahwa kita selamat lebih banyak karena luck dari rational deterrence."
+  },
+  {
+    "id": "m022",
+    "title": "Negosiasi dengan Teroris",
+    "orig": "Terrorists, Negotiating with",
+    "cat": "hubungan-internasional",
+    "type": "pandangan",
+    "ctx": "Haruskah pemerintah bernegosiasi dengan kelompok teroris untuk mengakhiri konflik?",
+    "pro": [
+      "Negosiasi adalah satu-satunya cara yang terbukti mengakhiri konflik asimetris (IRA, ETA, FARC)",
+      "Menolak negosiasi memperpanjang konflik dan penderitaan warga sipil",
+      "Satu generasi teroris menjadi negarawan generasi berikutnya"
+    ],
+    "kon": [
+      "Negosiasi memberikan legitimasi kepada kelompok yang gunakan kekerasan sebagai taktik",
+      "Menciptakan insentif kelompok lain mengadopsi terorisme untuk mendapat pengakuan",
+      "No deals with terrorists mencegah taktik penyanderaan menjadi efektif"
+    ],
+    "terms": [
+      "Asymmetric Warfare",
+      "No Concessions Policy",
+      "Legitimasi"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame menggunakan historical precedents yang overwhelming — IRA, ETA, ANC, PLO, semua kelompok yang dulu dilabeli \"teroris\" kemudian menjadi mitra negosiasi dan akhirnya pemimpin sah. Establish bahwa no-negotiation policy adalah luxury yang tidak bisa dibeli dengan nyawa sandera atau warga sipil yang terus menderita akibat konflik berkepanjangan. Counter: \"memberikan legitimasi\" adalah false precision — negosiasi ≠ pengakuan moral.<br><br>\n<strong>OPP (Ideal):</strong> Frame menggunakan signaling theory — konsistensi no-negotiation policy mencegah incentive untuk mengambil sandera sebagai taktik. Cite Israel policy vs data: negara dengan no-concessions policy memiliki kidnapping rate lebih rendah dalam beberapa konteks.",
+    "research": "<strong>Cronin \"How Terrorism Ends\" (2009):</strong> Study komprehensif tentang bagaimana kelompok teroris berakhir — negosiasi adalah salah satu ending yang paling sering dan paling berkelanjutan, bersama decapitation dan reorientation. <strong>Northern Ireland Peace Process:</strong> Kasus yang paling dipelajari — negosiasi dengan IRA yang awalnya sangat kontroversial menghasilkan Good Friday Agreement 1998 yang mengakhiri 30 tahun konflik. <strong>Putnam \"Diplomacy and Domestic Politics\" (1988):</strong> Two-level games theory — pemimpin harus simultaneously convince kelompok teroris bahwa negosiasi menguntungkan DAN convince konstituen domestik bahwa negosiasi bukan capitulation."
+  },
+  {
+    "id": "m023",
+    "title": "Imigrasi dan Kebijakan Perbatasan",
+    "orig": "Immigration Restrictions",
+    "cat": "sosial",
+    "type": "kebijakan",
+    "ctx": "Seberapa jauh negara dapat membatasi imigrasi? Apakah perbatasan nasional secara moral dapat dibenarkan?",
+    "pro": [
+      "Negara memiliki hak berdaulat mengontrol perbatasan demi keamanan dan kohesi sosial",
+      "Imigrasi masif dapat menekan upah pekerja lokal dan membebani layanan publik",
+      "Integrasi budaya membutuhkan waktu — imigrasi terlalu cepat menciptakan fragmentasi"
+    ],
+    "kon": [
+      "Dari perspektif keadilan global, tempat kelahiran tidak boleh menentukan peluang hidup",
+      "Imigran secara neto berkontribusi positif pada ekonomi",
+      "Pembatasan sewenang-wenang memisahkan keluarga dan menghancurkan kehidupan"
+    ],
+    "terms": [
+      "Kedaulatan Nasional",
+      "Open Borders",
+      "Brain Drain",
+      "Birthright Citizenship"
+    ],
+    "ideal": "<strong>PRO open (Ideal):</strong> Birthplace morally arbitrary (Carens). Economic evidence: immigrants complement tidak compete dengan native workers. Demographic imperative untuk aging societies.<br><br><strong>OPP/restriction (Ideal):</strong> Democratic self-determination includes control community membership. Welfare state sustainability requires selectivity. Integration capacity is real constraint. Distinguish economic migration dari asylum — different moral obligations."
+  },
+  {
+    "id": "m024",
+    "title": "ICC dan Keadilan Internasional",
+    "orig": "International Criminal Court",
+    "cat": "hubungan-internasional",
+    "type": "pandangan",
+    "ctx": "Apakah ICC efektif dan legitimate dalam menghukum kejahatan perang dan kejahatan terhadap kemanusiaan?",
+    "pro": [
+      "Tanpa ICC, pemimpin yang lakukan genosida sering lolos dari hukuman",
+      "Keadilan internasional mengirimkan sinyal bahwa kejahatan perang tidak akan ditoleransi",
+      "Mendorong norma akuntabilitas melampaui batas kedaulatan nasional"
+    ],
+    "kon": [
+      "ICC dituduh bias terhadap Afrika — mayoritas kasusnya dari negara Afrika",
+      "Negara kuat (AS, Rusia, China) tidak meratifikasi ICC — efektivitasnya terbatas fundamental",
+      "Kedaulatan nasional seharusnya menghalangi pengadilan asing mengadili warganya"
+    ],
+    "terms": [
+      "Complementarity Principle",
+      "Universal Jurisdiction",
+      "Impunity",
+      "Kedaulatan"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame menggunakan false dichotomy argument — keamanan yang nyata tidak membutuhkan pengorbanan privasi. Surveillance massal tidak terbukti lebih efektif dari targeted surveillance yang berbasis probable cause. Cite: Report of the Presidential Policy Review Group (2013, pasca Snowden) — mass surveillance programs tidak pernah terbukti mencegah satu serangan teroris yang tidak bisa dicegah dengan metode lain.<br><br>\n<strong>OPP (Ideal):</strong> Frame menggunakan pragmatic harm reduction — di dunia yang sudah penuh surveillance (CCTV, credit cards, smartphones), pertanyaan bukan apakah privasi absolut bisa dipertahankan tapi bagaimana meminimalkan potential abuse. Argue untuk oversight yang kuat, sunset clauses, dan judicial review — bukan penolakan totalan.",
+    "research": "<strong>Solove \"Nothing to Hide\" (2011):</strong> Membantah argumen \"if you have nothing to hide, you have nothing to fear\" — privasi bukan tentang menyembunyikan sesuatu tapi tentang kontrol atas narasi dan identitas diri. <strong>Zuboff \"The Age of Surveillance Capitalism\" (2019):</strong> Analisis paling komprehensif tentang bagaimana data surveillance menjadi komoditas ekonomi — bukan hanya alat keamanan. <strong>EFF \"Panoptic Sort\" (2014, updated 2023):</strong> Dokumentasi bagaimana surveillance yang dimulai untuk keamanan nasional secara rutin di-repurpose untuk penindasan politik, imigrasi enforcement, dan kriminalisasi protest."
+  },
+  {
+    "id": "m025",
+    "title": "Pengujian Nasional / Ujian Standar",
+    "orig": "National Testing",
+    "cat": "pendidikan",
+    "type": "kebijakan",
+    "ctx": "Apakah ujian standar nasional meningkatkan kualitas pendidikan atau justru mempersempitnya?",
+    "pro": [
+      "Memberikan data objektif kinerja sekolah dan memungkinkan akuntabilitas publik",
+      "Memastikan standar minimum nasional terlepas dari lokasi geografis",
+      "Mengidentifikasi kesenjangan prestasi antar kelompok secara sistematis"
+    ],
+    "kon": [
+      "\"Teaching to the test\" mempersempit kurikulum dan mengorbankan kreativitas",
+      "Tidak mengukur keterampilan penting: kolaborasi, kreativitas, kecerdasan emosional",
+      "Sekolah di daerah miskin dihukum dua kali — oleh kemiskinan dan oleh ujian"
+    ],
+    "terms": [
+      "High-Stakes Testing",
+      "Teaching to the Test",
+      "Educational Equity"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame menggunakan accountability argument — tanpa data yang terstandar, tidak ada cara untuk mengidentifikasi sekolah yang failing dan mengintervensi sebelum generasi anak-anak dirugikan. Establish bahwa test scores, meski imperfect, adalah satu-satunya metric yang bisa dibandingkan secara lintas geografis dan sosiodemografi.<br><br>\n<strong>OPP (Ideal):</strong> Frame menggunakan Campbell's Law — \"The more any quantitative social indicator is used for social decision-making, the more subject it will be to corruption pressures and the more apt it will be to distort and corrupt the social processes it is intended to monitor.\" Argue bahwa high-stakes testing menciptakan persis distorsi yang Campbell's Law prediksi: teaching to the test, cheating scandals, exclusion of hard students.",
+    "research": "<strong>Ravitch \"The Death and Life of the Great American School System\" (2010):</strong> Mantan pendukung NCLB yang kemudian menjadi kritikus terkeras — dokumentasi empiris bagaimana high-stakes testing memperburuk pendidikan. <strong>PISA Paradox:</strong> Finlandia, yang secara konsisten top PISA, tidak menggunakan standardized testing sama sekali sampai akhir sekolah — menantang asumsi bahwa testing diperlukan untuk outcomes yang baik. <strong>Linda Darling-Hammond (Stanford):</strong> Penelitian longitudinal menunjukkan bahwa teacher quality adalah predictor outcome jauh lebih kuat dari testing regime — implikasi untuk dimana resource seharusnya diinvestasikan."
+  },
+  {
+    "id": "m026",
+    "title": "Seragam Sekolah",
+    "orig": "School Uniforms",
+    "cat": "pendidikan",
+    "type": "kebijakan",
+    "ctx": "Haruskah sekolah mewajibkan seragam bagi semua siswa?",
+    "pro": [
+      "Menciptakan rasa komunitas dan mendorong disiplin akademik",
+      "Bertindak sebagai social leveler — semua siswa setara di mata sekolah",
+      "Menghemat pengeluaran keluarga dari tekanan membeli pakaian trendi"
+    ],
+    "kon": [
+      "Menekan individualitas dan mencegah siswa mengembangkan ekspresi diri",
+      "Banyak sekolah unggul tanpa seragam — korelasi bukan kausalitas",
+      "Peraturan penampilan tidak seharusnya menjadi kewajiban yang dipaksakan pemerintah"
+    ],
+    "terms": [
+      "Identitas Kolektif",
+      "Ekspresi Diri",
+      "Social Leveler"
+    ],
+    "ideal": "<strong>PRO seragam (Ideal):</strong> Socioeconomic signaling dari clothing → bullying dan peer pressure. Seragam removes wealth signaling → more equal environment. Evidence dari urban districts showing improved attendance.<br><br><strong>OPP (Ideal):</strong> Seragam menghilangkan self-expression penting untuk identity development. Evidence mixed — school culture, teacher quality matter far more than uniform policy."
+  },
+  {
+    "id": "m027",
+    "title": "Pendidikan Seks di Sekolah",
+    "orig": "Sex Education in Schools",
+    "cat": "pendidikan",
+    "type": "kebijakan",
+    "ctx": "Haruskah sekolah memberikan pendidikan seks komprehensif berbasis bukti ilmiah?",
+    "pro": [
+      "Pendidikan seks berbasis bukti mengurangi kehamilan remaja dan PMS secara terukur",
+      "Anak perlu informasi akurat untuk membuat keputusan yang aman",
+      "Abstinence-only terbukti tidak efektif dalam menunda aktivitas seksual"
+    ],
+    "kon": [
+      "Tanggung jawab orang tua, bukan negara atau sekolah",
+      "Dapat mendorong aktivitas seksual dini",
+      "Nilai budaya dan agama harus dihormati dalam konten pendidikan anak"
+    ],
+    "terms": [
+      "Abstinence-Only",
+      "Comprehensive Sex Education",
+      "Reproductive Health"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Kepentingan anak lebih penting dari hak prerogatif orang tua di domain kesehatan. Lack of sex ed → ignorance → teenage pregnancy, STIs, inability to recognize abuse. Countries dengan comprehensive sex ed memiliki LOWER teen pregnancy rates.<br><br><strong>OPP (Ideal):</strong> Orang tua memiliki hak untuk shape nilai dan moral education anaknya. Age-appropriateness adalah legitimate concern. Opt-out mechanism sebagai compromise yang respects kedua kepentingan."
+  },
+  {
+    "id": "m028",
+    "title": "Voucher Sekolah",
+    "orig": "School Vouchers",
+    "cat": "pendidikan",
+    "type": "kebijakan",
+    "ctx": "Haruskah orang tua diberikan voucher pemerintah untuk menyekolahkan anak di sekolah swasta pilihan mereka?",
+    "pro": [
+      "Kompetisi antara sekolah meningkatkan kualitas untuk semua",
+      "Memberikan orang tua miskin pilihan yang sebelumnya hanya bagi yang kaya",
+      "Mendorong inovasi pedagogis melalui keragaman sekolah"
+    ],
+    "kon": [
+      "Mengalihkan dana dari sekolah negeri yang sudah kekurangan",
+      "Tidak semua keluarga mampu memanfaatkan sistem voucher secara efektif",
+      "Dapat mendanai sekolah berbasis agama dengan uang publik"
+    ],
+    "terms": [
+      "School Choice",
+      "Educational Privatization",
+      "Parochial Schools"
+    ],
+    "ideal": "<strong>PRO voucher (Ideal):</strong> Parental choice dan market competition → improve quality. Wealthy families already have school choice — vouchers democratize access untuk poor. Evidence dari Milwaukee, DC voucher programs.<br><br><strong>OPP (Ideal):</strong> Vouchers drain resources dari public schools yang majority students attend. Cream-skimming: private schools select best students, public schools left with hardest-to-teach. Fix public schools bukan abandon them."
+  },
+  {
+    "id": "m029",
+    "title": "Sekolah Single-Sex",
+    "orig": "Single-Sex Schools",
+    "cat": "pendidikan",
+    "type": "pandangan",
+    "ctx": "Apakah sekolah yang dipisahkan berdasarkan gender memberikan pendidikan yang lebih baik?",
+    "pro": [
+      "Penelitian menunjukkan siswi berkinerja lebih baik dalam sains di sekolah perempuan",
+      "Mengurangi tekanan sosial terkait gender",
+      "Beberapa siswa belajar lebih baik tanpa distraksi antargender"
+    ],
+    "kon": [
+      "Mempersiapkan siswa untuk dunia nyata heterogen membutuhkan interaksi antargender",
+      "Tidak ada bukti konsisten sekolah single-sex lebih baik secara umum",
+      "Justru memperkuat stereotip gender daripada menantangnya"
+    ],
+    "terms": [
+      "Gender Segregation",
+      "Co-education",
+      "Gender Stereotype"
+    ],
+    "ideal": "<strong>PRO single-sex (Ideal):</strong> Remove gender dynamics dari classroom → girls outperform di STEM, boys improve in humanities. Developmental appropriateness — different learning dynamics at adolescent stage.<br><br><strong>OPP (Ideal):</strong> Segregasi berdasarkan gender tidak prepare students untuk mixed-gender world. Socialization dengan opposite gender adalah educational experience itself. Co-ed schools dengan good pedagogy outperform single-sex."
+  },
+  {
+    "id": "m030",
+    "title": "Biodiversitas dan Spesies Terancam",
+    "orig": "Biodiversity and Endangered Species",
+    "cat": "lingkungan",
+    "type": "kebijakan",
+    "ctx": "Seberapa jauh perlindungan spesies terancam punah, bahkan jika menghalangi pembangunan ekonomi?",
+    "pro": [
+      "Kepunahan bersifat permanen dan ireversibel — merusak ekosistem yang saling bergantung",
+      "Keanekaragaman hayati memiliki nilai intrinsik di luar utilitas ekonomi",
+      "Generasi mendatang berhak mewarisi planet yang sama kayanya"
+    ],
+    "kon": [
+      "Pembangunan ekonomi di negara miskin diperlukan untuk mengurangi kemiskinan manusia",
+      "Tidak semua spesies memiliki nilai ekologis yang sama — prioritas harus dibuat pragmatis",
+      "Manusia juga bagian dari ekosistem dan kebutuhan kita valid"
+    ],
+    "terms": [
+      "Sixth Mass Extinction",
+      "Intrinsic Value",
+      "Conservation vs Development"
+    ],
+    "ideal": "<strong>PRO proteksi (Ideal):</strong> Intrinsic value of species beyond instrumental value to humans. Biodiversity sebagai ecosystem services — keystone species removal causes cascade collapse. Irreversibility argument: extinction permanent.<br><br><strong>OPP/balance (Ideal):</strong> Triage approach — tidak semua species can atau should be saved. Human development needs dapat justify some habitat loss. Focus conservation resources on most ecologically critical species dan habitats."
+  },
+  {
+    "id": "m031",
+    "title": "Pengujian Obat di Sekolah",
+    "orig": "Drug Testing in Schools",
+    "cat": "pendidikan",
+    "type": "kebijakan",
+    "ctx": "Haruskah sekolah menguji siswa untuk penggunaan narkoba sebagai kondisi partisipasi ekstrakurikuler?",
+    "pro": [
+      "Memberikan alasan bagi remaja untuk menolak narkoba dari tekanan teman sebaya",
+      "Intervensi dini dapat menyelamatkan anak dari ketergantungan jangka panjang",
+      "Sekolah memiliki kewajiban memastikan lingkungan belajar yang aman"
+    ],
+    "kon": [
+      "Melanggar privasi siswa dan presumption of innocence",
+      "Penelitian menunjukkan pengujian narkoba tidak efektif mengurangi penggunaan siswa",
+      "Mendorong siswa yang membutuhkan bantuan menjauh dari aktivitas sekolah"
+    ],
+    "terms": [
+      "Student Privacy",
+      "Harm Reduction",
+      "Fourth Amendment"
+    ],
+    "ideal": "<strong>PRO pengujian (Ideal):</strong> Drug-free environment adalah prerequisite untuk effective learning. Random testing deterrence reduces use — evidence dari military dan workplace programs. Parental consent model: opt-in untuk extracurriculars, tidak wajib untuk semua siswa. Kausalistik: testing → deterrence → reduced peer pressure → healthier school climate → better outcomes.<br><br><strong>OPP (Ideal):</strong> Fourth Amendment violation — unreasonable search without individualized suspicion. Stigmatizing dan traumatizing false positives yang inevitable. Evidence: ACLU data menunjukkan school drug testing tidak reduce drug use. Trust destruction antara students dan school administration. Counseling dan education more effective dan less invasive."
+  },
+  {
+    "id": "m032",
+    "title": "Pemungutan Suara Wajib",
+    "orig": "Compulsory Voting",
+    "cat": "politik",
+    "type": "kebijakan",
+    "ctx": "Haruskah pemungutan suara diwajibkan dengan sanksi bagi yang tidak memilih?",
+    "pro": [
+      "Partisipasi tinggi menciptakan mandat demokratis yang lebih kuat dan representatif",
+      "Kelompok miskin dan marginal yang biasanya tidak berpartisipasi akan terwakili",
+      "Australia memiliki sistem ini yang bekerja baik selama puluhan tahun"
+    ],
+    "kon": [
+      "Memaksakan pilihan pada yang tidak berminat menciptakan suara tidak terinformasi",
+      "Kebebasan termasuk kebebasan untuk tidak berpartisipasi",
+      "Rendahnya partisipasi adalah sinyal ketidakpuasan yang valid"
+    ],
+    "terms": [
+      "Demokrasi Deliberatif",
+      "Apati Politik",
+      "Civic Duty"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame menggunakan \"voice of the disengaged\" argument — kelompok yang paling tidak berpartisipasi dalam pemilu (miskin, muda, marginal) adalah yang paling terkena dampak kebijakan. Compulsory voting memastikan politicians harus memenangkan hati mereka, bukan hanya activate base. Australia sebagai proof of concept: 90%+ turnout selama 80 tahun, no democratic collapse, politicians genuinely harus appeal ke swing voters yang moderat.<br><br>\n<strong>OPP (Ideal):</strong> Frame menggunakan \"quality over quantity\" argument — uninformed votes tidak lebih baik dari no vote. Argue bahwa forced participation menciptakan random noise dalam electoral outcomes, menguntungkan populist messaging yang simple. Liberty argument: forcing participation in political process violates basic freedom of conscience.",
+    "research": "<strong>Lijphart \"Unequal Participation\" (1997):</strong> Analisis klasik tentang siapa yang tidak memilih dan implikasinya bagi representasi — compulsory voting adalah solusi paling efektif untuk ketidaksetaraan partisipasi. <strong>Selb & Lachat (2009):</strong> Quasi-experiment menggunakan Swiss cantonal variation — compulsory voting meningkatkan partisipasi tapi juga meningkatkan \"donkey voting\" (random choice). <strong>Brennan \"The Ethics of Voting\" (2011):</strong> Epistocracy argument — jika voters tidak kompeten, mereka memiliki \"moral duty to abstain\" — compulsory voting melanggar prinsip ini. Controversial tapi philosophically rigorous."
+  },
+  {
+    "id": "m033",
+    "title": "Riset Sel Punca dan Kloning Terapeutik",
+    "orig": "Stem Cell Research",
+    "cat": "teknologi",
+    "type": "kebijakan",
+    "ctx": "Haruskah penelitian sel punca embrionik dilanjutkan meskipun memerlukan penghancuran embrio?",
+    "pro": [
+      "Potensi menyembuhkan Parkinson, Alzheimer, dan diabetes membenarkan penelitian ini",
+      "Embrio awal tidak memiliki status moral yang sama dengan manusia yang sudah lahir",
+      "Alternatif (sel punca dewasa) memiliki keterbatasan ilmiah yang signifikan"
+    ],
+    "kon": [
+      "Embrio manusia, bahkan pada tahap awal, memiliki potensi kehidupan penuh yang harus dilindungi",
+      "Membuka pintu menuju desain manusia dan eugenika terselubung",
+      "Kemajuan iPSC dapat menggantikan kebutuhan embrio secara lebih etis"
+    ],
+    "terms": [
+      "Embrio",
+      "iPSC",
+      "Therapeutic Cloning",
+      "Bioethics"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Medical benefit adalah overwhelming justification. Embryos used sudah destined for destruction (IVF surplus). Blastocyst has no sentience. Research oversight through IRB sufficient.<br><br><strong>OPP (Ideal):</strong> Moral status dari human embryo regardless of development stage. Slippery slope ke reproductive cloning. Adult stem cell research producing comparable results — redirect to ethically uncontroversial alternatives."
+  },
+  {
+    "id": "m034",
+    "title": "Sumber Daya Air: Hak atau Komoditas?",
+    "orig": "Water Resources",
+    "cat": "lingkungan",
+    "type": "pandangan",
+    "ctx": "Haruskah air diprivatisasi dan diperlakukan sebagai komoditas pasar?",
+    "pro": [
+      "Privatisasi menciptakan insentif efisiensi dan investasi dalam infrastruktur air",
+      "Harga pasar mencegah pemborosan dan memastikan alokasi yang lebih efisien",
+      "Perusahaan swasta sering lebih efektif dari birokrasi pemerintah"
+    ],
+    "kon": [
+      "Air adalah hak asasi fundamental yang tidak bisa dimonopoli oleh kepentingan komersial",
+      "Privatisasi air (Bolivia 2000, Thames) menunjukkan harga naik tanpa peningkatan kualitas",
+      "Pasar tidak bisa memberi air kepada yang tidak mampu membayar"
+    ],
+    "terms": [
+      "Tragedy of the Commons",
+      "Public Good",
+      "Commodification",
+      "Water Scarcity"
+    ],
+    "ideal": "<strong>PRO hak/publik (Ideal):</strong> Water sebagai fundamental human right yang tidak bisa di-commodify. Privatization → profit motive → price gouging → access denial untuk poor. State responsibility untuk ensure universal access.<br><br><strong>OPP/komoditas (Ideal):</strong> Treating water as free commons → overconsumption dan waste. Price signals allocate scarce resource more efficiently. Targeted subsidies untuk poor lebih efficient dari price controls yang benefit everyone equally."
+  },
+  {
+    "id": "m035",
+    "title": "HAM: Eksistensi dan Universalitas",
+    "orig": "Human Rights: Existence of",
+    "cat": "filosofi",
+    "type": "pandangan",
+    "ctx": "Apakah hak asasi manusia benar-benar universal atau konstruksi budaya Barat yang di-impose?",
+    "pro": [
+      "Ada hak yang secara intuitif universal — larangan penyiksaan, perbudakan — lintas budaya",
+      "Tanpa hak universal tidak ada dasar mengkritik pelanggaran di negara mana pun",
+      "HAM memberikan standar minimum melindungi yang paling rentan dari kesewenangan"
+    ],
+    "kon": [
+      "Konsep HAM berasal dari tradisi filsafat Barat dan tidak bisa diklaim sebagai alami universal",
+      "Relativisme budaya yang sah: apa yang dianggap \"hak\" berbeda bermakna antar masyarakat",
+      "Penegakan HAM sering digunakan sebagai dalih intervensi yang bermotif geopolitik"
+    ],
+    "terms": [
+      "Universalisme",
+      "Relativisme Budaya",
+      "Natural Rights",
+      "Human Dignity"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame menggunakan empirical history argument — setiap pembatasan kebebasan sipil yang diperkenalkan sebagai \"sementara dan darurat\" dalam sejarah menjadi permanen. USA PATRIOT Act 2001 sebagai bukti: dirancang sementara, diperpanjang 14 kali. Establish bahwa security yang mensyaratkan mengorbankan liberty tidak benar-benar aman — ini hanya mengganti satu ancaman dengan ancaman yang lebih insidious.<br><br>\n<strong>OPP (Ideal):</strong> Frame menggunakan proportionality argument — tidak semua security measures sama: targeted surveillance dengan judicial oversight ≠ mass surveillance. Argue untuk sunset clauses yang genuine dan independent oversight bodies — bukan tolak seutuhnya, tapi desain yang mencegah mission creep.",
+    "research": "<strong>Dworkin \"Rights as Trumps\" (1978):</strong> Hak fundamental tidak bisa dikompromikan oleh kalkulasi utilitarian — ini adalah inti liberal theory yang menolak security-liberty tradeoff framing. <strong>Posner & Vermeule \"Terror in the Balance\" (2007):</strong> Counter-argument — dalam extreme emergencies, executive discretion harus meluas dan judicial review harus berkurang. Controversial tapi influential dalam post-9/11 policy. <strong>Lazarus \"Restoring What's Just\" (2022):</strong> Data dari COVID-19 era menunjukkan bahwa emergency powers yang diberikan kepada eksekutif sistematis disalahgunakan di 80+ negara untuk tujuan di luar penanganan pandemi."
+  },
+  {
+    "id": "m036",
+    "title": "Veto DK PBB, Penghapusan",
+    "orig": "UN Security Council Veto",
+    "cat": "hubungan-internasional",
+    "type": "kebijakan",
+    "ctx": "Haruskah hak veto tetap anggota DK PBB dihapus demi efektivitas dan legitimasi?",
+    "pro": [
+      "Veto memungkinkan kekuatan besar memblokir tindakan terhadap kejahatan mereka sendiri",
+      "Dunia telah berubah sejak 1945 — struktur DK tidak mencerminkan realitas geopolitik",
+      "PBB yang lebih demokratis lebih efektif menangani krisis global"
+    ],
+    "kon": [
+      "Tanpa veto, kekuatan besar mungkin menarik diri dari PBB — membuatnya tidak relevan",
+      "Hak veto mencegah PBB digunakan untuk memaksakan kehendak mayoritas kepada kekuatan besar",
+      "Konsensus antara kekuatan besar, meski lambat, menghasilkan keputusan lebih stabil"
+    ],
+    "terms": [
+      "P5",
+      "Multilateralisme",
+      "Great Power Politics",
+      "UN Reform"
+    ],
+    "ideal": "<strong>PRO hapus veto (Ideal):</strong> P5 veto power reflects 1945 power distribution yang completely obsolete. Veto enables authoritarian states to block accountability for own atrocities (Russia/Syria). Reform: limit veto scope to Chapter VII enforcement.<br><br><strong>OPP (Ideal):</strong> Veto ensures great power buy-in untuk UN decisions. Without veto, P5 might withdraw entirely. Better: work around UNSC through Uniting for Peace resolution than structural reform yang P5 akan never accept."
+  },
+  {
+    "id": "m037",
+    "title": "Komersialisasi Kematian",
+    "orig": "Commercialization of Death",
+    "cat": "sosial",
+    "type": "penyesalan",
+    "comp": "SLDC 2025",
+    "ctx": "Dewan ini menyesali meningkatnya komersialisasi kematian — proses di mana kematian dan ritual berduka diubah menjadi komoditas yang diperjualbelikan.",
+    "pro": [
+      "Menggeser kesedihan menjadi peluang bisnis yang tidak etis dan manipulatif",
+      "Dehumanisasi dan erosi makna ritual menjadi transaksional yang dingin dan kejam",
+      "Status quo: tradisi kematian dinilai mewah dan bergantung standar ekonomi materialistik"
+    ],
+    "kon": [
+      "Profesionalisme layanan membantu masyarakat modern mengelola kematian secara bermartabat",
+      "Kebebasan memilih ritual pemakaman dan kesiapan finansial adalah hak yang harus dihormati",
+      "Peluang lapangan kerja dan kesiapan finansial yang semakin progresif"
+    ],
+    "terms": [
+      "Komodifikasi",
+      "Death Industry",
+      "Grief Capitalism",
+      "Ritual"
+    ],
+    "ideal": "<strong>PRO regulasi (Ideal):</strong> Funeral industry exploits bereaved families yang vulnerable, tidak bisa negotiate rationally. Hidden costs, aggressive upselling. Consumer protection framework untuk deathcare industry — dignity dalam kematian tidak harus mahal.<br><br><strong>OPP (Ideal):</strong> Market enables choice dan customization. Transparency requirements lebih proportionate dari price controls. Religious dan cultural traditions around death serve genuine social function yang pasar membantu deliver."
+  },
+  {
+    "id": "m038",
+    "title": "\"Selamanya\" Bukan Standar Hubungan Romantis",
+    "orig": "\"Forever\" Non-Standard in Romance",
+    "cat": "sosial",
+    "type": "memilih",
+    "comp": "PRA-LDI BAHANA ARUTALA 2025",
+    "ctx": "Dewan ini memilih dunia di mana \"selamanya\" tidak pernah menjadi harapan standar dalam hubungan romantis.",
+    "pro": [
+      "Status quo membuat orang tertekan dengan narasi \"selamanya\" yang menjadi toksik",
+      "Hubungan dinamis — menghargai kualitas dibandingkan durasi lebih sehat",
+      "Keterhambatan pada toxic relationship karena narasi selamanya menciptakan stigmatisasi sosial"
+    ],
+    "kon": [
+      "Hubungan butuh narasi ini sebagai penyeimbang agar tidak mudah menyerah",
+      "Orang akan gampang melepas hubungan hanya karena masalah kecil",
+      "Nilai pengorbanan, kegigihan, dan komunikasi mendalam dibangun karena komitmen selamanya"
+    ],
+    "terms": [
+      "Commitment Phobia",
+      "Relationship Permanence",
+      "Toxic Relationship",
+      "Romantic Expectations"
+    ],
+    "ideal": "<strong>PRO commitment (Ideal):</strong> Forever sebagai commitment device memiliki real value — investment dalam relationship, vulnerability, joint life-building. Serial monogamy norm creates relationship precarity yang harms especially women dan children.<br><br><strong>OPP (Ideal):</strong> Autonomy — individuals harus define their own relationship structures. Forcing forever standard harms people stuck in bad relationships. Diverse relationship models adalah equally valid expressions of human connection."
+  },
+  {
+    "id": "m039",
+    "title": "Sistem Ranking Universitas Berbasis Dampak Sosial",
+    "orig": "Social Impact University Ranking",
+    "cat": "pendidikan",
+    "type": "kebijakan",
+    "comp": "KDMI Regional 2025",
+    "ctx": "Dewan ini akan menggunakan indikator dampak sosial sebagai parameter utama dalam menentukan sistem ranking universitas.",
+    "pro": [
+      "Sistem ranking saat ini tidak relevan — kuantitas jurnal mudah dimanipulasi tanpa dampak nyata",
+      "Reorientasi moral — universitas fokus kebermanfaatan dan dampak nyata bukan prestise",
+      "Perubahan insentif dan alokasi sumber daya — mendanai riset terdepan yang berdampak langsung"
+    ],
+    "kon": [
+      "Pemerataan akses pendidikan masih bergantung pada reputasi dan nama universitas",
+      "Indikator dampak sosial belum sesignifikan itu karena akses pekerjaan terbatas",
+      "Menggeser standar pendidikan menjadi lembaga amal — tujuan utama perguruan tinggi adalah penciptaan ilmu"
+    ],
+    "terms": [
+      "Social Impact Measurement",
+      "Academic Metrics",
+      "Research Output",
+      "University Accountability"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame sebagai mosi penyesalan — kontrafakta kuat: sebelum sistem ranking saat ini (QS, THE, Shanghai), universitas Indonesia masih bisa menghasilkan riset yang relevan tanpa obsesi metriks. Establish bahwa ranking berbasis jurnal internasional menciptakan incentive yang mendistorsi seluruh sistem: dosen dipaksa publish dalam journal yang tidak relevan untuk komunitas mereka, mahasiswa diabaikan untuk mengejar h-index.<br><br>\n<strong>OPP (Ideal):</strong> Argue bahwa tanpa metrics yang objektif, ranking akan lebih korup dan subjektif. Frame: imperfect metrics masih lebih baik dari pure reputation-based ranking yang hanya menguntungkan universitas lama yang sudah established. Argue untuk reform metrics, bukan abolisi.",
+    "research": "<strong>Hazelkorn \"Rankings and the Reshaping of Higher Education\" (2015):</strong> Studi paling komprehensif tentang bagaimana ranking mengubah perilaku universitas global — menunjukkan gaming dan mission drift di seluruh dunia. <strong>Marginson \"University Rankings and Social Science\" (2014):</strong> Kritik metodologis terhadap ranking systems — menunjukkan bahwa rankings mengukur prestige, bukan quality atau social impact. <strong>UNESCO \"Rethinking Education\" (2021):</strong> Seruan untuk redefine university purpose di era post-pandemic — dari knowledge production untuk elites ke knowledge distribution untuk sustainable development."
+  },
+  {
+    "id": "m040",
+    "title": "Kardinal Konservatif Mengisi Kepausan",
+    "orig": "Conservative Cardinal Papal Vacancy",
+    "cat": "agama",
+    "type": "pandangan",
+    "comp": "NDC 2025",
+    "ctx": "Dewan ini percaya Kardinal Konservatif harus menggantikan kekosongan bangku kepausan saat ini.",
+    "pro": [
+      "Gereja dalam masa krisis akibat pengaruh liberasi — Paus konservatif penting untuk menahan",
+      "Rekonsiliasi — Paus konservatif merangkul kelompok tradisionalis yang merasa ditinggalkan",
+      "Fungsi gereja sebagai standar moral mutlak harus dipertahankan"
+    ],
+    "kon": [
+      "Gereja yang kaku akan menjadi tidak relevan dan menjauhkan umat dari Tuhan",
+      "Relevansi gereja bergantung pada kemampuan beradaptasi agar pemeluk merasa dikasihi",
+      "Polarisasi global akan semakin dalam jika kepemimpinan tidak mau berkompromi"
+    ],
+    "terms": [
+      "Konservatisme Religius",
+      "Schism",
+      "Papal Authority",
+      "Tradisionalisme Katolik"
+    ],
+    "ideal": "<strong>PRO konservatif (Ideal):</strong> Continuity doctrine — Church lebih stable dengan predictable continuation. Conservative candidate melindungi doctrinal consistency yang adalah basis institutional legitimacy Catholic Church.<br><br><strong>OPP/progresif (Ideal):</strong> Church membership declining in Global North requires renewal. Francis-era reforms are unfinished. Clergy abuse crisis, womens role, LGBTQ pastoral care — existential issues untuk relevance."
+  },
+  {
+    "id": "m041",
+    "title": "Feminisme: Advokasi Mahar",
+    "orig": "Feminist Advocacy for Mahar",
+    "cat": "sosial",
+    "type": "aktor",
+    "comp": "ProAms 2025",
+    "ctx": "Dewan ini, sebagai feminis, akan secara aktif mengadvokasikan Mahar — pemberian dari mempelai pria kepada wanita dalam pernikahan dari tradisi Islam.",
+    "pro": [
+      "Mahar sebagai kedaulatan finansial bagi perempuan dalam institusi pernikahan patriarkal",
+      "Otonomi finansial — perempuan memiliki aset yang diakui secara hukum sejak awal pernikahan",
+      "Bentuk pengakuan atas nilai perempuan dalam institusi pernikahan"
+    ],
+    "kon": [
+      "Mahar melanggengkan logika bahwa perempuan adalah \"barang\" yang ditukar dengan nilai materi",
+      "Komodifikasi atas tubuh perempuan — memperkuat patriarki yang berkuasa",
+      "Gerakan feminis seharusnya mendorong permasalahan yang lebih substansial"
+    ],
+    "terms": [
+      "Bride Price",
+      "Patriarki",
+      "Otonomi Finansial",
+      "Feminist Standpoint Theory"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Frame sebagai mosi feminisme-aktor — dari perspektif feminis, mahar bukan sekadar tradisi tapi redistribusi kekayaan dalam konteks pernikahan yang historically men-controlled. Establish bahwa dalam realitas di mana perempuan masih menghadapi pay gap dan property inequality, mahar berfungsi sebagai \"financial security deposit\" yang genuine. Counter: \"ini mengkomodifikasi perempuan\" — justru sebaliknya, ini mengakui nilai ekonomi perempuan yang selama ini tidak diakui.<br><br>\n<strong>OPP (Ideal):</strong> Argue dari sudut pandang feminis interseksional — mahar dalam prakteknya sering menjadi alat tekanan: keluarga yang tidak mampu membayar mahar tinggi mengalami shaming, perempuan yang \"terlalu mahal\" tidak menikah. Frame: gerakan feminis seharusnya mendorong structural changes bukan adaptasi dalam patriarchal system.",
+    "research": "<strong>Agarwal \"A Field of One's Own\" (1994):</strong> Studi tentang property rights perempuan di Asia Selatan — menunjukkan bahwa kontrol atas aset (termasuk mahar) adalah prediktor terkuat autonomy dan bargaining power perempuan dalam rumah tangga. <strong>Sen \"Gender and Cooperative Conflicts\" (1990):</strong> Bargaining approach to family — perempuan dengan lebih banyak \"fallback option\" (termasuk aset dari mahar) memiliki leverage lebih dalam family decision-making. <strong>Mackie \"Ending Footbinding and Infibulation\" (1996):</strong> Theory of conventional practices — mahar bukan sekadar tradisi individual tapi conventional equilibrium yang sulit diubah unilateral, justifying collective approach."
+  },
+  {
+    "id": "m042",
+    "title": "Presiden Prabowo Menang Pemilu 2029",
+    "orig": "Prabowo Wins 2029 Election",
+    "cat": "indonesia",
+    "type": "prediksi",
+    "comp": "Entritons 2026",
+    "ctx": "Dewan ini memprediksi Presiden Prabowo akan menang pemilu 2029 berdasarkan analisis kondisi politik Indonesia yang dinamis.",
+    "pro": [
+      "Kondisi politik dinamis — yang bermasalah adalah persekusi struktural, bukan Prabowo sendiri",
+      "Legitimasi kekuasaan Prabowo yang menunjukkan empatinya terhadap negara",
+      "Dinamika politik Indonesia kompleks di tengah krisis politik global mendukung stabilitas incumbent"
+    ],
+    "kon": [
+      "Banyak kebijakan tidak pro rakyat dan menyelipkan agenda kepentingan dinasti politik",
+      "Kepentingan menaikkan Gibran sebagai calon presiden akan menggerogoti popularitas Prabowo",
+      "Elaktibilitas masyarakat menurun — bergantung pada stigma kebijakan dan blunder pemerintah"
+    ],
+    "terms": [
+      "Dinasti Politik",
+      "Incumbent Advantage",
+      "Elektabilitas",
+      "Political Volatility"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Incumbency advantage, infrastructure pembangunan, conditional cash transfers sebagai political capital. Strong base voter mobilization dari rural dan lower-middle class jika economic performance continues.<br><br><strong>OPP (Ideal):</strong> Presidential approval ratings volatile, coalition fragility, potential economic headwinds. Indonesian presidents rarely win with same margin in second election. Opposition consolidation possible."
+  },
+  {
+    "id": "m043",
+    "title": "DebateHub Eksis",
+    "orig": "DebateHub Platform",
+    "cat": "teknologi",
+    "type": "harapan",
+    "comp": "Themis BP OPEN 2026",
+    "ctx": "Dewan ini berharap DebateHub eksis — platform yang mentransformasikan aktivitas debat menjadi ekosistem melalui gamifikasi dan kuantifikasi performa pendebat.",
+    "pro": [
+      "Tidak ada ukuran perkembangan debat yang objektif dan terstandar untuk novice",
+      "Pemetaan progresifitas debat menjadi bahan evaluasi dan tolok ukur yang jelas",
+      "Melindungi dari kecurangan melalui penerapan status yang terverifikasi"
+    ],
+    "kon": [
+      "Esensi debat beragam — ada yang ikut untuk fun, menang, copping mechanism, dan lainnya",
+      "Ketika ini ada akan menciderai aktor yang terdampak karena standar penilaian berbeda",
+      "Penerapan sistem yang belum stabil — WSDC dinilai dari retorika, WUDC dari substansi"
+    ],
+    "terms": [
+      "Gamification",
+      "Competitive Ranking",
+      "Debating Ecosystem",
+      "Performance Metrics"
+    ],
+    "ideal": "<strong>PRO DebateHub Eksis (Ideal):</strong> Platform debat digital memenuhi gap yang tidak bisa diisi oleh kompetisi offline — accessibility, practice frequency, feedback loop. Kausalistik: DebateHub → more practice reps → faster skill development → better debaters → stronger circuit. Democratizes access ke coaching resources untuk sekolah di luar kota besar.<br><br><strong>OPP (Ideal):</strong> Digital debating tidak replace face-to-face skills yang dibutuhkan dalam kompetisi nyata — manner, presence, POI dynamics semua berbeda online. Platform dependency creates fragility. Traditional coaching relationships dan mentorship lebih effective untuk holistic development."
+  },
+  {
+    "id": "m044",
+    "title": "DebateHub Eksis",
+    "orig": "DebateHub Platform",
+    "cat": "sosial",
+    "type": "harapan",
+    "comp": "Themis BP OPEN 2026",
+    "ctx": "Mosi DebateHub — lihat kategori Teknologi.",
+    "pro": [
+      "Lihat tab Teknologi"
+    ],
+    "kon": [
+      "Lihat tab Teknologi"
+    ],
+    "terms": [],
+    "ideal": "<strong>PRO (Ideal):</strong> Ekosistem debat digital yang terintegrasi menciptakan network effects — lebih banyak users → lebih banyak resources → lebih banyak improvement. Standardization platform memudahkan cross-circuit learning dan comparison.<br><br><strong>OPP (Ideal):</strong> Proliferation of platforms fragents community. Better: strengthen existing institutions (LDBI, PKN) dengan digital tools, bukan create separate digital ecosystem yang potentially siphons talent dan attention dari official circuit."
+  },
+  {
+    "id": "m045",
+    "title": "Eskalasi Pengajaran Agama Terkait Lingkungan",
+    "orig": "Religion-Based Environmental Education",
+    "cat": "agama",
+    "type": "dukungan",
+    "comp": "IDEONIC 2026",
+    "ctx": "Dewan ini mendukung eskalasi pengajaran agama yang berkaitan dengan topik lingkungan, contoh: konsep Tobat Ekologis dari Gereja Katolik.",
+    "pro": [
+      "Kerusakan lingkungan akibat keserakahan individu — agama mengintervensi di level nilai dan moralitas",
+      "Internalisasi nilai agama membantu perubahan perilaku — manusia sebagai penjaga bukan penguasa",
+      "Mobilisasi massa di akar rumput melalui komunitas agama yang kuat dan terorganisir"
+    ],
+    "kon": [
+      "Masalah struktural ekonomi tidak bisa diselesaikan dengan doa atau tobat ekologis individual",
+      "Menjadikan kerusakan lingkungan sebagai \"dosa\" adalah simplifikasi yang mengalihkan dari tanggung jawab struktural",
+      "Fragmentasi dan politisasi nilai agama yang berbahaya"
+    ],
+    "terms": [
+      "Eco-theology",
+      "Ecological Penance",
+      "Religious Environmentalism"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Religious institutions memiliki moral authority yang scientists tidak untuk mobilize behavioral change. Religious framing → intrinsic duty narrative → behavior change di religiously-motivated populations. Precedent: evangelical conservation, Islamic green theology, Catholic Laudato Si.<br><br><strong>OPP (Ideal):</strong> Religion harus tidak dicampur dengan scientific policy. Environmental protection becomes sectarian when framed religiously. Universal secular framing includes everyone. Risk of religious capture of environmental movement."
+  },
+  {
+    "id": "m046",
+    "title": "MKPK sebagai Syarat Kelulusan Universitas",
+    "orig": "MKPK University Graduation Requirement",
+    "cat": "pendidikan",
+    "type": "penyesalan",
+    "comp": "Pentra 1.0 2026",
+    "ctx": "Dewan ini menyesalkan kewajiban Mata Kuliah Penguatan Kompetensi (MKPK) sebagai syarat kelulusan di universitas.",
+    "pro": [
+      "Syarat kelulusan seharusnya bergantung pada pengalaman akademis nyata, bukan sistem poin artifisial",
+      "Kalau sistem poin tolak ukurnya tidak masif dan tidak terstandar, hasilnya tidak bermakna",
+      "MKPK menciptakan beban administratif tidak proporsional dengan manfaat akademisnya"
+    ],
+    "kon": [
+      "MKPK memberikan standar minimum kompetensi yang terukur secara formal",
+      "Memastikan lulusan siap menghadapi tantangan dunia kerja secara holistik",
+      "Mendorong mahasiswa aktif berorganisasi dan mengembangkan soft skills"
+    ],
+    "terms": [
+      "Soft Skills",
+      "Kompetensi Lulusan",
+      "Syarat Kelulusan",
+      "Experiential Learning"
+    ],
+    "ideal": "<strong>PRO MKPK (Ideal):</strong> Non-academic skills equally important sebagai academic credentials. MKPK ensures holistic development. Employer surveys: companies prioritize collaboration, communication, problem-solving over GPA.<br><br><strong>OPP (Ideal):</strong> Credential inflation yang tidak measures competency genuinely. Burden disproportionate pada working-class students tanpa time/money untuk extracurriculars. Gaming: students participate untuk checkboxes, not genuine development."
+  },
+  {
+    "id": "m047",
+    "title": "Evakuasi Planet: Terampil vs Keluarga",
+    "orig": "Planetary Evacuation Skilled vs Family",
+    "cat": "filosofi",
+    "type": "kebijakan",
+    "comp": "UCDC Nasional 2026",
+    "ctx": "Dewan ini akan memprioritaskan individu terampil dibandingkan seleksi berbasis keluarga dalam program evakuasi planet saat krisis eksistensial.",
+    "pro": [
+      "Kelangsungan spesies membutuhkan individu dengan keterampilan membangun kembali peradaban",
+      "Utilitas kolektif mensyaratkan efisiensi — emosi dan ikatan keluarga bukan dasar keputusan eksistensial",
+      "Keputusan dalam kondisi darurat eksistensial harus mengutamakan kapasitas survival kolektif"
+    ],
+    "kon": [
+      "Unit keluarga adalah fondasi psikologis dan sosial yang diperlukan membangun masyarakat yang sehat",
+      "Memisahkan keluarga menciptakan trauma massal yang merusak kemampuan kolektif untuk survive",
+      "Kriteria \"terampil\" bias terhadap yang sudah punya privilege akses pendidikan"
+    ],
+    "terms": [
+      "Lifeboat Ethics",
+      "Triage Moral",
+      "Existential Risk",
+      "Utilitarian Calculus"
+    ],
+    "ideal": "<strong>PRO terampil (Ideal):</strong> Utilitarian calculus — maximize human civilization survival capability. Skilled workers memiliki higher probability untuk rebuild viable civilization. Triage adalah justified when resources finite dalam genuine emergency.<br><br><strong>OPP/keluarga (Ideal):</strong> Familial bonds adalah fundamental unit yang civilization rests on. Social cohesion post-evacuation akan collapse tanpa intact family units. Trauma dari separation harms long-term productivity. Skill dapat be taught, family bonds cannot be replaced."
+  },
+  {
+    "id": "m048",
+    "title": "Hukuman Mati untuk Kejahatan Tertentu",
+    "orig": "Capital Punishment",
+    "cat": "hukum",
+    "type": "kebijakan",
+    "ctx": "Apakah hukuman mati dapat dibenarkan untuk kategori kejahatan tertentu seperti genosida, terorisme, atau pembunuhan berencana?",
+    "pro": [
+      "Keadilan retributif: ada kejahatan yang begitu berat sehingga hanya hukuman mati yang setimpal",
+      "Menghilangkan ancaman permanen bagi masyarakat dari penjahat yang tidak bisa direhabilitasi",
+      "Dalam konteks tertentu (genosida), hukuman mati menyampaikan pesan moral yang kuat"
+    ],
+    "kon": [
+      "Negara tidak boleh melakukan pembunuhan yang disengaja — melanggar nilai dasar HAM",
+      "Orang tidak bersalah telah dieksekusi — kesalahan sistem yang tidak bisa diperbaiki",
+      "Tidak ada bukti hukuman mati lebih efektif sebagai efek jera dari penjara seumur hidup"
+    ],
+    "terms": [
+      "Retributive Justice",
+      "Deterrence",
+      "Due Process",
+      "Irreversible Punishment"
+    ],
+    "ideal": "<strong>PRO HD spesifik (Ideal):</strong> Certain crimes (genocide, terrorism, serial child murder) place perpetrator so far outside moral community that retributive justice demands ultimate sanction. Permanent incapacitation eliminates recidivism completely.<br><br><strong>OPP (Ideal):</strong> Irreversibility argument decisive — Innocence Project exonerated 190+ death row inmates. Cannot undo wrongful execution. Racial dan economic disparity guarantees discriminatory application. Life without parole achieves incapacitation without irreversibility risk."
+  },
+  {
+    "id": "m049",
+    "title": "Penjualan Organ Manusia",
+    "orig": "Human Organs, Sale of",
+    "cat": "hukum",
+    "type": "kebijakan",
+    "ctx": "Haruskah jual beli organ manusia dilegalkan dan diregulasi untuk mengatasi kekurangan donor yang kronis?",
+    "pro": [
+      "Melegalkan pasar organ dengan regulasi ketat dapat menyelamatkan ribuan nyawa dalam daftar tunggu",
+      "Otonomi individu mencakup hak memutuskan apa yang dilakukan dengan tubuh sendiri",
+      "Pasar gelap sudah ada — legalisasi membuatnya lebih aman dan dapat diawasi"
+    ],
+    "kon": [
+      "Pasar organ pasti mengeksploitasi yang miskin — hanya kaya yang membeli, hanya miskin yang menjual",
+      "Komersialisasi organ merusak nilai altruisme donasi yang membangun masyarakat",
+      "Solusi lebih baik ada: opt-out donor system, peningkatan edukasi donasi sukarela"
+    ],
+    "terms": [
+      "Organ Trafficking",
+      "Altruistic Donation",
+      "Commodification of Body",
+      "Opt-Out System"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Organ shortage kills 20 people per day in US alone. Regulated market dengan safeguards dramatically increases supply. Adults have right to sell their own organs. Iran regulated kidney market works — zero waiting list for kidneys.<br><br><strong>OPP (Ideal):</strong> Commodification of body parts adalah inherently degrading. In practice only poor akan sell organs to rich — exploitation disguised as choice. Better solutions: opt-out donation, paired kidney exchange programs yang tidak commodify the body."
+  },
+  {
+    "id": "m050",
+    "title": "Subsidi Seni, Penghapusan",
+    "orig": "Arts Subsidies, Abolition of",
+    "cat": "ekonomi",
+    "type": "kebijakan",
+    "ctx": "Haruskah pemerintah mensubsidi seni? Atau haruskah seni bertahan berdasarkan permintaan pasar?",
+    "pro": [
+      "Seni yang tidak komersial — opera, balet klasik, museum — tidak akan bertahan tanpa subsidi",
+      "Seni adalah bagian identitas budaya nasional yang nilainya melampaui pasar",
+      "Akses ke seni seharusnya tidak dibatasi oleh kemampuan membayar"
+    ],
+    "kon": [
+      "Subsidi memaksakan selera estetika sekelompok kecil elite kepada seluruh pembayar pajak",
+      "Seni yang tidak bisa bertahan secara komersial tidak memiliki audiens yang cukup untuk disubsidi",
+      "Pasar lebih baik dalam menentukan apa yang bernilai bagi masyarakat"
+    ],
+    "terms": [
+      "Cultural Policy",
+      "Public Funding Arts",
+      "Market vs State"
+    ],
+    "ideal": "<strong>PRO subsidi (Ideal):</strong> Arts produce positive externalities not captured by market. Market under-provides experimental art dengan highest cultural value tapi lowest commercial viability. Arts funding democratizes cultural production beyond commercial gatekeepers.<br><br><strong>OPP hapus (Ideal):</strong> Government arts funding = state determining what culture gets support = aesthetic paternalism. Crowdfunding dan streaming demokratisasi arts financing lebih genuine. Public arts funding disproportionately benefits wealthy arts consumers (opera, classical music)."
+  },
+  {
+    "id": "m051",
+    "title": "Paten Gen",
+    "orig": "Gene Patenting",
+    "cat": "teknologi",
+    "type": "kebijakan",
+    "ctx": "Haruskah penemuan gen dan urutan genetik manusia dapat dipatenkan?",
+    "pro": [
+      "Tanpa insentif paten, perusahaan tidak akan berinvestasi dalam penelitian genomik yang sangat mahal",
+      "Paten mendorong pengungkapan penemuan kepada publik yang memungkinkan penelitian lebih lanjut",
+      "Sistem paten menciptakan kepastian hukum yang diperlukan untuk investasi bioteknologi"
+    ],
+    "kon": [
+      "Gen adalah warisan biologis manusia yang tidak seharusnya menjadi milik privat korporasi",
+      "Paten gen menciptakan monopoli yang membatasi akses peneliti lain dan meningkatkan biaya perawatan",
+      "Penemuan alamiah tidak seharusnya dapat dipatenkan — hanya aplikasinya yang bisa"
+    ],
+    "terms": [
+      "Intellectual Property",
+      "BRCA Gene",
+      "Access to Medicine",
+      "Bioethics"
+    ],
+    "ideal": "<strong>PRO paten gen (Ideal):</strong> Patent protection incentivizes pharmaceutical R&D investment. Without IP protection, companies won tidak invest billions dalam development. Time-limited monopoly dengan mandatory licensing adalah reasonable tradeoff.<br><br><strong>OPP (Ideal):</strong> Genes are products of nature, not human invention. BRCA gene patents: priced diagnostics out of reach untuk banyak perempuan, delayed development of better tests. Alternative: prize funds, public research, open-source biotech."
+  },
+  {
+    "id": "m052",
+    "title": "Surrogasi / Ibu Pengganti",
+    "orig": "Surrogate Mothers",
+    "cat": "sosial",
+    "type": "kebijakan",
+    "ctx": "Apakah kehamilan surrogat komersial seharusnya diizinkan dan diregulasi?",
+    "pro": [
+      "Memberikan kesempatan pasangan yang tidak dapat hamil untuk memiliki anak biologis",
+      "Dengan kontrak yang jelas dan regulasi, hak semua pihak dapat dilindungi",
+      "Bagi ibu pengganti, ini adalah pilihan bermakna yang dilakukan secara sadar"
+    ],
+    "kon": [
+      "Komodifikasi tubuh perempuan dalam konteks ketidaksetaraan ekonomi",
+      "Anak-anak menjadi \"produk\" dari transaksi komersial yang merendahkan martabat",
+      "Risiko eksploitasi ibu pengganti yang berada dalam tekanan ekonomi"
+    ],
+    "terms": [
+      "Reproductive Autonomy",
+      "Altruistic Surrogacy",
+      "Baby Selling",
+      "Commodification"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Reproductive autonomy extends to choosing surrogate parenthood. Surrogates are adults capable of informed consent. Benefits: allows infertile couples, same-sex couples, single individuals to have biologically-related children. Provides surrogates dengan significant income.<br><br><strong>OPP (Ideal):</strong> Commodification of women reproductive capacity. Voluntary consent compromised by economic desperation. International surrogacy especially exploitative. Psychological impact pada surrogates dan child."
+  },
+  {
+    "id": "m053",
+    "title": "Pertanian Organik Wajib",
+    "orig": "Organic Farming Mandate",
+    "cat": "lingkungan",
+    "type": "kebijakan",
+    "ctx": "Haruskah pertanian organik diwajibkan untuk mengurangi dampak lingkungan dari pertanian konvensional?",
+    "pro": [
+      "Pestisida dan pupuk kimia merusak ekosistem, tanah, dan sumber air secara jangka panjang",
+      "Pertanian organik lebih berkelanjutan untuk ketahanan pangan jangka panjang",
+      "Kesehatan konsumen dan lingkungan adalah tanggung jawab regulasi pemerintah"
+    ],
+    "kon": [
+      "Pertanian organik menghasilkan lebih sedikit per hektar — ancaman ketahanan pangan",
+      "Biaya yang jauh lebih tinggi akan mendorong harga pangan naik dan menyakiti yang miskin",
+      "Pilihan metode pertanian seharusnya ada di tangan petani yang memahami kondisi lokal"
+    ],
+    "terms": [
+      "Sustainable Agriculture",
+      "Food Security",
+      "Pesticide Regulation"
+    ],
+    "ideal": "<strong>PRO organik wajib (Ideal):</strong> Pesticide runoff → soil degradation → ecosystem collapse → food security threat. Organic practices restore soil health dan biodiversity. Externalized costs of conventional farming tidak captured dalam price.<br><br><strong>OPP (Ideal):</strong> Organic yields lower → more land needed → more deforestation paradox. Higher prices disproportionately harm poor consumers. Precision agriculture dan integrated pest management achieve environmental goals more efficiently."
+  },
+  {
+    "id": "m054",
+    "title": "Larangan Rokok di Semua Tempat Publik",
+    "orig": "Smoking, Further Restrictions on",
+    "cat": "sosial",
+    "type": "kebijakan",
+    "ctx": "Seberapa jauh negara dapat membatasi merokok di tempat publik dan berbagai konteks kehidupan?",
+    "pro": [
+      "Perokok pasif menyebabkan kerusakan kesehatan serius bagi non-perokok — pelanggaran hak mereka",
+      "Tembakau adalah zat adiktif yang sering dimulai pada masa remaja sebelum keputusan otonom bisa dibuat",
+      "Biaya kesehatan merokok ditanggung semua pembayar pajak melalui sistem kesehatan publik"
+    ],
+    "kon": [
+      "Larangan merokok di tempat privat seperti bar melanggar hak pemilik bisnis",
+      "Orang dewasa berhak atas keputusan gaya hidup mereka sendiri",
+      "Slippery slope ke paternalisme ekstrem — mengapa tidak larang makanan tidak sehat?"
+    ],
+    "terms": [
+      "Second-Hand Smoke",
+      "Paternalism",
+      "Public Health",
+      "Tobacco Regulation"
+    ],
+    "ideal": "<strong>PRO larangan (Ideal):</strong> Second-hand smoke harms non-smokers who cannot consent. Workers in hospitality industry forced to choose between livelihood dan health. Evidence dari Ireland, UK: hospitality worker health improved dramatically post-ban dengan minimal economic impact.<br><br><strong>OPP (Ideal):</strong> Private businesses should allow legal activity on premises. Market solution: smoking dan non-smoking establishments. Adults have right to choose to enter smoking venues. Harm reduction lebih proportionate dari total ban."
+  },
+  {
+    "id": "m055",
+    "title": "Penelitian Nuklir untuk Energi",
+    "orig": "Nuclear vs. Renewable Energy",
+    "cat": "lingkungan",
+    "type": "pandangan",
+    "ctx": "Apakah energi nuklir harus menjadi bagian dari solusi perubahan iklim?",
+    "pro": [
+      "Energi nuklir menghasilkan listrik dalam jumlah besar tanpa emisi karbon",
+      "Lebih andal dari energi surya dan angin yang bergantung pada kondisi cuaca",
+      "Kapasitas pembangkit per unit lahan jauh lebih efisien dari energi terbarukan"
+    ],
+    "kon": [
+      "Kecelakaan nuklir (Chernobyl, Fukushima) menunjukkan risiko katastrofik yang tidak dapat dimaafkan",
+      "Pembuangan limbah radioaktif tetap menjadi masalah yang belum terpecahkan selama ribuan tahun",
+      "Biaya pembangunan reaktor nuklir sangat mahal dan waktu konstruksi sangat panjang"
+    ],
+    "terms": [
+      "Nuclear Safety",
+      "Carbon Footprint",
+      "Energy Security",
+      "Radioactive Waste"
+    ],
+    "ideal": "<strong>PRO nuklir (Ideal):</strong> Zero carbon during operation, highest energy density, most reliable baseload power. France 70% nuclear → lowest carbon electricity grid in Europe. New generation (SMR, Gen IV) dramatically safer. Essential untuk decarbonization without sacrificing reliability.<br><br><strong>OPP (Ideal):</strong> Construction cost overruns, long timelines, Chernobyl/Fukushima risk. Solar dan wind now cheaper per MWh with storage improving. Proliferation risk dari fuel cycle. Intergenerational burden of waste storage 10,000+ years."
+  },
+  {
+    "id": "m056",
+    "title": "Eksplorasi Luar Angkasa",
+    "orig": "Space Exploration",
+    "cat": "teknologi",
+    "type": "pandangan",
+    "ctx": "Apakah pengeluaran miliaran untuk eksplorasi luar angkasa dapat dibenarkan saat ada masalah mendesak di bumi?",
+    "pro": [
+      "Eksplorasi luar angkasa menghasilkan teknologi transformatif di bumi: GPS, satelit cuaca, material baru",
+      "Diversifikasi planet adalah asuransi eksistensial bagi kelangsungan spesies manusia",
+      "Eksplorasi adalah bagian fundamental sifat manusia yang mendorong inovasi dan aspirasi kolektif"
+    ],
+    "kon": [
+      "Miliaran bisa menyelamatkan lebih banyak nyawa jika diinvestasikan dalam kesehatan dan kemiskinan di bumi",
+      "Privatisasi luar angkasa menciptakan pertanyaan serius tentang kepemilikan sumber daya luar orbit",
+      "Fokus eksplorasi mengalihkan perhatian dari krisis eksistensial yang lebih mendesak di bumi"
+    ],
+    "terms": [
+      "Opportunity Cost",
+      "Space Race",
+      "Existential Risk",
+      "Privatization of Space"
+    ],
+    "ideal": "<strong>PRO (Ideal):</strong> Planetary-scale risk management: asteroid detection, climate backup, long-term species survival. Spinoff technologies (GPS, weather satellites, water purification). Inspiration effect pada STEM education.<br><br><strong>OPP (Ideal):</strong> Opportunity cost: space budget vs global health, poverty, climate investment. Space exploration benefits tidak justify cost when billions lack clean water. Private sector dapat fund exploration — public money not needed."
+  },
+  {
+    "id": "m057",
+    "title": "Intervensi Kemanusiaan",
+    "orig": "Human Rights: Imposition by Force?",
+    "cat": "hubungan-internasional",
+    "type": "pandangan",
+    "ctx": "Kapan, jika pernah, dapat dibenarkan secara moral untuk melakukan intervensi militer demi alasan kemanusiaan?",
+    "pro": [
+      "Komunitas internasional memiliki kewajiban moral (Responsibility to Protect) mencegah genosida",
+      "Kedaulatan bukan hak absolut ketika suatu negara gagal melindungi warganya sendiri",
+      "Intervensi yang tepat waktu di Rwanda bisa mencegah 800.000 kematian"
+    ],
+    "kon": [
+      "Intervensi kemanusiaan sering memiliki agenda tersembunyi — minyak, pengaruh geopolitik",
+      "Ketergantungan pada intervensi luar melemahkan kapasitas lokal membangun solusinya sendiri",
+      "Intervensi yang gagal (Libya, Irak) sering memperburuk situasi secara signifikan"
+    ],
+    "terms": [
+      "Responsibility to Protect (R2P)",
+      "Sovereignty",
+      "Humanitarian Intervention",
+      "Just War Theory"
+    ],
+    "ideal": "<strong>PRO intervensi (Ideal):</strong> R2P: sovereignty conditional on protecting citizens. Some atrocities cross threshold where international community obligation to protect overrides sovereignty. Non-intervention in Rwanda (800,000 dead) versus Kosovo intervention that prevented ethnic cleansing.<br><br><strong>OPP (Ideal):</strong> Track record devastating: Libya failed state, Iraq disaster. Sovereignty must be presumed inviolable or becomes pretext for neo-colonial interference. Russia humanitarian intervention in Crimea shows abuse potential. Multilateral diplomacy, sanctions, ICC lebih effective."
+  },
+  {
+    "id": "m058",
+    "title": "Pajak Datar (Flat Tax)",
+    "orig": "Flat Tax",
+    "cat": "ekonomi",
+    "type": "kebijakan",
+    "ctx": "Haruskah sistem pajak progresif digantikan dengan tarif pajak tunggal yang sama untuk semua?",
+    "pro": [
+      "Lebih sederhana dan adil — semua orang membayar persentase yang sama dari penghasilan",
+      "Mengurangi distorsi ekonomi yang diciptakan oleh tarif pajak marginal yang tinggi",
+      "Memperkecil beban kepatuhan pajak dan mendorong produktivitas"
+    ],
+    "kon": [
+      "Pajak datar secara efektif menurunkan beban pajak bagi yang kaya dan meningkatkan bagi yang miskin",
+      "Pajak progresif mencerminkan prinsip bahwa yang memiliki lebih harus berkontribusi lebih",
+      "Mengurangi kapasitas redistribusi yang diperlukan untuk mengatasi ketidaksetaraan"
+    ],
+    "terms": [
+      "Pajak Progresif",
+      "Marginal Tax Rate",
+      "Redistribusi",
+      "Supply-Side Economics"
+    ],
+    "ideal": "<strong>PRO flat tax (Ideal):</strong> Simplicity → compliance dan efficiency gains. Eliminate loopholes yang wealthy use to avoid progressive taxation. Equal treatment: everyone pays same percentage. Economic activity tidak distorted by marginal rate differentials.<br><br><strong>OPP (Ideal):</strong> Marginal utility justifies progressive rates. Flat tax in practice = regressive net of exemptions. Historical evidence: progressive systems produce comparable growth dengan better distributional outcomes. Simplification achievable without flat rate."
+  },
+  {
+    "id": "m059",
+    "title": "Reformasi Hukum Narkoba",
+    "orig": "Drug Policy Reform",
+    "cat": "hukum",
+    "type": "kebijakan",
+    "ctx": "Haruskah semua narkoba didekriminalisasi (seperti model Portugal) sebagai pendekatan kesehatan publik?",
+    "pro": [
+      "Model Portugal membuktikan dekriminalisasi mengurangi penggunaan narkoba, infeksi HIV, dan kematian overdosis",
+      "Mengobati ketergantungan sebagai masalah kesehatan lebih efektif dari mengkriminalkan pengguna",
+      "Membebaskan sumber daya penegak hukum untuk kejahatan yang lebih berbahaya"
+    ],
+    "kon": [
+      "Dekriminalisasi mengirimkan pesan bahwa penggunaan narkoba dapat diterima",
+      "Ketersediaan yang lebih mudah akan meningkatkan penggunaan terutama di kalangan remaja",
+      "Narkoba berbahaya dan negara memiliki kewajiban mencegah warganya menggunakannya"
+    ],
+    "terms": [
+      "Dekriminalisasi",
+      "Portugal Model",
+      "Harm Reduction",
+      "War on Drugs"
+    ],
+    "ideal": "<strong>PRO dekriminalisasi (Ideal):</strong> War on Drugs empirically failed — drug use not reduced, mass incarceration disproportionately harms communities of color. Portugal experiment: decriminalization + treatment → decreased use, HIV transmission, drug deaths. Regulated market eliminates black market violence.<br><br><strong>OPP (Ideal):</strong> Decriminalization sends permissive signal, increases use especially youth. Some substances terlalu harmful untuk legalization. Treatment-focused criminalization adalah middle path — maintain illegality but divert to treatment."
+  },
+  {
+    "id": "m060",
+    "title": "Pendapatan Dasar Universal (UBI)",
+    "orig": "Universal Basic Income",
+    "cat": "ekonomi",
+    "type": "kebijakan",
+    "ctx": "Haruskah semua warga menerima pendapatan dasar tanpa syarat dari pemerintah?",
+    "pro": [
+      "Memberikan jaring pengaman yang memastikan tidak ada yang jatuh ke kemiskinan ekstrem",
+      "Membebaskan individu dari pekerjaan yang tidak bermakna dan memungkinkan kreativitas dan kewirausahaan",
+      "Mengantisipasi disruption otomasi yang akan menghilangkan jutaan pekerjaan"
+    ],
+    "kon": [
+      "Biaya UBI yang memadai sangat besar dan sulit dibiayai secara berkelanjutan",
+      "Mengurangi insentif bekerja — menciptakan ketergantungan pada transferan",
+      "Lebih baik menargetkan bantuan pada yang paling membutuhkan daripada memberi semua orang"
+    ],
+    "terms": [
+      "Means-Testing",
+      "Automation",
+      "Safety Net",
+      "Labor Supply"
+    ],
+    "ideal": "<strong>PRO UBI (Ideal):</strong> Automation akan displace jobs faster than retraining can respond. UBI replaces fragmented welfare bureaucracy dengan simple universal floor. Eliminates poverty traps dari benefit cliffs. Economic stimulus ke poorest (high marginal propensity to consume).<br><br><strong>OPP (Ideal):</strong> Fiscal cost prohibitive untuk meaningful amount. Work provides meaning dan social connection beyond income — UBI risks meaninglessness epidemic. Better: Job Guarantee provides income AND purpose. Targeted programs more efficient."
+  }
+]

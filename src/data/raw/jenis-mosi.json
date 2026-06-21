@@ -1,0 +1,215 @@
+[
+  {
+    "id": "jm1",
+    "icon": "🏛️",
+    "nama": "Mosi Kebijakan",
+    "prefix": "\"Dewan ini akan...\"",
+    "warna": "var(--def)",
+    "definisi": "Fokus pada apakah sebuah kebijakan sebaiknya dilaksanakan atau tidak. Membahas sebuah proposal dan kenapa sebaiknya dilaksanakan, apakah ada alternatif lain di Status Quo, dan apakah kebijakan ini satu-satunya cara menyelesaikan permasalahan (ekslusifitas). Bukan cuma baik atau buruknya, tapi kenapa ini menjadi tanggung jawab pemangku kebijakan dan yang paling penting: ada FIAT.",
+    "penting": "Ada FIAT — tim pro tidak perlu buktikan feasibility, cukup debatkan dampak. Paling banyak muncul di kompetisi.",
+    "pro": [
+      "Bagaimana mekanisme proposal ini berjalan?",
+      "Sepenting apa masalahnya kalau tidak ada proposal ini? (urgensi)",
+      "Bagaimana reaksi masyarakat? (penerimaan)",
+      "Apakah ini cara satu-satunya? (ekslusifitas)",
+      "Hasil akhirnya bisa menyelesaikan masalah yang ada? (benefit)"
+    ],
+    "kon": [
+      "Masalahnya ternyata tidak sepenting itu",
+      "Reaksi masyarakat tidak menerima, karena faktor a,b,c",
+      "Kita tidak punya kapasitas untuk menjalankan proposal",
+      "Sudah banyak alternatif lain di Status Quo",
+      "Hasil akhirnya tidak menjawab permasalahan yang ada"
+    ],
+    "contoh": [
+      {
+        "mosi": "THW implement mandatory civic education in all secondary schools",
+        "konteks": "Fokus pada apakah kebijakan kurikulum wajib dapat dan harus dilaksanakan, bukan apakah civic education itu baik secara prinsip."
+      },
+      {
+        "mosi": "Dewan ini akan menggunakan indikator dampak sosial sebagai parameter utama dalam menentukan sistem ranking universitas",
+        "konteks": "KDMI Regional 2025 — mosi kebijakan tentang reformasi sistem penilaian institusi pendidikan tinggi."
+      }
+    ]
+  },
+  {
+    "id": "jm2",
+    "icon": "💭",
+    "nama": "Mosi Pandangan",
+    "prefix": "\"Dewan ini berpandangan/berpendapat/percaya...\"",
+    "warna": "var(--chaos)",
+    "definisi": "Beban pembuktian sangat sederhana — kenapa ini lebih banyak memberikan dampak baik atau dampak buruk. Biasanya dilihat dari sudut pandang orang ketiga. Nilainya berupa prinsip (pemenuhan hak, pemenuhan mandat, keselarasan konsep, adat dan norma). PENTING: tidak perlu membawa proposal, solusi, atau aksi KECUALI ketika perlu dan ada kebutuhan membahas alternatif lain.",
+    "penting": "Tidak ada proposal wajib. Nilai = prinsip. Sudut pandang = orang ketiga yang netral dan objektif. Boleh bawa solusi hanya jika diperlukan untuk memperkuat argumen.",
+    "pro": [
+      "Menganalisis apa yang terjadi dan salah di Status Quo dan kenapa khayalan ini lebih baik/buruk",
+      "Mungkin ga yaa khayalan ini terjadi?",
+      "Manfaat apa yang bisa didapatkan?",
+      "Bagaimana mekanisme penerapannya menurut pandangan kamu"
+    ],
+    "kon": [
+      "Status Quo udah bagus, jadi tidak perlu diganti",
+      "Kenapa khayalan tim pro susah untuk diimplementasikan",
+      "Kenapa khayalan tim pro cuma nambah masalah baru",
+      "Kalaupun Status Quo bermasalah, yang diinginkan tim pro tidak menyelesaikan masalah"
+    ],
+    "contoh": [
+      {
+        "mosi": "THB social media does more harm than good for democracy",
+        "konteks": "Pandangan — harus evaluasi kondisi nyata dan dampaknya, bukan propose kebijakan tertentu."
+      },
+      {
+        "mosi": "Dewan ini percaya bahwa mengintelektualisasi emosi lebih banyak merugikan daripada menguntungkan individu",
+        "konteks": "Fokus pada evaluasi fenomena psikologis dari sudut pandang ketiga yang objektif."
+      }
+    ]
+  },
+  {
+    "id": "jm3",
+    "icon": "👤",
+    "nama": "Mosi Aktor",
+    "prefix": "\"Sebagai X, Dewan ini... / Dewan ini, Sebagai X...\"",
+    "warna": "var(--agg)",
+    "definisi": "Fokus pada PERSPEKTIF, kepentingan, dan sudut pandang AKTOR YANG DISEBUTKAN dalam mosi. Berbeda dengan debat jenis lain — semua aktor atau pemangku kepentingan SAMA PENTINGNYA. Para pendebat harus secara signifikan membahas aktor utama yang disebutkan. Mosi Aktor harus linkback kepada aktor, memberikan kebermanfaatan ke aktor yang banyak. Jangan lupakan mengaitkan analisis aktor lain dengan aktor utamanya.",
+    "penting": "Selalu linkback ke aktor! Semua argumen harus dilihat dari kepentingan dan perspektif aktor yang disebutkan, bukan dari perspektif umum. Ini membedakan mosi aktor dari mosi pandangan biasa.",
+    "pro": [
+      "Apa keinginan dari aktor atau interest aktor",
+      "Apa karateristik dari aktor ini, dia punya kepentingan apa?",
+      "Dari hal tersebut, kenapa X lebih baik dari Y",
+      "Ada hal-hal ga yang mendukung kalau cara yang dipilih aktor ini adalah cara paling tepat untuk mencapai tujuan? (faktor eksternal masyarakat, dll)"
+    ],
+    "kon": [
+      "Sama seperti tim Pro, cuma membalik logikanya — kasus positif di tim Pro justru jadi negatif di sisi Kontra dan kasus negatif mereka adalah kasus terbaik bagi kalian"
+    ],
+    "contoh": [
+      {
+        "mosi": "Dewan ini, sebagai feminis, akan secara aktif mengadvokasikan Mahar",
+        "konteks": "ProAms 2025 — harus argue dari perspektif dan kepentingan feminis, bukan dari sudut pandang umum masyarakat."
+      },
+      {
+        "mosi": "Sebagai pemerintah Indonesia, Dewan ini akan melegalkan ganja untuk keperluan medis",
+        "konteks": "Aktor spesifik = pemerintah Indonesia. Semua argumen harus dikaitkan dengan konteks, kapabilitas, dan kepentingan Indonesia."
+      }
+    ]
+  },
+  {
+    "id": "jm4",
+    "icon": "😔",
+    "nama": "Mosi Penyesalan",
+    "prefix": "\"Dewan ini menyesali...\"",
+    "warna": "var(--gold)",
+    "definisi": "Beban pembuktian sangat sederhana — menganalisis hal yang sudah ada di status quo dan sudah cukup lama terjadi (bersifat lebih reflektif dan historis). Biasanya dengan analisis apakah ini memberikan dampak baik atau dampak buruk. CATAT: Tim Pro diperbolehkan untuk membawa KONTRA FAKTA — kalau hal yang disesali tidak ada, hal apa yang bisa mendukung status quo.",
+    "penting": "Kontra fakta (counterfactual) adalah senjata unik mosi penyesalan. Pro bisa argue: \"kalau X tidak ada, dunia lebih baik karena Y.\" Ini membedakan mosi penyesalan dari mosi pandangan biasa.",
+    "pro": [
+      "Jelaskan di status quo ada masalah dari hal ini",
+      "Jelaskan masalah itu terjadi karena ada X (hal yang kita sesali)",
+      "Bisa menjelaskan kenapa hal ini membawa masalah di status quo",
+      "Jelaskan juga bahwasannya jika tidak ada ini, dunia status quo akan baik-baik saja atau bahkan lebih baik",
+      "TAMBAHKAN kontrafakta/kontrafaktual"
+    ],
+    "kon": [
+      "Masalah di status quo sebenernya ga serumit kata gov",
+      "Kalau pun iya di SQ ada masalah, penyebabnya bukan si X tapi hal lain",
+      "Jelasin kalau si X ini banyak manfaatnya, jangan sampai di sesali",
+      "Jelasin dampak negatifnya kalau si X ini di sesali, status quo bakal jadi kaya gimana"
+    ],
+    "contoh": [
+      {
+        "mosi": "Dewan ini menyesali meningkatnya komersialisasi kematian",
+        "konteks": "SLDC 2025 — analisis historis dan reflektif tentang bagaimana komersialisasi kematian berdampak pada masyarakat."
+      },
+      {
+        "mosi": "Dewan ini menyesalkan kewajiban MKPK sebagai syarat kelulusan di universitas",
+        "konteks": "Pentra 1.0 2026 — evaluasi kebijakan yang sudah ada dan dampaknya selama berlaku."
+      }
+    ]
+  },
+  {
+    "id": "jm5",
+    "icon": "🔮",
+    "nama": "Mosi Prediksi",
+    "prefix": "\"Dewan ini memprediksi... / Dewan ini Berharap...\"",
+    "warna": "var(--kaus)",
+    "definisi": "Mengharuskan pembicara memberikan gagasan kemungkinan yang akan terjadi di masa akan datang dengan mempertimbangkan waktu lampau, sekarang, dan sebagainya yang relevan. \"Dewan ini berharap\" (membahas nilai sebuah fenomena masa depan) dan mosi prediksi (menentukan apakah sesuatu akan terjadi). CATAT: Mosi Prediksi BUKAN membahas baik buruk ketika terjadi, tapi PROSES ANALISIS kenapa itu BISA TERJADI atau TIDAK.",
+    "penting": "Bukan \"apakah X itu baik?\" tapi \"apakah X akan terjadi?\" Fokus pada faktor-faktor yang membuat sesuatu mungkin atau tidak mungkin terjadi secara konkret.",
+    "pro": [
+      "Menjelaskan kenapa hal tersebut memungkinkan untuk terjadi — kondisi yang ada, tren, faktor-faktor pendukung",
+      "Setup kondisi saat ini yang relevan",
+      "Faktor struktural yang mendukung prediksi ini"
+    ],
+    "kon": [
+      "Menjelaskan kenapa hal tersebut tidak mungkin terjadi — hambatan struktural, kondisi tidak mendukung",
+      "Setup kondisi yang bertentangan dengan prediksi",
+      "Faktor-faktor yang akan menghalangi terjadinya hal yang diprediksi"
+    ],
+    "contoh": [
+      {
+        "mosi": "Dewan ini memprediksi Presiden Prabowo akan menang pemilu 2029",
+        "konteks": "Entritons 2026 — fokus pada analisis faktor yang memungkinkan atau menghambat kemenangan incumbent, bukan evaluasi kebijakan Prabowo."
+      },
+      {
+        "mosi": "Dewan ini berharap DebateHub eksis",
+        "konteks": "Themis BP OPEN 2026 — membahas kemungkinan dan nilai keberadaan platform ini, bukan propose kebijakan spesifik."
+      }
+    ]
+  },
+  {
+    "id": "jm6",
+    "icon": "❤️",
+    "nama": "Mosi Dukungan",
+    "prefix": "\"Dewan ini mendukung...\"",
+    "warna": "#ff9f43",
+    "definisi": "Beban pembuktian jauh lebih sederhana karena kebijakan, narasi, atau glorifikasi sudah ada di Status Quo — kita cuma membuktikan kenapa kita harus mendukung atau tidak mendukung dengan mempertimbangkan manfaat atau mudarat. Berbeda dari mosi kebijakan karena objek yang didukung SUDAH ADA.",
+    "penting": "Objek yang didukung SUDAH ADA di dunia nyata. Tidak perlu buktikan feasibility — cukup evaluasi manfaat vs mudarat dari mendukungnya. Ini jauh lebih sederhana dari mosi kebijakan.",
+    "pro": [
+      "Kasih tau kalau ada masalah di status quo yang berkaitan",
+      "Kasih tau kalau hal yang kamu dukung adalah solusi terbaik untuk selesaikan masalah di status quo",
+      "Kasih tau benefit seandainya hal yang kamu dukung bisa jadi hal yang populer",
+      "Kasih tau kalau dampak negatif seandainya kebijakan ini ga kamu dukung"
+    ],
+    "kon": [
+      "Jelasin kalau status quo ga seburuk itu",
+      "Jelasin aja kalau hal yang di dukung tim pro tidak akan menyelesaikan masalah",
+      "Jelasin kalau di dukung justru bakal banyak dampak negatifnya",
+      "Kamu bilang aja ga akan mendukung atau bahkan menyesalinya"
+    ],
+    "contoh": [
+      {
+        "mosi": "Dewan ini mendukung eskalasi pengajaran agama yang berkaitan dengan topik lingkungan",
+        "konteks": "IDEONIC 2026 — mendukung sesuatu yang sudah ada/bisa dilakukan, bukan propose yang baru dari nol."
+      },
+      {
+        "mosi": "Dewan ini mendukung gerakan #MeToo sebagai alat perubahan sosial yang efektif",
+        "konteks": "Objek sudah ada — evaluasi apakah mendukung gerakan ini memberikan lebih banyak manfaat atau mudarat."
+      }
+    ]
+  },
+  {
+    "id": "jm7",
+    "icon": "🌍",
+    "nama": "Mosi Memilih",
+    "prefix": "\"Dewan ini lebih memilih/memilih dunia...\"",
+    "warna": "var(--def)",
+    "definisi": "Beban pembuktian: menjelaskan kenapa pilihan tersebut adalah pilihan yang terbaik untuk status quo, atau kenapa hal tersebut lebih memilih dunia baru untuk menyelesaikan permasalahan yang ada. CATAT: Mosi \"Dewan ini memilih Dunia\" — FIAT tim pro bisa mereset SEMUA dunia yang ada termasuk membangun dunia idealnya, sedangkan tim kontra bertahan di status quo dengan adanya hal (yang dipilih) tersebut.",
+    "penting": "Fiat memilih dunia = reset total! Pro bisa gambarkan dunia ideal baru dari nol. Kontra harus defend status quo dengan hal yang dipilih tetap ada. Ini memberikan kekuatan besar kepada tim Pro sekaligus risiko besar jika dunia yang digambarkan tidak koheren.",
+    "pro": [
+      "Menjelaskan kalau dunia status quo ga cukup",
+      "Menjelaskan kenapa dengan me-reset dunia lebih baik",
+      "Menjelaskan segala upaya yang ada di Status Quo tidak akan pernah selesai"
+    ],
+    "kon": [
+      "Bertahan di status quo",
+      "Masalah tersebut dapat terselesaikan dengan baik tanpa perlu di reset dunianya",
+      "Justru kalau dunianya di reset tidak ada counterbalance atau penyeimbang"
+    ],
+    "contoh": [
+      {
+        "mosi": "Dewan ini memilih dunia di mana \"selamanya\" tidak pernah menjadi harapan standar dalam hubungan romantis",
+        "konteks": "PRA-LDI BAHANA ARUTALA 2025 — pro bisa reset semua norma sosial tentang hubungan romantis dan bangun dunia baru."
+      },
+      {
+        "mosi": "Dewan ini lebih memilih dunia di mana tidak ada agama terorganisir",
+        "konteks": "Fiat tim pro = bisa gambarkan seluruh masyarakat tanpa institusi agama — implikasi sosial dan moral yang sangat luas."
+      }
+    ]
+  }
+]

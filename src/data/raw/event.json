@@ -1,0 +1,24 @@
+{
+  "events": [
+    {
+      "id": "op15",
+      "nama": "OP 15",
+      "desc": "Olimpiade Parlemen ke-15. 23 tim, sistem gugur dari Quarter Finals.",
+      "brackets": [
+        { "id": "quarter", "nama": "Quarter Finalis", "teams": ["manic-t1","witama-t2","sman1pku-t1","sman2sh-t2","sman1pku-t2","darmayudha-t1","sman2sh-t1","darmayudha-t2"] },
+        { "id": "semi", "nama": "Semi Finalis", "teams": ["sman2sh-t1","sman2sh-t2","manic-t1","darmayudha-t1"] },
+        { "id": "final", "nama": "Final & Prestasi", "teams": ["darmayudha-t1","sman2sh-t2","manic-t1"] }
+      ],
+      "prestasi": {
+        "j1": { "team": "darmayudha-t1", "label": "Juara 1" },
+        "j2": { "team": "sman2sh-t2", "label": "Juara 2" },
+        "j3": { "team": "manic-t1", "label": "Juara 3" },
+        "best_speakers": [
+          { "speaker": "manic-t1-p3", "label": "Best Speaker #1" },
+          { "speaker": "sman2sh-t2-p2", "label": "Best Speaker #2" },
+          { "speaker": "sman1pku-t2-p2", "label": "Best Speaker #3" }
+        ]
+      }
+    }
+  ]
+}
