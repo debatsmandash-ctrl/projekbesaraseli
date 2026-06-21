@@ -508,7 +508,7 @@ export function buildGraph(): Graph {
       if (isChaos) edges.push({ a: schoolNodeId, b: "style:chaos", strength: "weak", color: "#a855f7", kind: "link" });
       const teamCount = s.teams.length;
       // Lebih rapat: team & speaker tetap dekat school
-      const teamPositions = teamCount === 1 ? [schoolPos] : placeBranch(schoolPos, center, teamCount, 4.0, 7.5);
+      const teamPositions = teamCount === 1 ? [schoolPos] : placeBranch(schoolPos, center, teamCount, 6.5, 11.5);
       s.teams.forEach((t, ti) => {
         const teamPos = teamPositions[ti];
         const teamNodeId = `${cluster}:team:${t.id}`;
@@ -523,7 +523,7 @@ export function buildGraph(): Graph {
         }
         const parentId = teamCount > 1 ? teamNodeId : schoolNodeId;
         const parentPos = teamCount > 1 ? teamPos : schoolPos;
-        const speakerPositions = placeBranch(parentPos, center, t.speakers.length, 2.8, 5.4);
+        const speakerPositions = placeBranch(parentPos, center, t.speakers.length, 4.5, 8.5);
         t.speakers.forEach((sp, spi) => {
           const spNodeId = `${cluster}:speaker:${sp.id}`;
           speakerIdMap[sp.id] = spNodeId;
