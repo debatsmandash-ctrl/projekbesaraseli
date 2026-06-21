@@ -244,6 +244,7 @@ const LABEL_THRESHOLDS: Record<NodeKind, number> = {
   bab: 70,
   subbab: 28,
   role: 90,
+  roleskill: 36,
   style: 110,
   motion: 32,
   jenis: 100,

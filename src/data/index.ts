@@ -5,6 +5,7 @@ import matterRaw from "./raw/matter.json";
 import competitorsRaw from "./raw/competitors.json";
 import activeMemberRaw from "./raw/active-member.json";
 import eventRaw from "./raw/event.json";
+import rolesRaw from "./raw/roles.json";
 import type { Motion, JenisMosi, Vocab, MatterData } from "./types";
 
 export const MOTIONS = motionsRaw as unknown as Motion[];
