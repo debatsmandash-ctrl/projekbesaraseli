@@ -490,9 +490,9 @@ export function buildGraph(): Graph {
   const speakerIdMap: Record<string, string> = {};
   const teamIdMap: Record<string, string> = {};
   const roleSideMap: Record<string, [string, string]> = {
-    p1: ["role:pm", "role:lo"],
-    p2: ["role:dpm", "role:dlo"],
-    p3: ["role:gw", "role:ow"],
+    p1: ["role:ap:pm", "role:ap:lo"],
+    p2: ["role:ap:dpm", "role:ap:dlo"],
+    p3: ["role:ap:gw", "role:ap:ow"],
   };
   function buildSchoolTree(cluster: ClusterKey, schools: typeof COMPETITORS, center: V3, baseRadius: number) {
     const schoolPositions = placeCloud(center, baseRadius, schools.length, baseRadius * 0.34);
