@@ -572,6 +572,7 @@ export function PanelContent({ node }: { node: StarNode }) {
   }
   else if (node.kind === "style") body = <StylePanel refId={node.refId!} />;
   else if (node.kind === "role") body = <RolePanel refId={node.refId!} />;
+  else if (node.kind === "roleskill") body = <RoleSkillPanel refId={node.refId!} />;
   else if (node.kind === "domain") body = <MatterDomainPanel refId={node.refId!} />;
   else if (node.kind === "bab") body = <MatterBabPanel refId={node.refId!} />;
   else if (node.kind === "subbab") body = <MatterSubBabPanel refId={node.refId!} />;
