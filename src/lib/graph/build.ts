@@ -388,11 +388,12 @@ export function buildGraph(): Graph {
     const motionCenter = clusterCenter.motion;
     // 1) Sub-hub per Jenis Mosi sebagai cabang Motion Bank — lebih rapat
     const jenisPositions = placeCloud(motionCenter, 22, JENIS_MOSI.length, 9);
+    const JENIS_NEON = ["#ff3d8b", "#ff8b3d", "#ffd53d", "#ff5fb3", "#ffb13d", "#ffe066", "#ff6b6b"];
     JENIS_MOSI.forEach((j, i) => {
       const id = `jenis:${j.id}`;
       jenisIdMap[j.id] = id;
       jenisPos[j.id] = jenisPositions[i];
-      const c = j.warna && j.warna.startsWith("#") ? j.warna : paletteColor("jenis", j.id);
+      const c = JENIS_NEON[i % JENIS_NEON.length];
       nodes.push({ id, label: j.nama, kind: "subhub", cluster: "motion", color: c, size: 0.36, pos: jenisPositions[i], refId: j.id, importance: 0.7 });
       edges.push({ a: "cluster:motion", b: id, strength: "strong", color: c });
     });
