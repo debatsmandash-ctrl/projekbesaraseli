@@ -20,6 +20,9 @@ export function Sidebar() {
   const setEditorUnlockOpen = useUniverse((s) => s.setEditorUnlockOpen);
   const editorMode = useUniverse((s) => s.editorMode);
   const [collapsed, setCollapsed] = useState(false);
+  const offset = useSettings((s) => s.sidebarOffset);
+  const update = useSettings((s) => s.update);
+  const drag = usePointerDrag(offset, (next) => update({ sidebarOffset: next }));
 
   return (
     <aside
@@ -29,6 +32,7 @@ export function Sidebar() {
         left: 0,
         bottom: 0,
         width: collapsed ? 56 : 240,
+        transform: `translate(${offset.x}px, ${offset.y}px)`,
         background: "linear-gradient(180deg, rgba(8,13,24,0.95), rgba(5,8,15,0.85))",
         borderRight: "1px solid rgba(168,85,247,0.18)",
         backdropFilter: "blur(14px)",
