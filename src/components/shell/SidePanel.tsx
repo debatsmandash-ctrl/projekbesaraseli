@@ -16,6 +16,9 @@ export function SidePanel() {
   const open = !!node && node.id !== "root";
   const [labelDraft, setLabelDraft] = useState("");
   useEffect(() => { if (node) setLabelDraft(node.label); }, [node]);
+  const offset = useSettings((s) => s.sidePanelOffset);
+  const update = useSettings((s) => s.update);
+  const drag = usePointerDrag(offset, (next) => update({ sidePanelOffset: next }));
 
   return (
     <AnimatePresence>
@@ -28,9 +31,9 @@ export function SidePanel() {
           transition={{ type: "spring", stiffness: 240, damping: 28 }}
           style={{
             position: "fixed",
-            top: 0,
-            right: 0,
-            bottom: 0,
+            top: offset.y,
+            right: -offset.x,
+            bottom: -offset.y,
             width: "min(560px, 92vw)",
             background: "linear-gradient(180deg, rgba(11,18,32,0.95), rgba(5,8,15,0.92))",
             borderLeft: `1px solid ${node.color}55`,
