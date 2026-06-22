@@ -7,6 +7,27 @@ import { PanelContent } from "./panels/PanelContent";
 import { setOverride, loadOverrides, clearOverrides, exportOverrides } from "@/lib/editor/overrides";
 import { usePointerDrag } from "@/hooks/usePointerDrag";
 
+const KIND_GLYPH: Record<string, string> = {
+  cluster: "✦", subhub: "◈", root: "★",
+  motion: "◉", jenis: "▣",
+  vocab: "A", letter: "α",
+  domain: "◆", bab: "❋", subbab: "•",
+  style: "✺",
+  role: "◐", roleskill: "◦",
+  school: "▲", team: "▶", speaker: "✪",
+  bracket: "♛",
+  section: "◇",
+};
+function kindGlyph(k: string) { return KIND_GLYPH[k] || "★"; }
+function crownLabel(c: string) {
+  if (c === "best-speaker") return "★ BEST SPEAKER";
+  if (c === "j1") return "🥇 JUARA 1";
+  if (c === "j2") return "🥈 JUARA 2";
+  if (c === "j3") return "🥉 JUARA 3";
+  return c.toUpperCase();
+}
+
+
 export function SidePanel() {
   const selectedId = useUniverse((s) => s.selectedId);
   const select = useUniverse((s) => s.select);
