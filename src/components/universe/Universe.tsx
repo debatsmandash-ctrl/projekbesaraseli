@@ -628,7 +628,7 @@ export function Universe() {
   return (
     <>
     <Canvas
-      camera={{ position: [0, 38, 220], fov: 58, near: 0.1, far: 1800 }}
+      camera={{ position: [120, 70, 200], fov: 55, near: 0.1, far: 2400 }}
       dpr={profile.dpr}
       frameloop={fpsCap ? "demand" : "always"}
       gl={{
@@ -636,13 +636,13 @@ export function Universe() {
         alpha: true,
         powerPreference: "high-performance",
         toneMapping: THREE.ACESFilmicToneMapping,
-        toneMappingExposure: 0.85,
+        toneMappingExposure: 1.15,
         outputColorSpace: THREE.SRGBColorSpace,
       }}
       style={{ position: "absolute", inset: 0, background: "transparent" }}
     >
       <color attach="background" args={["#05080f"]} />
-      <fog attach="fog" args={["#05080f", 240, 720]} />
+      <fog attach="fog" args={["#05080f", 360, 1100]} />
       <Suspense fallback={null}>
         <Scene profile={profile} />
       </Suspense>
