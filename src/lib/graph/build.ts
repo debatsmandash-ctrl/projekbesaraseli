@@ -18,6 +18,70 @@ function mulberry32(seed: number) {
 }
 const rand = mulberry32(20260614);
 
+// ─── Uniform level spacing ───
+// User request: jarak root→section = section→subsection = ... = leaf seragam.
+// Default 30 unit; bisa di-tune lewat Settings → setLevelSpacing().
+let LEVEL_SPACING = 30;
+export function setLevelSpacing(v: number) { LEVEL_SPACING = Math.max(8, v); }
+export function getLevelSpacing() { return LEVEL_SPACING; }
+
+function hashSeed(v: V3): number {
+  return Math.abs(Math.floor(v[0]*1313 + v[1]*7919 + v[2]*49157)) % 0xffff;
+}
+
+// Point on a fibonacci sphere of radius=LEVEL_SPACING around `center`.
+function fibSphere(center: V3, n: number, seed = 0): V3[] {
+  const out: V3[] = [];
+  const phi = Math.PI * (3 - Math.sqrt(5));
+  const offset = ((seed * 0.61803398875) % 1) * Math.PI * 2;
+  const R = LEVEL_SPACING;
+  for (let i = 0; i < n; i++) {
+    const y = n === 1 ? 0 : 1 - (i / (n - 1)) * 2;
+    const r = Math.sqrt(Math.max(0, 1 - y * y));
+    const th = phi * i + offset;
+    out.push([
+      center[0] + Math.cos(th) * r * R,
+      center[1] + y * R,
+      center[2] + Math.sin(th) * r * R,
+    ]);
+  }
+  return out;
+}
+
+// Point on a fibonacci HEMISPHERE of radius=LEVEL_SPACING around `center`,
+// oriented to face away from `hub`.
+function fibHemisphere(center: V3, hub: V3, n: number, seed = 0): V3[] {
+  const axis = normalize(sub(center, hub));
+  const tmp: V3 = Math.abs(axis[1]) < 0.95 ? [0, 1, 0] : [1, 0, 0];
+  const u: V3 = normalize([
+    axis[1]*tmp[2] - axis[2]*tmp[1],
+    axis[2]*tmp[0] - axis[0]*tmp[2],
+    axis[0]*tmp[1] - axis[1]*tmp[0],
+  ]);
+  const v: V3 = normalize([
+    axis[1]*u[2] - axis[2]*u[1],
+    axis[2]*u[0] - axis[0]*u[2],
+    axis[0]*u[1] - axis[1]*u[0],
+  ]);
+  const out: V3[] = [];
+  const phi = Math.PI * (3 - Math.sqrt(5));
+  const offset = ((seed * 0.61803398875) % 1) * Math.PI * 2;
+  const R = LEVEL_SPACING;
+  for (let i = 0; i < n; i++) {
+    // y ∈ (0, 1] → hemisphere away from hub
+    const y = (i + 0.5) / n;
+    const r = Math.sqrt(Math.max(0, 1 - y * y));
+    const th = phi * i + offset;
+    const lx = Math.cos(th) * r, ly = y, lz = Math.sin(th) * r;
+    out.push([
+      center[0] + (u[0]*lx + axis[0]*ly + v[0]*lz) * R,
+      center[1] + (u[1]*lx + axis[1]*ly + v[1]*lz) * R,
+      center[2] + (u[2]*lx + axis[2]*ly + v[2]*lz) * R,
+    ]);
+  }
+  return out;
+}
+
 type V3 = [number, number, number];
 const normalize = (v: V3): V3 => { const L = Math.hypot(v[0], v[1], v[2]) || 1; return [v[0]/L, v[1]/L, v[2]/L]; };
 const scale = (v: V3, s: number): V3 => [v[0]*s, v[1]*s, v[2]*s];
