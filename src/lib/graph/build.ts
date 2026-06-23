@@ -674,10 +674,10 @@ export function buildGraph(): Graph {
     });
   }
 
-  // ─── Cross-cluster collision push: jaga buffer >= 8 antara leaf cluster berbeda ───
-  {
+  // ─── Cross-cluster collision push (disabled): user request bahwa jarak antar
+  // level seragam — push akan mendistorsi jarak edge. Dibiarkan komentar.
+  if (false) {
     const BUFFER = 6;
-    // only push small leaves (size < 0.2)
     const movable = nodes.filter((n) => n.kind !== "root" && n.kind !== "cluster" && n.kind !== "subhub");
     for (let iter = 0; iter < 2; iter++) {
       for (let i = 0; i < movable.length; i++) {
