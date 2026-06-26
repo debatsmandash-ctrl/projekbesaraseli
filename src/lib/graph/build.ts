@@ -639,10 +639,26 @@ export function buildGraph(): Graph {
     });
   }
 
-  // ─── Cross-cluster collision push: jaga buffer >= 8 antara leaf cluster berbeda ───
+  // ─── SHELL re-projection: pastikan SEMUA leaf benar2 di kulit bola ───
+  // (placeCloud/placeBranch sudah project, tapi root tetap di origin,
+  // subhub offsets juga di-project di sini sebagai safety net.)
   {
-    const BUFFER = 6;
-    // only push small leaves (size < 0.2)
+    for (const n of nodes) {
+      if (n.id === "root") continue;
+      const r = Math.hypot(n.pos[0], n.pos[1], n.pos[2]);
+      if (r < 1e-3) continue;
+      // jitter radial halus per-node (deterministik via hash sederhana)
+      const seed = n.id.split("").reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7) % 1000;
+      const j = ((seed / 1000) - 0.5) * 2 * SHELL_NOISE;
+      const target = SHELL_R + j;
+      const k = target / r;
+      n.pos = [n.pos[0] * k, n.pos[1] * k, n.pos[2] * k];
+    }
+  }
+
+  // ─── Cross-cluster collision push (tangensial, tetap di kulit) ───
+  {
+    const BUFFER = 4.2;
     const movable = nodes.filter((n) => n.kind !== "root" && n.kind !== "cluster" && n.kind !== "subhub");
     for (let iter = 0; iter < 2; iter++) {
       for (let i = 0; i < movable.length; i++) {
@@ -656,11 +672,17 @@ export function buildGraph(): Graph {
             const nx = dx/d, ny = dy/d, nz = dz/d;
             a.pos = [a.pos[0]+nx*push, a.pos[1]+ny*push, a.pos[2]+nz*push];
             b.pos = [b.pos[0]-nx*push, b.pos[1]-ny*push, b.pos[2]-nz*push];
+            // re-project to shell
+            const ra = Math.hypot(a.pos[0], a.pos[1], a.pos[2]);
+            const rb = Math.hypot(b.pos[0], b.pos[1], b.pos[2]);
+            if (ra > 1e-3) { const k = SHELL_R / ra; a.pos = [a.pos[0]*k, a.pos[1]*k, a.pos[2]*k]; }
+            if (rb > 1e-3) { const k = SHELL_R / rb; b.pos = [b.pos[0]*k, b.pos[1]*k, b.pos[2]*k]; }
           }
         }
       }
     }
   }
+
 
   // ─── Apply overrides (label/desc) ───
   for (const n of nodes) {
