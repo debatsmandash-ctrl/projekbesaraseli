@@ -450,7 +450,7 @@ function CameraController({ targetId, profile, autoRotate, autoRotateSpeed, damp
       zoomSpeed={0.8}
       rotateSpeed={profile.rotateSpeed}
       panSpeed={0.7}
-      maxDistance={500}
+      maxDistance={900}
       minDistance={3}
       autoRotate={autoRotate && !interacting && !targetId}
       autoRotateSpeed={autoRotateSpeed}
