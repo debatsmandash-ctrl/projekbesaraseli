@@ -1,18 +1,14 @@
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { OrbitControls, Html } from "@react-three/drei";
-import { EffectComposer, Bloom, ChromaticAberration, Vignette, SMAA } from "@react-three/postprocessing";
+import { EffectComposer, Bloom, ChromaticAberration } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
 import { useMemo, useRef, useEffect, useState, Suspense } from "react";
 import * as THREE from "three";
-import { buildGraph, invalidateGraphCache, setLevelSpacing } from "@/lib/graph/build";
+import { buildGraph } from "@/lib/graph/build";
 import { useUniverse, useSettings, type QualityPreset } from "@/lib/store";
 import type { StarNode, StarEdge, NodeKind } from "@/data/types";
 import { MilkyWaySky } from "./MilkyWaySky";
 import { HoverEdges } from "./HoverEdges";
-import { CoreBlackHole } from "./CoreBlackHole";
-import { GalaxyVolume } from "./GalaxyVolume";
-import { GalaxyGlow } from "./GalaxyGlow";
-import { NebulaClouds } from "./NebulaClouds";
 import { useDeviceProfile, type DeviceProfile } from "@/hooks/useDeviceProfile";
 
 // ─── Halo texture (shared canvas radial gradient) ───
@@ -382,11 +378,10 @@ function StarNodeMesh({ node, isSelected, isHovered, isLit, isDim, haloTex, prof
 }
 
 // ─── Camera flyer ───
-function CameraController({ targetId, profile, autoRotate, autoRotateSpeed, damping, rotateSpeed, zoomSpeed, panSpeed }: { targetId: string | null; profile: DeviceProfile; autoRotate: boolean; autoRotateSpeed: number; damping: number; rotateSpeed: number; zoomSpeed: number; panSpeed: number }) {
+function CameraController({ targetId, profile, autoRotate, autoRotateSpeed, damping }: { targetId: string | null; profile: DeviceProfile; autoRotate: boolean; autoRotateSpeed: number; damping: number }) {
   const controls = useRef<any>(null);
   const { camera } = useThree();
-  const spacing = useSettings((s) => s.levelSpacing);
-  const graph = useMemo(() => buildGraph(), [spacing]);
+  const graph = useMemo(() => buildGraph(), []);
   const [interacting, setInteracting] = useState(false);
   const idleTimerRef = useRef<number | null>(null);
 
@@ -417,10 +412,10 @@ function CameraController({ targetId, profile, autoRotate, autoRotateSpeed, damp
     const target = new THREE.Vector3(...node.pos);
     const dir = target.clone().sub(new THREE.Vector3(0, 0, 0)).normalize();
     const offset =
-      node.kind === "root" ? spacing * 2.2 :
-      node.kind === "cluster" ? spacing * 0.85 :
-      node.kind === "subhub" ? spacing * 0.55 :
-      node.kind === "domain" ? spacing * 0.45 : spacing * 0.28;
+      node.kind === "root" ? 180 :
+      node.kind === "cluster" ? 58 :
+      node.kind === "subhub" ? 34 :
+      node.kind === "domain" ? 28 : 18;
     const camTarget = target.clone().add(dir.multiplyScalar(offset));
     const startCam = camera.position.clone();
     const startLook = (controls.current?.target as THREE.Vector3 | undefined)?.clone() ?? new THREE.Vector3();
@@ -451,10 +446,10 @@ function CameraController({ targetId, profile, autoRotate, autoRotateSpeed, damp
       enableDamping
       dampingFactor={damping}
       zoomToCursor
-      zoomSpeed={zoomSpeed}
-      rotateSpeed={rotateSpeed}
-      panSpeed={panSpeed}
-      maxDistance={Math.max(180, spacing * 9)}
+      zoomSpeed={0.8}
+      rotateSpeed={profile.rotateSpeed}
+      panSpeed={0.7}
+      maxDistance={500}
       minDistance={3}
       autoRotate={autoRotate && !interacting && !targetId}
       autoRotateSpeed={autoRotateSpeed}
@@ -464,17 +459,12 @@ function CameraController({ targetId, profile, autoRotate, autoRotateSpeed, damp
 
 // ─── Scene contents ───
 function Scene({ profile }: { profile: DeviceProfile }) {
-  const settings = useSettings();
-  // Apply spacing → invalidate graph cache → rebuild
-  const graph = useMemo(() => {
-    setLevelSpacing(settings.levelSpacing);
-    invalidateGraphCache();
-    return buildGraph();
-  }, [settings.levelSpacing]);
+  const graph = useMemo(() => buildGraph(), []);
   const selectedId = useUniverse((s) => s.selectedId);
   const hoveredId = useUniverse((s) => s.hoveredId);
   const select = useUniverse((s) => s.select);
   const setLoaded = useUniverse((s) => s.setLoaded);
+  const settings = useSettings();
   const quality = settings.quality;
   const qScale = quality === "low" ? 0.45 : quality === "medium" ? 0.7 : quality === "high" ? 0.9 : 1.0;
   const crustShells = quality === "low" ? 1 : quality === "medium" ? 1 : 2;
@@ -508,17 +498,14 @@ function Scene({ profile }: { profile: DeviceProfile }) {
       <pointLight position={[-140, -60, 100]} intensity={0.22} color="#8aa6d8" distance={320} />
       <pointLight position={[60, -120, 60]} intensity={0.16} color="#38bdf8" distance={300} />
 
-      {/* Distant skybox — dimmed so the volumetric disc is dominant */}
-      <MilkyWaySky opacity={Math.min(settings.nebulaOpacity, 0.45)} />
-      {/* Volumetric Milky-Way disc + bulge + halo + glow + nebulae */}
-      <GalaxyGlow />
-      <GalaxyVolume tier={profile.tier} />
-      <NebulaClouds tier={profile.tier} />
+      <StarField />
       {profile.tier === "desktop" && <Galaxies />}
+      <StarClusters />
+      <MilkyWaySky opacity={settings.nebulaOpacity} />
 
       <group>
         {graph.edges.map((e: StarEdge, i: number) => {
-          if (e.kind === "link" && !settings.showAllLinks) return null; // hover-only by default
+          if (e.kind === "link") return null; // hover-only
           const a = graph.byId.get(e.a);
           const b = graph.byId.get(e.b);
           if (!a || !b) return null;
@@ -542,7 +529,6 @@ function Scene({ profile }: { profile: DeviceProfile }) {
 
       <group>
         {graph.nodes.map((n) => (
-          n.id === "root" ? null :
           <StarNodeMesh
             key={n.id}
             node={n}
@@ -558,21 +544,12 @@ function Scene({ profile }: { profile: DeviceProfile }) {
         ))}
       </group>
 
-      {/* Supermassive black hole at the galactic centre, replaces root sphere */}
-      <CoreBlackHole
-        isSelected={selectedId === "root"}
-        isHovered={hoveredId === "root"}
-      />
-
       <CameraController
         targetId={selectedId}
         profile={profile}
         autoRotate={settings.autoRotate && !settings.reducedMotion}
         autoRotateSpeed={settings.autoRotateSpeed}
         damping={settings.damping}
-        rotateSpeed={settings.cameraRotateSpeed}
-        zoomSpeed={settings.cameraZoomSpeed}
-        panSpeed={settings.cameraPanSpeed}
       />
 
       <mesh onPointerMissed={() => select(null)} visible={false}>
@@ -582,17 +559,9 @@ function Scene({ profile }: { profile: DeviceProfile }) {
 
       {bloomEnabled && (
         <EffectComposer multisampling={quality === "ultra" ? 4 : 0}>
-          <Bloom
-            intensity={profile.bloomIntensity * settings.bloomIntensity * qScale * 1.4}
-            luminanceThreshold={0.18}
-            luminanceSmoothing={0.8}
-            mipmapBlur
-            radius={profile.bloomRadius * 1.1}
-          />
-          {quality === "ultra" ? <SMAA /> : <></>}
-          <Vignette eskil={false} offset={0.18} darkness={0.78} />
+          <Bloom intensity={profile.bloomIntensity * settings.bloomIntensity * qScale} luminanceThreshold={0.32} luminanceSmoothing={0.7} mipmapBlur radius={profile.bloomRadius} />
           {profile.chromaticAberration && quality === "ultra" ? (
-            <ChromaticAberration offset={[0.0006, 0.0006]} radialModulation={false} modulationOffset={0} blendFunction={BlendFunction.NORMAL} />
+            <ChromaticAberration offset={[0.0008, 0.0008]} radialModulation={false} modulationOffset={0} blendFunction={BlendFunction.NORMAL} />
           ) : <></>}
         </EffectComposer>
       )}
@@ -649,7 +618,7 @@ export function Universe() {
   return (
     <>
     <Canvas
-      camera={{ position: [70, 42, 110], fov: 52, near: 0.1, far: 2400 }}
+      camera={{ position: [0, 38, 220], fov: 58, near: 0.1, far: 1800 }}
       dpr={profile.dpr}
       frameloop={fpsCap ? "demand" : "always"}
       gl={{
@@ -657,14 +626,13 @@ export function Universe() {
         alpha: true,
         powerPreference: "high-performance",
         toneMapping: THREE.ACESFilmicToneMapping,
-        toneMappingExposure: 1.25,
+        toneMappingExposure: 0.85,
         outputColorSpace: THREE.SRGBColorSpace,
-        logarithmicDepthBuffer: true,
       }}
       style={{ position: "absolute", inset: 0, background: "transparent" }}
     >
       <color attach="background" args={["#05080f"]} />
-      <fog attach="fog" args={["#05080f", 220, 900]} />
+      <fog attach="fog" args={["#05080f", 240, 720]} />
       <Suspense fallback={null}>
         <Scene profile={profile} />
       </Suspense>

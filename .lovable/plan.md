@@ -1,79 +1,79 @@
-## Goal
+# Upgrade Galaksi HD + Mobile UI + PWA
 
-1. Ganti black hole jadi gaya **Interstellar Gargantua** (bukan "bola + cakram CD") — disc-nya melengkung di atas dan bawah event horizon karena lensing gravitasi, photon ring tipis tajam, lighting sekitar warm orange yang membungkus horizon.
-2. Sebar semua node informasi **merata ke seluruh volume galaxy** dengan **jarak antar level seragam = 30 unit** (root→section = section→subsection = subsection→leaf), pakai **fibonacci sphere per level**.
-3. Upgrade cakram galaxy: dust lane gelap realistis + bulge→disc gradient + spiral arms lebih jelas + tilt/parallax dust.
+## 1. Milky Way HD (procedural shader, bore-up)
 
----
+File: `src/components/universe/MilkyWaySky.tsx` (rewrite)
 
-## 1. Black hole — Gargantua look (`CoreBlackHole.tsx` rewrite)
+- Naikkan resolusi noise: 6–7 oktaf FBM (saat ini ~3), tambah ridge noise utk dust lane gelap yg tegas.
+- **Asymmetric core bulge**: pusat galaksi terang hanya di satu sisi (bukan ring penuh). Pakai radial gaussian besar di satu arah (mis. +X), warna amber-cream `#ffd9a8 → #ffb070`, falloff lebar.
+- **Dust lanes**: lapisan kedua FBM di-invert + threshold, warna deep brown `#1a0e08`, ditumpuk di atas disc utk siluet lane gelap.
+- **Disc gradient**: cream center → blue-white mid `#b8c8ff` → dark navy edge `#03050d`. Anisotropic disc tipis (h ±0.08) supaya jelas pita.
+- **Star layers (3 lapis, di skybox shader, bukan PointLight)**:
+  - Background haze: ribuan titik halus via hash noise, intensitas tinggi di dalam pita.
+  - Mid stars: ~2000 titik kecil dgn temperature tint (blue-white–amber).
+  - Foreground bright: ~60 bintang besar dgn diffraction cross subtle.
+- **Lighting universe**: 2 directional/point light lemah yg warnanya match core (amber) + opposite (cool blue), sehingga node 3D dapat rim-light dari arah galaxy core.
+- Kamera tetap di dalam disc, miringkan sedikit supaya core terlihat di sisi kanan layar.
+- Tone: deep, gelap, kontras tinggi — fokus tetap di node.
 
-**Hapus**: layout cakram datar 2-layer + torus photon ring + dual fresnel sphere rim. Penampilan "CD" datang dari ring datar di equator.
+## 2. Cluster Competitor (slider=4 → dekat tapi tidak nabrak)
 
-**Ganti dengan**:
-- **Event horizon**: sphere hitam kecil (radius 1.2), tetap.
-- **Curved accretion disc dengan lensing**: satu mesh ring tipis di plane equator dengan shader yang me-render disc dua kali via fragment trick — bagian belakang disc dibengkokkan ke atas/bawah lewat photon-deflection approximation. Pendekatan praktis: render disc sebagai geometry, lalu duplikasi mesh kedua di plane yang sama tapi shader-nya menggambar "top arc" dan "bottom arc" melengkung di atas horizon menggunakan parametric mapping `(r, θ) → screen` dengan offset Y proporsional `1/r`. Ini meniru efek lensing Gargantua tanpa raymarching penuh.
-- **Photon ring**: torus sangat tipis (tube 0.02, radius 1.45) putih-kekuningan, additive, sebagai garis lensing tajam yang membungkus horizon.
-- **Top/bottom lensing arcs**: 2 ring tambahan di atas (+Y) dan bawah (−Y) horizon — meniru sisi-jauh disc yang "terangkat" ke atas dan bawah view kamera. Diorientasikan menghadap kamera (billboard tipis) dengan kelengkungan vertex shader.
-- **Doppler beaming**: sisi mendekati kamera 3-4× lebih terang (sudah ada, intensifkan).
-- **Glow sekitar**: sprite radial warm orange (#ff8830 → transparent) di belakang horizon untuk lighting envelopment.
-- **Hapus**: outer einstein blue rim, 2nd lensing arc faint biru — terlalu "ring planet".
+File: `src/lib/graph/build.ts`
 
-Palet: inner `#fff4d6` → mid `#ffa850` → outer `#b03010`. Photon ring `#fff0c8`. Glow `#ff7028`.
+- Radius leaf sekolah di Competitor: dari ~10–11 → **5.5**.
+- Cek collision dgn radius node parent (`competitor` hub) + node visual size; pastikan jarak min ≈ parentRadius + childRadius + 0.8 padding.
+- Sub-hub Competitor tetap, hanya jarak parent→leaf yg dipendekkan.
 
-## 2. Uniform spacing layout (`src/lib/graph/build.ts` rewrite)
+## 3. Panel & Navigasi bisa digeser (desktop + mobile)
 
-Ganti circular orbit cluster + jitter sekarang dengan **per-level fibonacci sphere**:
+Files: `src/components/shell/SidePanel.tsx`, `src/components/shell/Sidebar.tsx`, `src/components/shell/MobileShell.tsx`
 
-```
-LEVEL_RADIUS = 30 (configurable)
-level 0 (root)        → posisi origin
-level 1 (sections)    → fibonacci sphere radius = 30, N points
-level 2 (subsections) → tiap parent jadi anchor; child ditempatkan
-                        di fibonacci-sphere lokal radius 30 di sekitar parent
-level 3+              → recurse, tiap parent jadi pusat shell baru radius 30
-```
+- Tambah drag handle di tepi panel (kiri utk Sidebar, kanan utk SidePanel di desktop).
+- State `panelOffset` di `src/lib/store.ts` (zustand) per panel, persisted ke localStorage.
+- Pakai pointer events (no library) — drag mengubah `translateX/Y`, snap ke edge bila <40px.
+- Mobile: bottom sheet bisa di-drag handle vertikal (lihat #4).
 
-Fibonacci sphere formula (golden angle):
-```
-φ = π * (3 - √5)
-for i in 0..n-1:
-  y = 1 - (i/(n-1)) * 2          // -1..1
-  r = √(1 - y²)
-  θ = φ * i
-  pos = (cos(θ)*r, y, sin(θ)*r) * RADIUS
-```
+## 4. Mobile UI baru (default = bottom sheet, opsi di Settings)
 
-**Disc flattening**: NONE — user pilih "Fibonacci sphere per level", jadi nodes mengisi volume bola merata, bukan dipipihkan. Galaxy disc tetap volumetric dari star particles, tapi node graph itu sendiri spherical.
+Files baru:
+- `src/components/shell/mobile/BottomSheet.tsx` — info panel sbg sheet 3 snap point (peek 12%, mid 50%, full 92%), drag handle.
+- `src/components/shell/mobile/FloatingPills.tsx` — alternatif: nav pill atas + info pill bawah, collapsible jadi icon.
+- `src/components/shell/mobile/MobileNavBar.tsx` — top bar tipis (logo + search + menu).
 
-**Collision avoid**: kalau child shell milik 2 parent berdekatan saling tumpang, jitter rotasi tiap shell pakai PRNG seeded oleh parent.id sehingga deterministik. Tidak ada penyesuaian jarak — jarak tetap 30.
+Logic:
+- `useDeviceProfile()` deteksi mobile (sudah ada).
+- Setting baru di `SettingsPanel.tsx`: **Mobile layout** = "Bottom sheet (default)" | "Floating pills". Disimpan di store.
+- `MobileShell.tsx` switch berdasar setting tsb.
+- Desktop **tidak berubah** sama sekali.
 
-**Edge length**: otomatis seragam 30 karena tiap child di sphere radius 30 dari parent-nya.
+Target: peta bintang minimal 60% layar selalu terlihat di mobile.
 
-**Hapus**: `roles`/`event` orbit ring, `rJ/thJ/yJ` jitter, disc-flattening pass.
+## 5. Warna hover sesuai bintang tujuan
 
-## 3. Galaxy disc upgrades (`GalaxyVolume.tsx`, `NebulaClouds.tsx`, `GalaxyGlow.tsx`)
+File: `src/components/universe/HoverEdges.tsx` (+ `Universe.tsx`)
 
-- **Dust lane gelap** (`GalaxyVolume.tsx`): kembalikan `genDustLanes` tapi pakai **multiplicative blending** dengan warna coklat-gelap `(0.08, 0.05, 0.03)`, density ~12k, ditempatkan tepat **di dalam** arm (phase offset −0.18) sebagai silhouette. Beda dari kosmik dust di `NebulaClouds` — yang ini sangat tipis (slab y ±1) dan langsung di plane disc.
-- **Bulge → disc gradient** (`GalaxyGlow.tsx`): tambah radial sprite warm `#ffd890 → #ff8040 → transparent` dengan falloff `exp(-r²/σ²)`, σ besar (~80) supaya transisi halus dari bulge terang ke arm gelap. Hapus banding stripe yang masih ada.
-- **Spiral arms lebih jelas** (`GalaxyVolume.tsx`): tightness `b = 0.22 → 0.26`, transverse spread `4 + r*0.08 → 3 + r*0.05` (lengan lebih ramping/tegas), naikkan brightness HII regions 1.3×, naikkan thin-disc star count 55k → 70k desktop.
-- **Tilt + parallax dust** (`NebulaClouds.tsx`): tilt galaxy +12° (sudah ~6°+4° → naikkan ke 14°), tambah 1 layer dust depan kamera tipis (Z+150 dari pusat) supaya ada parallax saat orbit.
+- Saat hover edge/node, ambil warna node tujuan (target star color), pakai sbg stroke edge + glow halo.
+- Sebelumnya warna hover statis — sekarang dynamic per target.
 
-## 4. Settings (`store.ts`, `SettingsPanel.tsx`)
+## 6. Installable PWA (home-screen only)
 
-- Tambah slider `levelSpacing` (15–60, default 30) untuk tune jarak antar level live.
-- Edge `showAllLinks` tetap.
+Files:
+- `public/manifest.webmanifest` (baru): name "Debate Universe", short_name "Debate U", display "standalone", theme `#03050d`, background `#000`.
+- Icons: 192, 512, maskable 512 — generate via imagegen (logo galaksi sederhana).
+- `src/routes/__root.tsx` head(): tambah link `manifest`, `apple-touch-icon`, meta `theme-color`, `apple-mobile-web-app-capable`.
+- **Tidak ada service worker** (sesuai pilihan home-screen only). Tidak ada offline cache.
 
----
+## File summary
 
-## Technical notes
+**Baru**: `BottomSheet.tsx`, `FloatingPills.tsx`, `MobileNavBar.tsx`, `public/manifest.webmanifest`, 3 icon PNG.
 
-- Curved disc Gargantua: pakai 1 ring geometry, shader fragment hitung `worldY` offset berdasar angle relatif ke kamera + radius — bagian disc di "belakang" horizon dipindah ke fragment dengan UV-remap (`uv.y` pada θ tertentu di-shift). Ini approximation, bukan ray-traced lensing — tapi visually sangat mendekati Gargantua karena bloom post-process akan menutupi seam.
-- Fallback: kalau approximation seam terlalu kentara, render 2 ring terpisah (front-half flat, back-half melengkung billboard ke atas) → 100% guaranteed look.
-- Fibonacci layout deterministik (no PRNG di posisi pusat shell), hanya rotasi shell seeded oleh `parent.id` hash supaya child cluster tidak collide.
-- Edge graph tetap pakai sistem `HoverEdges` / `showAllLinks` existing — panjang edge ~30 visually konsisten.
+**Diubah**: `MilkyWaySky.tsx`, `build.ts`, `SidePanel.tsx`, `Sidebar.tsx`, `MobileShell.tsx`, `SettingsPanel.tsx`, `store.ts`, `HoverEdges.tsx`, `Universe.tsx`, `__root.tsx`.
 
-## Files touched
+**Tidak diubah**: data roles, layout desktop, semua konten panel.
 
-- Rewrite: `src/components/universe/CoreBlackHole.tsx`, `src/lib/graph/build.ts`
-- Edit: `src/components/universe/GalaxyVolume.tsx`, `src/components/universe/GalaxyGlow.tsx`, `src/components/universe/NebulaClouds.tsx`, `src/components/universe/Universe.tsx` (tilt + camera distance match new layout radius), `src/lib/store.ts`, `src/components/shell/SettingsPanel.tsx`
+## Catatan teknis
+
+- Shader noise pakai GLSL hash (no texture) → tetap ringan, target 60fps di desktop, 30fps di mobile.
+- Drag panel pakai pointer events native + `useRef`, no dnd-kit (overkill).
+- Bottom sheet pakai framer-motion `useDragControls` (sudah ada di project).
+- Manifest icons: solid background utk maskable, transparent utk regular.

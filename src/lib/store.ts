@@ -14,14 +14,9 @@ export interface Settings {
   nebulaOpacity: number;
   starSize: number;
   showHoverEdges: boolean;
-  showAllLinks: boolean;
-  levelSpacing: number;
   autoRotate: boolean;
   autoRotateSpeed: number;
   damping: number;
-  cameraRotateSpeed: number;
-  cameraZoomSpeed: number;
-  cameraPanSpeed: number;
   audioMuted: boolean;
   audioVolume: number;
   reducedMotion: boolean;
@@ -40,14 +35,9 @@ export const DEFAULT_SETTINGS: Settings = {
   nebulaOpacity: 0.95,
   starSize: 1.0,
   showHoverEdges: true,
-  showAllLinks: false,
-  levelSpacing: 30,
   autoRotate: true,
   autoRotateSpeed: 0.25,
   damping: 0.1,
-  cameraRotateSpeed: 1.2,
-  cameraZoomSpeed: 1.4,
-  cameraPanSpeed: 1.2,
   audioMuted: true,
   audioVolume: 0.35,
   reducedMotion: false,
