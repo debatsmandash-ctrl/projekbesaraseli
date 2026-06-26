@@ -450,7 +450,7 @@ function CameraController({ targetId, profile, autoRotate, autoRotateSpeed, damp
       zoomSpeed={0.8}
       rotateSpeed={profile.rotateSpeed}
       panSpeed={0.7}
-      maxDistance={500}
+      maxDistance={900}
       minDistance={3}
       autoRotate={autoRotate && !interacting && !targetId}
       autoRotateSpeed={autoRotateSpeed}
@@ -492,12 +492,12 @@ function Scene({ profile }: { profile: DeviceProfile }) {
 
   return (
     <>
-      {/* Lighting global — kalem & gelap; aksen krem/biru, BUKAN pink/magenta */}
-      <ambientLight intensity={0.14} />
-      <pointLight position={[0, 0, 0]} intensity={0.5} color="#d8b27a" distance={260} />
-      <pointLight position={[140, 80, -80]} intensity={0.28} color="#00ffc8" distance={360} />
-      <pointLight position={[-140, -60, 100]} intensity={0.22} color="#8aa6d8" distance={320} />
-      <pointLight position={[60, -120, 60]} intensity={0.16} color="#38bdf8" distance={300} />
+      {/* Lighting global — boosted di ULTRA agar node sisi jauh bola tetap terlihat */}
+      <ambientLight intensity={quality === "ultra" ? 0.22 : quality === "high" ? 0.18 : 0.14} />
+      <pointLight position={[0, 0, 0]} intensity={quality === "ultra" ? 0.85 : 0.5} color="#d8b27a" distance={quality === "ultra" ? 520 : 260} />
+      <pointLight position={[140, 80, -80]} intensity={quality === "ultra" ? 0.45 : 0.28} color="#00ffc8" distance={quality === "ultra" ? 560 : 360} />
+      <pointLight position={[-140, -60, 100]} intensity={quality === "ultra" ? 0.38 : 0.22} color="#8aa6d8" distance={quality === "ultra" ? 520 : 320} />
+      <pointLight position={[60, -120, 60]} intensity={quality === "ultra" ? 0.28 : 0.16} color="#38bdf8" distance={quality === "ultra" ? 500 : 300} />
 
       <StarField />
       {profile.tier === "desktop" && <Galaxies />}
@@ -628,7 +628,7 @@ export function Universe() {
   return (
     <>
     <Canvas
-      camera={{ position: [0, 38, 220], fov: 58, near: 0.1, far: 1800 }}
+      camera={{ position: [0, 60, 360], fov: 58, near: 0.1, far: 2400 }}
       dpr={profile.dpr}
       frameloop={fpsCap ? "demand" : "always"}
       gl={{
@@ -642,7 +642,7 @@ export function Universe() {
       style={{ position: "absolute", inset: 0, background: "transparent" }}
     >
       <color attach="background" args={["#05080f"]} />
-      <fog attach="fog" args={["#05080f", 240, 720]} />
+      <fog attach="fog" args={["#05080f", 380, 1100]} />
       <Suspense fallback={null}>
         <Scene profile={profile} />
       </Suspense>

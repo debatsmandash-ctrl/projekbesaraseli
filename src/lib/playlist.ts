@@ -4,6 +4,8 @@ import stay from "@/assets/audio/stay-at-your-house.mp3.asset.json";
 import dragonspine from "@/assets/audio/dragonspine-medley.mp3.asset.json";
 import dreamAria from "@/assets/audio/dream-aria.mp3.asset.json";
 import columbina from "@/assets/audio/columbina-lullaby.mp3.asset.json";
+import canYouHear from "@/assets/audio/can-you-hear-the-music.mp3.asset.json";
+import timeInception from "@/assets/audio/time-inception.mp3.asset.json";
 
 export interface Track {
   id: string;
@@ -13,12 +15,14 @@ export interface Track {
 }
 
 export const TRACKS: Track[] = [
-  { id: "interstellar",  title: "Interstellar Theme",       artist: "Hans Zimmer",      url: interstellar.url },
-  { id: "no-time",       title: "No Time For Caution",      artist: "Hans Zimmer",      url: noTime.url },
-  { id: "stay",          title: "I Really Want to Stay",    artist: "Rosa Walton",      url: stay.url },
-  { id: "dragonspine",   title: "Dragonspine Medley",       artist: "Genshin Impact",   url: dragonspine.url },
-  { id: "dream-aria",    title: "Dream Aria",               artist: "Genshin Impact",   url: dreamAria.url },
-  { id: "columbina",     title: "Columbina's Lullaby",      artist: "Genshin Impact",   url: columbina.url },
+  { id: "interstellar",  title: "Interstellar Theme",            artist: "Hans Zimmer",        url: interstellar.url },
+  { id: "time-inception",title: "Time",                          artist: "Hans Zimmer",        url: timeInception.url },
+  { id: "can-you-hear",  title: "Can You Hear The Music (slow)", artist: "Ludwig Göransson",   url: canYouHear.url },
+  { id: "no-time",       title: "No Time For Caution",           artist: "Hans Zimmer",        url: noTime.url },
+  { id: "stay",          title: "I Really Want to Stay",         artist: "Rosa Walton",        url: stay.url },
+  { id: "dragonspine",   title: "Dragonspine Medley",            artist: "Genshin Impact",     url: dragonspine.url },
+  { id: "dream-aria",    title: "Dream Aria",                    artist: "Genshin Impact",     url: dreamAria.url },
+  { id: "columbina",     title: "Columbina's Lullaby",           artist: "Genshin Impact",     url: columbina.url },
 ];
 
 export const DEFAULT_ENABLED_TRACKS: Record<string, boolean> = Object.fromEntries(
