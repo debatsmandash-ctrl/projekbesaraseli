@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { buildGraph } from "@/lib/graph/build";
 import { useUniverse } from "@/lib/store";
 import type { StarNode } from "@/data/types";
@@ -18,7 +18,7 @@ export function Universe2D() {
   const hover = useUniverse((s) => s.hover);
   const selectedId = useUniverse((s) => s.selectedId);
   const hoveredId = useUniverse((s) => s.hoveredId);
-  const [view, setView] = useState({ x: 0, y: 0, zoom: 1 });
+  const viewRef = useRef({ x: 0, y: 0, zoom: 1 });
   const dragRef = useRef<{ x: number; y: number; vx: number; vy: number } | null>(null);
 
   // background stars
@@ -81,9 +81,9 @@ export function Universe2D() {
     const ro = new ResizeObserver(resize);
     ro.observe(wrap);
 
-    const anyActive = !!(selectedId ?? hoveredId);
-
     const draw = () => {
+      const view = viewRef.current;
+      const anyActive = !!(selectedId ?? hoveredId);
       const w = canvas.width, h = canvas.height;
       ctx.clearRect(0, 0, w, h);
       // background
@@ -113,7 +113,7 @@ export function Universe2D() {
       for (const e of graph.edges) {
         if (e.kind === "link") continue;
         const a = projected.get(e.a), b = projected.get(e.b);
-        if (!a || !b) return;
+        if (!a || !b) continue;
         const lit = anyActive && litSet.has(e.a) && litSet.has(e.b);
         const dim = anyActive && !lit;
         ctx.strokeStyle = e.color || "#ffffff";
@@ -167,6 +167,7 @@ export function Universe2D() {
 
     // interactions
     const screenToWorld = (sx: number, sy: number) => {
+      const view = viewRef.current;
       const rect = canvas.getBoundingClientRect();
       const px = (sx - rect.left) * dpr;
       const py = (sy - rect.top) * dpr;
@@ -189,7 +190,8 @@ export function Universe2D() {
       if (dragRef.current) {
         const dx = e.clientX - dragRef.current.x;
         const dy = e.clientY - dragRef.current.y;
-        setView((v) => ({ ...v, x: dragRef.current!.vx + dx, y: dragRef.current!.vy + dy }));
+        viewRef.current.x = dragRef.current.vx + dx;
+        viewRef.current.y = dragRef.current.vy + dy;
         return;
       }
       const id = hitTest(e.clientX, e.clientY);
@@ -199,14 +201,14 @@ export function Universe2D() {
     const onDown = (e: PointerEvent) => {
       const id = hitTest(e.clientX, e.clientY);
       if (id) { select(id); return; }
-      dragRef.current = { x: e.clientX, y: e.clientY, vx: view.x, vy: view.y };
+      dragRef.current = { x: e.clientX, y: e.clientY, vx: viewRef.current.x, vy: viewRef.current.y };
       canvas.style.cursor = "grabbing";
     };
     const onUp = () => { dragRef.current = null; canvas.style.cursor = "grab"; };
     const onWheel = (e: WheelEvent) => {
       e.preventDefault();
       const f = Math.exp(-e.deltaY * 0.001);
-      setView((v) => ({ ...v, zoom: Math.max(0.2, Math.min(6, v.zoom * f)) }));
+      viewRef.current.zoom = Math.max(0.2, Math.min(6, viewRef.current.zoom * f));
     };
     canvas.addEventListener("pointermove", onMove);
     canvas.addEventListener("pointerdown", onDown);
@@ -220,7 +222,7 @@ export function Universe2D() {
       window.removeEventListener("pointerup", onUp);
       canvas.removeEventListener("wheel", onWheel);
     };
-  }, [graph, projected, bgStars, view, selectedId, hoveredId, litSet, hover, select]);
+  }, [graph, projected, bgStars, selectedId, hoveredId, litSet, hover, select]);
 
   return (
     <div ref={wrapRef} style={{ position: "absolute", inset: 0, background: "#020308" }}>
