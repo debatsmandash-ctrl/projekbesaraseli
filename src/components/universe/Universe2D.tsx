@@ -19,8 +19,11 @@ export function Universe2D() {
   const hover = useUniverse((s) => s.hover);
   const selectedId = useUniverse((s) => s.selectedId);
   const hoveredId = useUniverse((s) => s.hoveredId);
+  const setLoaded = useUniverse((s) => s.setLoaded);
   const viewRef = useRef({ x: 0, y: 0, zoom: 1 });
   const dragRef = useRef<{ x: number; y: number; vx: number; vy: number } | null>(null);
+
+  useEffect(() => { setLoaded(true); }, [setLoaded]);
 
   // Background twinkle stars — natural redup
   const bgStars = useMemo(() => {
