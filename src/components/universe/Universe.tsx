@@ -4,13 +4,14 @@ import { EffectComposer, Bloom, ChromaticAberration } from "@react-three/postpro
 import { BlendFunction } from "postprocessing";
 import { useMemo, useRef, useEffect, useState, Suspense } from "react";
 import * as THREE from "three";
-import { buildGraph } from "@/lib/graph/build";
-import { useUniverse, useSettings, type QualityPreset } from "@/lib/store";
+import { buildGraph, SHELL_R } from "@/lib/graph/build";
+import { useUniverse, useSettings } from "@/lib/store";
 import type { StarNode, StarEdge, NodeKind } from "@/data/types";
 import { MilkyWaySky } from "./MilkyWaySky";
 import { HoverEdges } from "./HoverEdges";
 import { Universe2D } from "./Universe2D";
 import { useDeviceProfile, type DeviceProfile } from "@/hooks/useDeviceProfile";
+
 
 // ─── Halo texture (shared canvas radial gradient) ───
 function makeHaloTexture(): THREE.CanvasTexture {
@@ -378,8 +379,11 @@ function StarNodeMesh({ node, isSelected, isHovered, isLit, isDim, haloTex, prof
   );
 }
 
-// ─── Camera flyer ───
-function CameraController({ targetId, profile, autoRotate, autoRotateSpeed, damping }: { targetId: string | null; profile: DeviceProfile; autoRotate: boolean; autoRotateSpeed: number; damping: number }) {
+// ─── Camera flyer / Rover ───
+function CameraController({ targetId, profile, autoRotate, autoRotateSpeed, damping, preset }: {
+  targetId: string | null; profile: DeviceProfile; autoRotate: boolean; autoRotateSpeed: number; damping: number;
+  preset: "free" | "orbit" | "top" | "tour";
+}) {
   const controls = useRef<any>(null);
   const { camera } = useThree();
   const graph = useMemo(() => buildGraph(), []);
@@ -406,6 +410,45 @@ function CameraController({ targetId, profile, autoRotate, autoRotateSpeed, damp
     };
   }, []);
 
+  // Camera preset transitions (Rover)
+  useEffect(() => {
+    if (!controls.current) return;
+    const CAM_R = SHELL_R * 3.2; // ≈ 198
+    let dest: THREE.Vector3 | null = null;
+    let look = new THREE.Vector3(0, 0, 0);
+    if (preset === "top") dest = new THREE.Vector3(0, CAM_R, 0.001);
+    else if (preset === "orbit") dest = new THREE.Vector3(CAM_R, CAM_R * 0.35, CAM_R * 0.6);
+    else if (preset === "free") dest = null;
+    // "tour" handled by animation tick below
+    if (dest) {
+      const startCam = camera.position.clone();
+      let t = 0;
+      const tick = () => {
+        t += 1 / 60;
+        const k = Math.min(1, t / 1.4);
+        const e = k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
+        camera.position.lerpVectors(startCam, dest!, e);
+        controls.current?.target.lerp(look, e);
+        controls.current?.update();
+        if (k < 1) requestAnimationFrame(tick);
+      };
+      tick();
+    }
+  }, [preset, camera]);
+
+  // Tour mode: orbit the shell autonomously around 4 waypoints.
+  useFrame((_, dt) => {
+    if (preset !== "tour" || !controls.current) return;
+    const CAM_R = SHELL_R * 3.0;
+    const t = performance.now() * 0.00012; // slow
+    const x = Math.cos(t) * CAM_R;
+    const z = Math.sin(t) * CAM_R;
+    const y = Math.sin(t * 0.7) * CAM_R * 0.55;
+    camera.position.lerp(new THREE.Vector3(x, y, z), Math.min(1, dt * 1.2));
+    controls.current.target.lerp(new THREE.Vector3(0, 0, 0), Math.min(1, dt * 1.2));
+    controls.current.update();
+  });
+
   useEffect(() => {
     if (!targetId) return;
     const node = graph.byId.get(targetId);
@@ -413,10 +456,10 @@ function CameraController({ targetId, profile, autoRotate, autoRotateSpeed, damp
     const target = new THREE.Vector3(...node.pos);
     const dir = target.clone().sub(new THREE.Vector3(0, 0, 0)).normalize();
     const offset =
-      node.kind === "root" ? 180 :
-      node.kind === "cluster" ? 58 :
-      node.kind === "subhub" ? 34 :
-      node.kind === "domain" ? 28 : 18;
+      node.kind === "root" ? SHELL_R * 3.0 :
+      node.kind === "cluster" ? 44 :
+      node.kind === "subhub" ? 28 :
+      node.kind === "domain" ? 22 : 14;
     const camTarget = target.clone().add(dir.multiplyScalar(offset));
     const startCam = camera.position.clone();
     const startLook = (controls.current?.target as THREE.Vector3 | undefined)?.clone() ?? new THREE.Vector3();
@@ -438,25 +481,29 @@ function CameraController({ targetId, profile, autoRotate, autoRotateSpeed, damp
     tick();
   }, [targetId, camera, graph]);
 
+  const presetAutoRotate = preset === "orbit" || (autoRotate && preset === "free" && !interacting && !targetId);
+  const presetRotateSpeed = preset === "orbit" ? Math.max(0.35, autoRotateSpeed * 1.4) : autoRotateSpeed;
+
   return (
     <OrbitControls
       ref={controls}
-      enablePan
+      enablePan={preset === "free"}
       enableZoom
-      enableRotate
+      enableRotate={preset !== "tour"}
       enableDamping
       dampingFactor={damping}
       zoomToCursor
       zoomSpeed={0.8}
       rotateSpeed={profile.rotateSpeed}
       panSpeed={0.7}
-      maxDistance={900}
+      maxDistance={SHELL_R * 6}
       minDistance={3}
-      autoRotate={autoRotate && !interacting && !targetId}
-      autoRotateSpeed={autoRotateSpeed}
+      autoRotate={presetAutoRotate}
+      autoRotateSpeed={presetRotateSpeed}
     />
   );
 }
+
 
 // ─── Scene contents ───
 function Scene({ profile }: { profile: DeviceProfile }) {
