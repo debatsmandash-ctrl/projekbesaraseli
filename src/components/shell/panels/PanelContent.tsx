@@ -349,9 +349,25 @@ function MatterSubBabPanel({ refId }: { refId: string }) {
   );
 }
 
+// Assign deterministic risk 1..5 from index. First point = safer, last = bolder.
+function riskFor(i: number, n: number): number {
+  if (n <= 1) return 3;
+  const t = i / (n - 1); // 0..1
+  return Math.max(1, Math.min(5, Math.round(1 + t * 4)));
+}
+
 function MotionPanel({ refId }: { refId: string }) {
   const m = MOTIONS.find((x) => x.id === refId);
+  const [tab, setTab] = useState<"overview" | "argumen" | "ideal" | "research">("overview");
   if (!m) return null;
+  const pro = m.pro || [];
+  const kon = m.kon || [];
+  const TABS = [
+    { k: "overview", label: "OVERVIEW" },
+    { k: "argumen",  label: `ARGUMEN · ${pro.length}/${kon.length}` },
+    { k: "ideal",    label: "IDEAL CASE" },
+    { k: "research", label: "RESEARCH" },
+  ] as const;
   return (
     <div>
       <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
@@ -360,37 +376,102 @@ function MotionPanel({ refId }: { refId: string }) {
         {m.comp && <Chip color="var(--au-gold)">{m.comp}</Chip>}
       </div>
       {m.orig && <div style={{ ...muted, marginTop: 10, fontSize: 9 }}>{m.orig}</div>}
-      {m.ctx && <p style={{ ...para, marginTop: 14 }}>{m.ctx}</p>}
-      {m.pro && (
-        <>
-          <h3 style={heading}>Argumen Pro</h3>
-          {m.pro.map((p, i) => <p key={i} style={{ ...para, marginBottom: 6, borderLeft: "2px solid var(--au-agg)", paddingLeft: 12 }}>→ {p}</p>)}
-        </>
-      )}
-      {m.kon && (
-        <>
-          <h3 style={heading}>Argumen Kontra</h3>
-          {m.kon.map((p, i) => <p key={i} style={{ ...para, marginBottom: 6, borderLeft: "2px solid var(--au-blue)", paddingLeft: 12 }}>→ {p}</p>)}
-        </>
-      )}
-      {m.ideal && (
-        <>
-          <h3 style={heading}>Ideal Case</h3>
-          <p style={para} dangerouslySetInnerHTML={{ __html: m.ideal }} />
-        </>
-      )}
-      {m.research && (
-        <>
-          <h3 style={heading}>Research</h3>
-          <p style={para} dangerouslySetInnerHTML={{ __html: m.research }} />
-        </>
-      )}
-      {m.terms && m.terms.length > 0 && (
-        <div style={{ marginTop: 18 }}>
-          <div style={muted}>Istilah</div>
-          <div style={{ marginTop: 8 }}>{m.terms.map((t) => <Chip key={t} color="var(--au-blue)">{t}</Chip>)}</div>
-        </div>
-      )}
+
+      {/* Tab bar */}
+      <div style={{ display: "flex", gap: 4, marginTop: 18, borderBottom: "1px solid rgba(168,85,247,0.18)" }}>
+        {TABS.map((t) => (
+          <button key={t.k} onClick={() => setTab(t.k)}
+            style={{
+              flex: 1, padding: "8px 4px", background: "transparent",
+              border: "none", borderBottom: `2px solid ${tab === t.k ? "var(--au-cyan)" : "transparent"}`,
+              color: tab === t.k ? "var(--au-text)" : "var(--au-muted)",
+              cursor: "pointer", fontFamily: "Space Mono", fontSize: 9, letterSpacing: "0.18em",
+            }}>{t.label}</button>
+        ))}
+      </div>
+
+      <div style={{ marginTop: 16 }}>
+        {tab === "overview" && (
+          <>
+            {m.ctx && <p style={para}>{m.ctx}</p>}
+            <div style={{ marginTop: 18, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+              <div style={{ padding: "10px 12px", background: "rgba(255,107,107,0.07)", border: "1px solid rgba(255,107,107,0.3)", borderRadius: 4 }}>
+                <div style={{ ...muted, color: "var(--au-agg)", fontSize: 9 }}>PRO POINTS</div>
+                <div style={{ fontFamily: "Bebas Neue", fontSize: 28, color: "#ff6b6b", marginTop: 2 }}>{pro.length}</div>
+              </div>
+              <div style={{ padding: "10px 12px", background: "rgba(56,189,248,0.07)", border: "1px solid rgba(56,189,248,0.3)", borderRadius: 4 }}>
+                <div style={{ ...muted, color: "var(--au-blue)", fontSize: 9 }}>OPP POINTS</div>
+                <div style={{ fontFamily: "Bebas Neue", fontSize: 28, color: "#38bdf8", marginTop: 2 }}>{kon.length}</div>
+              </div>
+            </div>
+            {m.terms && m.terms.length > 0 && (
+              <div style={{ marginTop: 18 }}>
+                <div style={muted}>Istilah Kunci</div>
+                <div style={{ marginTop: 8 }}>{m.terms.map((t) => <Chip key={t} color="var(--au-blue)">{t}</Chip>)}</div>
+              </div>
+            )}
+          </>
+        )}
+
+        {tab === "argumen" && (
+          <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 18 }}>
+            <div>
+              <div style={{ ...muted, color: "var(--au-agg)", marginBottom: 8 }}>PRO · {pro.length}</div>
+              {pro.map((p, i) => {
+                const r = riskFor(i, pro.length);
+                return (
+                  <div key={i} style={{ padding: "10px 12px", marginBottom: 8, background: "rgba(255,107,107,0.04)", borderLeft: "2px solid #ff6b6b", borderRadius: 3 }}>
+                    <div style={{ ...para, fontSize: 13 }}>{p}</div>
+                    <RiskBar risk={r} side="pro" />
+                  </div>
+                );
+              })}
+            </div>
+            <div>
+              <div style={{ ...muted, color: "var(--au-blue)", marginBottom: 8 }}>OPP · {kon.length}</div>
+              {kon.map((p, i) => {
+                const r = riskFor(i, kon.length);
+                return (
+                  <div key={i} style={{ padding: "10px 12px", marginBottom: 8, background: "rgba(56,189,248,0.04)", borderLeft: "2px solid #38bdf8", borderRadius: 3 }}>
+                    <div style={{ ...para, fontSize: 13 }}>{p}</div>
+                    <RiskBar risk={r} side="opp" />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+        {tab === "ideal" && (
+          <>
+            {m.ideal ? (
+              <div style={{
+                padding: "14px 16px", borderRadius: 6,
+                border: "1px solid rgba(168,85,247,0.3)",
+                background: "linear-gradient(135deg, rgba(168,85,247,0.06), rgba(56,189,248,0.04))",
+              }}>
+                <div style={{ ...muted, color: "var(--au-purple)", marginBottom: 8 }}>STRATEGI IDEAL</div>
+                <p style={para} dangerouslySetInnerHTML={{ __html: m.ideal }} />
+              </div>
+            ) : <p style={para}>Belum ada ideal case khusus untuk mosi ini.</p>}
+          </>
+        )}
+
+        {tab === "research" && (
+          <>
+            {m.research ? (
+              <div style={{
+                padding: "14px 16px", borderRadius: 6,
+                borderLeft: "3px solid var(--au-gold)",
+                background: "rgba(253,224,71,0.04)",
+              }}>
+                <div style={{ ...muted, color: "var(--au-gold)", marginBottom: 8 }}>BUKTI & REFERENSI</div>
+                <p style={para} dangerouslySetInnerHTML={{ __html: m.research }} />
+              </div>
+            ) : <p style={para}>Belum ada catatan riset untuk mosi ini.</p>}
+          </>
+        )}
+      </div>
     </div>
   );
 }
