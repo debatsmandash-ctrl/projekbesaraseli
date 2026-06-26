@@ -7,6 +7,8 @@ export type FpsCap = 0 | 30 | 60 | 120;
 export type MobileLayout = "sheet" | "pills";
 export type ViewMode = "3d" | "2d";
 export type PlayMode = "shuffle" | "sequential";
+export type ThemePalette = "aurora" | "sunset" | "emerald" | "mono";
+export type CameraPreset = "free" | "orbit" | "top" | "tour";
 
 export interface Settings {
   quality: QualityPreset;
@@ -27,6 +29,16 @@ export interface Settings {
   viewMode: ViewMode;
   enabledTracks: Record<string, boolean>;
   playMode: PlayMode;
+  // New: 3D shell density & ambience
+  shellNoise: number;       // 0..6 unit radial jitter
+  backgroundStars: number;  // 500..5000
+  // New: theme palette + accessibility
+  themePalette: ThemePalette;
+  fontScale: number;        // 0.9..1.3
+  // New: 2D "real sky" toggle (mute aurora/comets)
+  realSky2D: boolean;
+  // New: camera preset (Rover)
+  cameraPreset: CameraPreset;
   // Offset draggable panel (desktop). { x, y } pixel relatif posisi default.
   sidebarOffset: { x: number; y: number };
   sidePanelOffset: { x: number; y: number };
@@ -51,9 +63,16 @@ export const DEFAULT_SETTINGS: Settings = {
   viewMode: "3d",
   enabledTracks: {},
   playMode: "shuffle",
+  shellNoise: 2.2,
+  backgroundStars: 2200,
+  themePalette: "aurora",
+  fontScale: 1.0,
+  realSky2D: false,
+  cameraPreset: "free",
   sidebarOffset: { x: 0, y: 0 },
   sidePanelOffset: { x: 0, y: 0 },
 };
+
 
 interface UniverseState {
   selectedId: string | null;
