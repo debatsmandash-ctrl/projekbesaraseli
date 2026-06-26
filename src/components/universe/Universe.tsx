@@ -598,7 +598,9 @@ function Scene({ profile }: { profile: DeviceProfile }) {
         autoRotate={settings.autoRotate && !settings.reducedMotion}
         autoRotateSpeed={settings.autoRotateSpeed}
         damping={settings.damping}
+        preset={settings.cameraPreset}
       />
+
 
       <mesh onPointerMissed={() => select(null)} visible={false}>
         <boxGeometry args={[1, 1, 1]} />
