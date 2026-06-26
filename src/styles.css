@@ -130,6 +130,34 @@
   --au-agg:     #ff6b6b;
 }
 
+/* ─── Theme palettes — swap via body.theme-* (Settings → Tema) ─── */
+body.theme-aurora {
+  --au-bg: #05080f; --au-bg2: #080d18; --au-bg3: #0b1220;
+  --au-cyan: #00ffc8; --au-purple: #a855f7; --au-magenta: #ff5cf0;
+  --au-blue: #38bdf8; --au-gold: #f0c040; --au-agg: #ff6b6b;
+}
+body.theme-sunset {
+  --au-bg: #100612; --au-bg2: #170a1f; --au-bg3: #1d0f29;
+  --au-cyan: #ffb24a; --au-purple: #ff5cf0; --au-magenta: #ff2d8a;
+  --au-blue: #ff8b3d; --au-gold: #ffd166; --au-agg: #ef476f;
+}
+body.theme-emerald {
+  --au-bg: #050f0c; --au-bg2: #081814; --au-bg3: #0b2018;
+  --au-cyan: #34d399; --au-purple: #5eead4; --au-magenta: #67e8f9;
+  --au-blue: #22d3ee; --au-gold: #facc15; --au-agg: #fb7185;
+}
+body.theme-mono {
+  --au-bg: #050507; --au-bg2: #0b0b0e; --au-bg3: #111118;
+  --au-cyan: #e8f4ff; --au-purple: #cbd5e1; --au-magenta: #f1f5f9;
+  --au-blue: #94a3b8; --au-gold: #e2e8f0; --au-agg: #fb7185;
+}
+/* Font scale (Settings → A11y) — applied to root html via class. */
+html.font-scale-sm { font-size: 14px; }
+html.font-scale-md { font-size: 16px; }
+html.font-scale-lg { font-size: 17px; }
+html.font-scale-xl { font-size: 18.5px; }
+
+
 .dark {
   --background: oklch(0.129 0.042 264.695);
   --foreground: oklch(0.984 0.003 247.858);
