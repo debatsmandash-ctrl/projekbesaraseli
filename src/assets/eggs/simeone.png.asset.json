@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "b3cee2f3-423e-44fe-b8a2-67913c0a0ed3",
-  "project_id": "c6d4740b-1b89-4b20-8a25-dae7b319ebef",
-  "url": "/__l5e/assets-v1/b3cee2f3-423e-44fe-b8a2-67913c0a0ed3/simeone.png",
-  "r2_key": "a/v1/c6d4740b-1b89-4b20-8a25-dae7b319ebef/b3cee2f3-423e-44fe-b8a2-67913c0a0ed3/simeone.png",
-  "original_filename": "simeone.png",
-  "size": 347798,
   "content_type": "image/png",
-  "created_at": "2026-06-26T02:52:27Z"
+  "created_at": "2026-06-26T02:52:27Z",
+  "original_filename": "simeone.png",
+  "project_id": "943c3840-7278-42ad-9f4e-52f28043fbf0",
+  "r2_key": "a/v1/943c3840-7278-42ad-9f4e-52f28043fbf0/b3cee2f3-423e-44fe-b8a2-67913c0a0ed3/simeone.png",
+  "size": 347798,
+  "url": "/__l5e/assets-v1/b3cee2f3-423e-44fe-b8a2-67913c0a0ed3/simeone.png",
+  "version": 1
 }
