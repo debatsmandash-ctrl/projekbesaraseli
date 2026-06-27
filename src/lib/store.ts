@@ -157,6 +157,9 @@ export const useSettings = create<SettingsState>()(
       update: (patch) => set(patch as Settings),
       reset: () => set(DEFAULT_SETTINGS),
     }),
-    { name: "smandash-settings-v2" }
+    {
+      name: "smandash-settings-v3",
+      merge: (persisted, current) => ({ ...current, ...(persisted as object) }),
+    }
   )
 );
