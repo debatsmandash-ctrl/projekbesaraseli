@@ -681,8 +681,10 @@ export function buildGraph(): Graph {
             // re-project to shell
             const ra = Math.hypot(a.pos[0], a.pos[1], a.pos[2]);
             const rb = Math.hypot(b.pos[0], b.pos[1], b.pos[2]);
-            if (ra > 1e-3) { const k = SHELL_R / ra; a.pos = [a.pos[0]*k, a.pos[1]*k, a.pos[2]*k]; }
-            if (rb > 1e-3) { const k = SHELL_R / rb; b.pos = [b.pos[0]*k, b.pos[1]*k, b.pos[2]*k]; }
+            // re-project but preserve original radius (so cangkang tetap tebal).
+            if (ra > 1e-3) { const k = (Math.hypot(a.pos[0], a.pos[1], a.pos[2]) === 0 ? SHELL_R : ra) / Math.hypot(a.pos[0], a.pos[1], a.pos[2]); a.pos = [a.pos[0]*k, a.pos[1]*k, a.pos[2]*k]; }
+            if (rb > 1e-3) { const k = (Math.hypot(b.pos[0], b.pos[1], b.pos[2]) === 0 ? SHELL_R : rb) / Math.hypot(b.pos[0], b.pos[1], b.pos[2]); b.pos = [b.pos[0]*k, b.pos[1]*k, b.pos[2]*k]; }
+
           }
         }
       }
