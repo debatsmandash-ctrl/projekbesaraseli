@@ -10,7 +10,10 @@ import type { StarNode, StarEdge, NodeKind } from "@/data/types";
 import { MilkyWaySky } from "./MilkyWaySky";
 import { HoverEdges } from "./HoverEdges";
 import { Universe2D } from "./Universe2D";
+import { MicroDust } from "./MicroDust";
+import { InterClusterLinks } from "./InterClusterLinks";
 import { useDeviceProfile, type DeviceProfile } from "@/hooks/useDeviceProfile";
+
 
 
 // ─── Halo texture (shared canvas radial gradient) ───
